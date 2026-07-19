@@ -19,4 +19,16 @@
       toggle.focus();
     }
   });
+
+  // Progressive enhancement: subtle shadow on the sticky header once scrolled.
+  // No external calls; purely a local class toggle.
+  var header = document.querySelector(".site-header");
+  if (header) {
+    var onScroll = function () {
+      if (window.scrollY > 8) header.classList.add("is-scrolled");
+      else header.classList.remove("is-scrolled");
+    };
+    onScroll();
+    window.addEventListener("scroll", onScroll, { passive: true });
+  }
 })();
