@@ -1,0 +1,12 @@
+# OS / editor cruft
+.DS_Store
+Thumbs.db
+desktop.ini
+*~
+.vscode/
+.idea/
+
+# Local server / logs
+*.log
+
+# Nothing here should require secrets — this is a static, self-contained site.

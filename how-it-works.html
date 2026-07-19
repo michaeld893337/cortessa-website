@@ -1,0 +1,230 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+  <meta charset="utf-8">
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>How it works — Cortessa</title>
+  <meta name="description" content="The provenance gate: Verified, Draft or Refused. Pure local retrieval, three assurance tiers, and how Ask and Audit work end to end.">
+  <meta name="color-scheme" content="light dark">
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <link rel="icon" href="assets/img/cortessa.ico" sizes="any">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a class="brand" href="index.html" aria-label="Cortessa home">
+        <img class="brand-logo" src="assets/img/cortessa-logo.png" width="256" height="256" alt="" aria-hidden="true">
+        <span class="brand-name">Cortessa</span>
+      </a>
+      <nav class="site-nav" aria-label="Primary">
+        <button class="nav-toggle" aria-expanded="false" aria-controls="nav-menu">
+          <span class="nav-toggle-bar" aria-hidden="true"></span>
+          <span class="visually-hidden">Menu</span>
+        </button>
+        <ul id="nav-menu" class="nav-menu">
+          <li><a href="how-it-works.html">How it works</a></li>
+          <li><a href="security.html">Security &amp; sovereignty</a></li>
+          <li><a href="sectors.html">Sectors</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a class="nav-cta" href="contact.html">Request a pilot</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <section class="page-hero" aria-labelledby="page-heading">
+      <div class="wrap">
+        <p class="eyebrow">How it works</p>
+        <h1 id="page-heading">The gate is enforced in code, not hoped for</h1>
+        <p class="lede">
+          Every output Cortessa produces is provenance-gated — labelled Verified, Draft or
+          Refused. The gate is deterministic and never-false-positive: a number or identifier
+          that is not in the source cannot pass as Verified.
+        </p>
+      </div>
+    </section>
+
+    <!-- The provenance gate -->
+    <section class="section" aria-labelledby="gate-heading">
+      <div class="wrap">
+        <h2 id="gate-heading">The provenance gate: Verified / Draft / Refused</h2>
+        <p class="section-intro">
+          Cortessa does not certify — the engineer signs off. What the gate guarantees is that
+          nothing reaches Verified unless it is provably a near-verbatim span of a cited source.
+        </p>
+        <div class="gate-grid">
+          <div class="gate-card">
+            <span class="proof-tag verified">Verified</span>
+            <p>Shown only when a claim is provably a near-verbatim span of a cited source, with the citation attached.</p>
+          </div>
+          <div class="gate-card">
+            <span class="proof-tag draft">Draft</span>
+            <p>Claims that cannot be proven against a source are shown as Draft — never passed off as fact.</p>
+          </div>
+          <div class="gate-card">
+            <span class="proof-tag refused">Refused</span>
+            <p>When the fact is not present in the approved corpus, the system refuses rather than guess.</p>
+          </div>
+        </div>
+        <div class="note">
+          <p><span class="note-label">Why deterministic matters.</span> Safety is not a prompt you
+          hope the model obeys — it is enforced in code. In a generative red-team of 3,820
+          adversarial trials, the gate caught every model slip; hallucination was measured below
+          0.09% and no ungrounded value reached Verified.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Pure local retrieval -->
+    <section class="section band" aria-labelledby="retrieval-heading">
+      <div class="wrap">
+        <h2 id="retrieval-heading">Pure local retrieval by default</h2>
+        <div class="prose">
+          <p>
+            In its default mode, Cortessa answers by retrieving from your approved document set on
+            the machine itself. Nothing leaves the machine to answer a question — no corpus, no
+            query, no fragment of a document. It runs as a single executable on a standard Windows
+            laptop: no install, no server, no cloud, no GPU, no internet dependency.
+          </p>
+          <p>
+            Because retrieval is local and the gate is deterministic, the same guarantee holds
+            whether the machine is online or disconnected inside an accreditation boundary. The
+            classification ribbon shows, live, which assurance mode is in force.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Three assurance tiers -->
+    <section class="section" aria-labelledby="tiers-heading">
+      <div class="wrap">
+        <h2 id="tiers-heading">Three assurance tiers</h2>
+        <p class="section-intro">
+          Three modes, each shown live on a classification ribbon so the operator always knows
+          the boundary they are working within.
+        </p>
+        <ul class="tier-list" aria-label="Assurance tiers">
+          <li><strong>Offline (default)</strong> — pure local retrieval; nothing leaves the machine to answer.</li>
+          <li><strong>In-region cloud</strong> — optional AI in-region (UK, London / eu-west-2); opt-in and logged.</li>
+          <li><strong>On-device</strong> — optional AI fully on-device; the same guarantee holds, with 0% hallucination measured on-device.</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Ask + Audit end to end -->
+    <section class="section band" aria-labelledby="capabilities-heading">
+      <div class="wrap">
+        <h2 id="capabilities-heading">How Ask and Audit work, end to end</h2>
+
+        <h3>Ask — a question, answered and cited</h3>
+        <ol class="steps">
+          <li>
+            <h3>Point it at an approved corpus</h3>
+            <p>You choose the document set. Cortessa retrieves only from that corpus — it has no other source of truth.</p>
+          </li>
+          <li>
+            <h3>Ask in natural language</h3>
+            <p>Every sentence in the answer is cited back to the source span it came from.</p>
+          </li>
+          <li>
+            <h3>The gate labels each claim</h3>
+            <p>Provable spans are Verified; anything unprovable is Draft; if the fact is not present, the answer is Refused rather than invented.</p>
+          </li>
+          <li>
+            <h3>The engineer signs off</h3>
+            <p>Cortessa never certifies. You trace each citation and make the call.</p>
+          </li>
+        </ol>
+        <p class="cap-metric measure">
+          Evidence: 500 / 500 blind problems solved on a 100-document, 21-type stress set, graded
+          by an independent AI judge (the engine never sees the answer key); plus 16 / 16 on the
+          live demo set. Measured on a fictional OFFICIAL-tier demonstration corpus.
+        </p>
+
+        <h3 style="margin-top:2.4rem;">Audit — the whole estate, cross-checked</h3>
+        <ol class="steps">
+          <li>
+            <h3>Load the document estate</h3>
+            <p>Cortessa cross-references the whole corpus rather than answering a single question.</p>
+          </li>
+          <li>
+            <h3>Surface where documents disagree</h3>
+            <p>Numeric conflicts, supersession, broken references and stale content are detected across the estate.</p>
+          </li>
+          <li>
+            <h3>Return a cited findings list</h3>
+            <p>Each finding points to the sources that disagree — for example a coupling rated to 30&nbsp;bar where the current standard says 45.</p>
+          </li>
+          <li>
+            <h3>An engineer adjudicates</h3>
+            <p>The findings are adjudicable, not automatic. The engineer resolves each one; Cortessa hands over the evidence.</p>
+          </li>
+        </ol>
+        <p class="cap-metric measure">
+          Evidence: 25 / 25 audit findings correct with 0 false positives across all 8
+          inconsistency categories; scale-validated to ~200 documents. Measured on a fictional
+          OFFICIAL-tier demonstration corpus.
+        </p>
+
+        <div class="note">
+          <p><span class="note-label">Author is in development.</span> A third capability, Author,
+          turns the corpus into a cited, sign-off-ready briefing where the engineer accepts,
+          revises or rejects each drafted claim. It is still in development — additional testing is
+          underway — and is not yet shipped.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section cta-band" aria-labelledby="cta-heading">
+      <div class="wrap cta-inner">
+        <h2 id="cta-heading">See the gate against your own documents</h2>
+        <p>
+          A scoped, paid pilot runs on your hardware, behind your firewall, against success
+          criteria you set — led by Audit.
+        </p>
+        <a class="btn btn-primary" href="contact.html">Request a pilot</a>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap footer-inner">
+      <div class="footer-brand">
+        <span class="footer-brand-row">
+          <img class="brand-logo" src="assets/img/cortessa-logo.png" width="256" height="256" alt="" aria-hidden="true">
+          <span class="brand-name">Cortessa</span>
+        </span>
+        <p>Sovereign document intelligence for defence.</p>
+      </div>
+      <nav aria-label="Footer">
+        <ul class="footer-links">
+          <li><a href="how-it-works.html">How it works</a></li>
+          <li><a href="security.html">Security &amp; sovereignty</a></li>
+          <li><a href="sectors.html">Sectors</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <nav aria-label="Legal">
+        <ul class="footer-links">
+          <li><a href="legal/privacy.html">Privacy</a></li>
+          <li><a href="legal/terms.html">Terms</a></li>
+          <li><a href="legal/cookies.html">Cookies</a></li>
+          <li><a href="legal/accessibility.html">Accessibility</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="wrap footer-fine">
+      <p>&copy; 2026 Cortessa. Built self-contained: no CDNs, no external fonts, no trackers.</p>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
