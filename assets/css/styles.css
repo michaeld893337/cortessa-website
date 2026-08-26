@@ -836,11 +836,16 @@ img, svg { max-width: 100%; height: auto; }
 }
 .steps > li::before {
   content: counter(step, decimal-leading-zero);
+  grid-column: 1;
+  grid-row: 1 / span 4;
   font-family: var(--font-mono);
   font-size: var(--fs-200);
   color: var(--text-muted);
   line-height: 1.6;
 }
+/* The counter pseudo-element is a grid item too — pin the real content to
+   column 2 or the paragraph falls into the 3.5rem number column.            */
+.steps > li > * { grid-column: 2; }
 .steps h3, .steps h4 {
   font-size: var(--fs-400);
   letter-spacing: -0.005em;
