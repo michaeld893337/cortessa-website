@@ -26,9 +26,10 @@ python -m http.server 8099
 ## Deployment
 Served via GitHub Pages at **https://cortessa.co.uk/** (www 301-redirects to the apex).
 The custom domain is pinned by the committed `CNAME` file — **do not delete it**; without it a
-push can drop the domain binding and 404 the site. Pages are currently marked `noindex` (a soft
-pre-launch state) — remove the `<meta name="robots" content="noindex, nofollow">` tags at full
-launch to allow search indexing.
+push can drop the domain binding and 404 the site. The site is **indexable** (owner go,
+2026-08-26): content pages carry canonical URLs and are listed in `sitemap.xml` (referenced
+from `robots.txt`). The four legal pages remain `noindex` while they are placeholders — lift
+that when counsel-approved copy is published.
 
 ## Status
 - **Contact** is a holding state until a real pilot-enquiry inbox is wired in.

@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://cortessa.co.uk/sitemap.xml
