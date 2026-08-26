@@ -634,6 +634,30 @@ code.placeholder {
 }
 
 /* ============================================================================
+   The appliance (concept) — media-led section on .invert (navy) ground.
+   Renders are dark, so they sit on navy with a hairline nav-border frame.
+   ============================================================================ */
+.appliance-media { margin-top: var(--space-7); }
+.appliance-media img,
+.appliance-thumbs img {
+  display: block; width: 100%; height: auto;
+  border-radius: var(--radius); border: 1px solid var(--nav-border);
+}
+.appliance-media figcaption,
+.appliance-thumbs figcaption {
+  margin-top: var(--space-3); text-align: center;
+  font-size: var(--fs-100); color: var(--nav-muted);
+}
+.appliance-thumbs {
+  display: grid; grid-template-columns: 1fr 1fr;
+  gap: var(--gap); margin-top: var(--gap);
+}
+.appliance-thumbs figure { margin: 0; }
+@media (max-width: 40rem) {
+  .appliance-thumbs { grid-template-columns: 1fr; }
+}
+
+/* ============================================================================
    Reduced motion (web-layout §8 / MDN)
    ============================================================================ */
 @media (prefers-reduced-motion: reduce) {

@@ -73,9 +73,9 @@
         </div>
         <div class="note">
           <p><span class="note-label">Why deterministic matters.</span> Safety is not a prompt you
-          hope the model obeys — it is enforced in code. In a generative red-team of 3,820
-          adversarial trials, the gate caught every model slip; hallucination was measured below
-          0.09% and no ungrounded value reached Verified.</p>
+          hope the model obeys — it is enforced in code. In blind testing on real, public
+          documents, all 16 fabrication baits were gated and no ungrounded value reached
+          Verified — 0 fabrications across both blind evaluations.</p>
         </div>
       </div>
     </section>
@@ -88,8 +88,8 @@
           <p>
             In its default mode, Cortessa answers by retrieving from your approved document set on
             the machine itself. Nothing leaves the machine to answer a question — no corpus, no
-            query, no fragment of a document. It runs as a single executable on a standard Windows
-            laptop: no install, no server, no cloud, no GPU, no internet dependency.
+            query, no fragment of a document. It runs entirely on a dedicated sovereign workstation
+            on the analyst's desk — a single executable: no server, no cloud, no internet dependency.
           </p>
           <p>
             Because retrieval is local and the gate is deterministic, the same guarantee holds
@@ -141,9 +141,12 @@
           </li>
         </ol>
         <p class="cap-metric measure">
-          Evidence: 500 / 500 blind problems solved on a 100-document, 21-type stress set, graded
-          by an independent AI judge (the engine never sees the answer key); plus 16 / 16 on the
-          live demo set. Measured on a fictional OFFICIAL-tier demonstration corpus.
+          Evidence: ~97% retrieval with 0 provenance breaches across a 480-question blind evaluation
+          (all 16 fabrication baits gated; artifacts hash-manifested). Independently, an
+          oracle-authored 60-question blind exam on a real 43-paper physics corpus — the engine
+          never sees the answer key — returned 83% strict accuracy with 12 / 12 out-of-corpus
+          questions refused and 0 fabrications, fully offline. Accuracy is a floor set by interim
+          hardware, not a ceiling of the design.
         </p>
 
         <h3 style="margin-top:2.4rem;">Audit — the whole estate, cross-checked</h3>
@@ -166,9 +169,9 @@
           </li>
         </ol>
         <p class="cap-metric measure">
-          Evidence: 25 / 25 audit findings correct with 0 false positives across all 8
-          inconsistency categories; scale-validated to ~200 documents. Measured on a fictional
-          OFFICIAL-tier demonstration corpus.
+          Evidence: recall 1.0 and precision 1.0 across four seeded error classes on the committed
+          audit benchmark; on a real NASA programme document family, 15 / 15 genuine findings with
+          0 false positives. Measured on real, public corpora.
         </p>
 
         <div class="note">
