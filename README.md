@@ -47,4 +47,13 @@ Mark: the Cortessa orbital **jewel** render (`assets/img/cortessa-mark.png`, fro
 `apple-touch-icon.png` are derived from the same render; `og-card.png` is the social card.
 Guilloche security-print motifs (`guilloche.svg`, `guilloche_tile.svg`) come from the product
 design system. Typefaces: IBM Plex Sans / Plex Mono (vendored). Palette: navy `#0b121c`,
-accent cyan `#5cd2e6`.
+accent cyan `#5cd2e6` (dark-background only — it fails contrast on white), paper `#fbfcfd`,
+ink `#10161d`.
+
+Design direction (2026-08-26 overhaul): **"the controlled document"** — the visual grammar of
+high-assurance engineering documentation (hairline rules, monospaced section designators,
+EVIDENCE footnote blocks, tabular figures, a title-block footer) delivered with the restraint
+of the top defence-technology marques: large weight-400 display type with tight tracking,
+zero border-radius, zero drop shadows, and a dark navy opening chapter carrying the guilloche
+motif. The reveal-on-scroll is progressive (inert without JS, off under reduced motion, with
+an in-view check plus a 2.5 s failsafe so content can never be stuck hidden).

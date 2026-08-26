@@ -37,7 +37,7 @@
         </button>
         <ul id="nav-menu" class="nav-menu">
           <li><a href="how-it-works.html">How it works</a></li>
-          <li><a href="security.html">Security &amp; sovereignty</a></li>
+          <li><a href="security.html" aria-current="page">Security</a></li>
           <li><a href="sectors.html">Sectors</a></li>
           <li><a href="about.html">About</a></li>
           <li><a class="nav-cta" href="contact.html">Request a pilot</a></li>
@@ -50,9 +50,9 @@
 
     <section class="page-hero" aria-labelledby="page-heading">
       <div class="wrap">
-        <p class="eyebrow">Security &amp; sovereignty</p>
-        <h1 id="page-heading">Air-gap-safe by construction, not by configuration</h1>
-        <p class="lede">
+        <p class="mono-label rise">Security &amp; sovereignty</p>
+        <h1 id="page-heading" class="rise">Air-gap-safe by construction, not by configuration</h1>
+        <p class="lede rise">
           Cortessa is built to the constraints of a controlled environment: sovereign,
           offline-first and provenance-gated by design. It runs disconnected inside an
           accreditation boundary — the same bar defence sets, cleared for everyone else.
@@ -60,9 +60,13 @@
       </div>
     </section>
 
-    <!-- No external calls -->
+    <!-- 01 · No external calls -->
     <section class="section" aria-labelledby="calls-heading">
-      <div class="wrap">
+      <div class="wrap reveal">
+        <div class="desig">
+          <span class="mono-label">01 / Boundary</span>
+          <span class="mono-label desig-note">No external calls at runtime</span>
+        </div>
         <h2 id="calls-heading">No external calls at runtime</h2>
         <div class="prose">
           <p>
@@ -80,25 +84,33 @@
       </div>
     </section>
 
-    <!-- On-device / in-region options -->
+    <!-- 02 · Modes -->
     <section class="section invert" aria-labelledby="modes-heading">
-      <div class="wrap">
+      <div class="wrap reveal">
+        <div class="desig">
+          <span class="mono-label">02 / Modes</span>
+          <span class="mono-label desig-note">Always opt-in · shown on the ribbon</span>
+        </div>
         <h2 id="modes-heading">On-device and in-region options, always opt-in</h2>
         <p class="section-intro">
           When a deployment chooses to bring an AI model into the loop, it does so explicitly and
           within a stated boundary. The classification ribbon shows the active mode at all times.
         </p>
         <ul class="tier-list" aria-label="Assurance tiers">
-          <li><strong>Offline (default)</strong> — pure local retrieval; nothing leaves the machine to answer.</li>
-          <li><strong>In-region cloud</strong> — optional AI kept in-region (UK, London / eu-west-2); opt-in and logged.</li>
-          <li><strong>On-device</strong> — optional AI fully on-device; the same gate applies, and nothing leaves the machine.</li>
+          <li><strong>Offline (default)</strong> <span>pure local retrieval; nothing leaves the machine to answer.</span></li>
+          <li><strong>In-region cloud</strong> <span>optional AI kept in-region (UK, London / eu-west-2); opt-in and logged.</span></li>
+          <li><strong>On-device</strong> <span>optional AI fully on-device; the same gate applies, and nothing leaves the machine.</span></li>
         </ul>
       </div>
     </section>
 
-    <!-- Offline cryptographic licensing -->
+    <!-- 03 · Licensing -->
     <section class="section" aria-labelledby="licence-heading">
-      <div class="wrap">
+      <div class="wrap reveal">
+        <div class="desig">
+          <span class="mono-label">03 / Licensing</span>
+          <span class="mono-label desig-note">Offline cryptographic activation</span>
+        </div>
         <h2 id="licence-heading">Offline cryptographic licensing</h2>
         <div class="prose">
           <p>
@@ -115,9 +127,13 @@
       </div>
     </section>
 
-    <!-- Auditability -->
+    <!-- 04 · Auditability -->
     <section class="section band" aria-labelledby="audit-heading">
-      <div class="wrap">
+      <div class="wrap reveal">
+        <div class="desig">
+          <span class="mono-label">04 / Auditability</span>
+          <span class="mono-label desig-note">Deterministic · inspectable</span>
+        </div>
         <h2 id="audit-heading">Auditability you can inspect</h2>
         <div class="prose">
           <p>
@@ -133,18 +149,18 @@
           <li><strong>Self-contained footprint.</strong> No server to harden, no CDN to trust, no tracker to review.</li>
           <li><strong>The engineer signs off.</strong> Cortessa hands over cited evidence; it never certifies on your behalf.</li>
         </ul>
-        <div class="note">
-          <p><span class="note-label">Measured, with context.</span> In a 480-question blind
-          evaluation, retrieval was ~97% with 0 provenance breaches and all 16 fabrication baits
-          gated. In an independent, oracle-authored blind exam on a real physics corpus, 12 of 12
-          out-of-corpus questions were refused with 0 fabrications, fully offline. Figures were
-          measured blind on real, public corpora; raw run artifacts are hash-manifested.</p>
-        </div>
+        <p class="evidence">
+          In a 480-question blind evaluation, retrieval was ~97% with 0 provenance breaches and
+          all 16 fabrication baits gated. In an independent, oracle-authored blind exam on a real
+          physics corpus, 12 of 12 out-of-corpus questions were refused with 0 fabrications, fully
+          offline. Figures were measured blind on real, public corpora; raw run artifacts are
+          hash-manifested.
+        </p>
       </div>
     </section>
 
     <section class="section cta-band" aria-labelledby="cta-heading">
-      <div class="wrap cta-inner">
+      <div class="wrap cta-inner reveal">
         <h2 id="cta-heading">Evaluate it inside your own boundary</h2>
         <p>
           A scoped, paid pilot runs on your hardware, behind your firewall, disconnected if you
@@ -187,6 +203,14 @@
           <li><a href="legal/accessibility.html">Accessibility</a></li>
         </ul>
       </nav>
+    </div>
+    <div class="wrap">
+      <dl class="title-block" aria-label="Document reference">
+        <div><dt>Product</dt><dd>Cortessa</dd></div>
+        <div><dt>Reference</dt><dd>cortessa.co.uk</dd></div>
+        <div><dt>Issue</dt><dd>2026-08</dd></div>
+        <div><dt>Distribution</dt><dd>Public release</dd></div>
+      </dl>
     </div>
     <div class="wrap footer-fine">
       <p>&copy; 2026 Cortessa. Built self-contained: no CDNs, no external fonts, no trackers.</p>

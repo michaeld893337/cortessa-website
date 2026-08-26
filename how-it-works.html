@@ -36,8 +36,8 @@
           <span class="visually-hidden">Menu</span>
         </button>
         <ul id="nav-menu" class="nav-menu">
-          <li><a href="how-it-works.html">How it works</a></li>
-          <li><a href="security.html">Security &amp; sovereignty</a></li>
+          <li><a href="how-it-works.html" aria-current="page">How it works</a></li>
+          <li><a href="security.html">Security</a></li>
           <li><a href="sectors.html">Sectors</a></li>
           <li><a href="about.html">About</a></li>
           <li><a class="nav-cta" href="contact.html">Request a pilot</a></li>
@@ -50,9 +50,9 @@
 
     <section class="page-hero" aria-labelledby="page-heading">
       <div class="wrap">
-        <p class="eyebrow">How it works</p>
-        <h1 id="page-heading">The gate is enforced in code, not hoped for</h1>
-        <p class="lede">
+        <p class="mono-label rise">How it works</p>
+        <h1 id="page-heading" class="rise">The gate is enforced in code, not hoped for</h1>
+        <p class="lede rise">
           Every output Cortessa produces is provenance-gated — labelled Verified, Draft or
           Refused. The gate is deterministic and never-false-positive: a number or identifier
           that is not in the source cannot pass as Verified.
@@ -60,10 +60,14 @@
       </div>
     </section>
 
-    <!-- The provenance gate -->
+    <!-- 01 · The gate -->
     <section class="section" aria-labelledby="gate-heading">
-      <div class="wrap">
-        <h2 id="gate-heading">The provenance gate: Verified / Draft / Refused</h2>
+      <div class="wrap reveal">
+        <div class="desig">
+          <span class="mono-label">01 / The gate</span>
+          <span class="mono-label desig-note">Verified · Draft · Refused</span>
+        </div>
+        <h2 id="gate-heading">The provenance gate</h2>
         <p class="section-intro">
           Cortessa does not certify — the engineer signs off. What the gate guarantees is that
           nothing reaches Verified unless it is provably a near-verbatim span of a cited source.
@@ -83,7 +87,7 @@
           </div>
         </div>
         <div class="note">
-          <p><span class="note-label">Why deterministic matters.</span> Safety is not a prompt you
+          <p><span class="note-label">Why deterministic matters</span> Safety is not a prompt you
           hope the model obeys — it is enforced in code. In blind testing on real, public
           documents, all 16 fabrication baits were gated and no ungrounded value reached
           Verified — 0 fabrications across both blind evaluations.</p>
@@ -91,9 +95,13 @@
       </div>
     </section>
 
-    <!-- Pure local retrieval -->
+    <!-- 02 · Local retrieval -->
     <section class="section band" aria-labelledby="retrieval-heading">
-      <div class="wrap">
+      <div class="wrap reveal">
+        <div class="desig">
+          <span class="mono-label">02 / Retrieval</span>
+          <span class="mono-label desig-note">Local by default</span>
+        </div>
         <h2 id="retrieval-heading">Pure local retrieval by default</h2>
         <div class="prose">
           <p>
@@ -111,48 +119,56 @@
       </div>
     </section>
 
-    <!-- Three assurance tiers -->
+    <!-- 03 · Assurance tiers -->
     <section class="section invert" aria-labelledby="tiers-heading">
-      <div class="wrap">
+      <div class="wrap reveal">
+        <div class="desig">
+          <span class="mono-label">03 / Assurance</span>
+          <span class="mono-label desig-note">Mode shown live on the ribbon</span>
+        </div>
         <h2 id="tiers-heading">Three assurance tiers</h2>
         <p class="section-intro">
           Three modes, each shown live on a classification ribbon so the operator always knows
           the boundary they are working within.
         </p>
         <ul class="tier-list" aria-label="Assurance tiers">
-          <li><strong>Offline (default)</strong> — pure local retrieval; nothing leaves the machine to answer.</li>
-          <li><strong>In-region cloud</strong> — optional AI in-region (UK, London / eu-west-2); opt-in and logged.</li>
-          <li><strong>On-device</strong> — optional AI fully on-device; the same gate applies, and nothing leaves the machine. In the independent blind exam this mode refused all 12 out-of-corpus questions with 0 fabrications.</li>
+          <li><strong>Offline (default)</strong> <span>pure local retrieval; nothing leaves the machine to answer.</span></li>
+          <li><strong>In-region cloud</strong> <span>optional AI in-region (UK, London / eu-west-2); opt-in and logged.</span></li>
+          <li><strong>On-device</strong> <span>optional AI fully on-device; the same gate applies, and nothing leaves the machine. In the independent blind exam this mode refused all 12 out-of-corpus questions with 0 fabrications.</span></li>
         </ul>
       </div>
     </section>
 
-    <!-- Ask + Audit end to end -->
-    <section class="section band" aria-labelledby="capabilities-heading">
-      <div class="wrap">
+    <!-- 04 · Procedures -->
+    <section class="section" aria-labelledby="capabilities-heading">
+      <div class="wrap reveal">
+        <div class="desig">
+          <span class="mono-label">04 / Procedure</span>
+          <span class="mono-label desig-note">Ask · Audit · end to end</span>
+        </div>
         <h2 id="capabilities-heading">How Ask and Audit work, end to end</h2>
 
         <h3>Ask — a question, answered and cited</h3>
         <ol class="steps">
           <li>
-            <h3>Point it at an approved corpus</h3>
+            <h4>Point it at an approved corpus</h4>
             <p>You choose the document set. Cortessa retrieves only from that corpus — it has no other source of truth.</p>
           </li>
           <li>
-            <h3>Ask in natural language</h3>
+            <h4>Ask in natural language</h4>
             <p>Every sentence in the answer is cited back to the source span it came from.</p>
           </li>
           <li>
-            <h3>The gate labels each claim</h3>
+            <h4>The gate labels each claim</h4>
             <p>Provable spans are Verified; anything unprovable is Draft; if the fact is not present, the answer is Refused rather than invented.</p>
           </li>
           <li>
-            <h3>The engineer signs off</h3>
+            <h4>The engineer signs off</h4>
             <p>Cortessa never certifies. You trace each citation and make the call.</p>
           </li>
         </ol>
-        <p class="cap-metric measure">
-          Evidence: ~97% retrieval with 0 provenance breaches across a 480-question blind evaluation
+        <p class="evidence">
+          ~97% retrieval with 0 provenance breaches across a 480-question blind evaluation
           (all 16 fabrication baits gated; artifacts hash-manifested). Independently, an
           oracle-authored 60-question blind exam on a real 43-paper physics corpus — the engine
           never sees the answer key — returned 83% strict accuracy with 12 / 12 out-of-corpus
@@ -160,33 +176,33 @@
           hardware, not a ceiling of the design.
         </p>
 
-        <h3 style="margin-top:2.4rem;">Audit — the whole estate, cross-checked</h3>
+        <h3 style="margin-top:3rem;">Audit — the whole estate, cross-checked</h3>
         <ol class="steps">
           <li>
-            <h3>Load the document estate</h3>
+            <h4>Load the document estate</h4>
             <p>Cortessa cross-references the whole corpus rather than answering a single question.</p>
           </li>
           <li>
-            <h3>Surface where documents disagree</h3>
+            <h4>Surface where documents disagree</h4>
             <p>Numeric conflicts, supersession, broken references and stale content are detected across the estate.</p>
           </li>
           <li>
-            <h3>Return a cited findings list</h3>
+            <h4>Return a cited findings list</h4>
             <p>Each finding points to the sources that disagree — for example a coupling rated to 30&nbsp;bar where the current standard says 45.</p>
           </li>
           <li>
-            <h3>An engineer adjudicates</h3>
+            <h4>An engineer adjudicates</h4>
             <p>The findings are adjudicable, not automatic. The engineer resolves each one; Cortessa hands over the evidence.</p>
           </li>
         </ol>
-        <p class="cap-metric measure">
-          Evidence: recall 1.0 and precision 1.0 across four seeded error classes on the committed
+        <p class="evidence">
+          Recall 1.0 and precision 1.0 across four seeded error classes on the committed
           audit benchmark; on a real NASA programme document family, 15 / 15 genuine findings with
           0 false positives. Measured on real, public corpora.
         </p>
 
         <div class="note">
-          <p><span class="note-label">Author is in development.</span> A third capability, Author,
+          <p><span class="note-label">Author is in development</span> A third capability, Author,
           turns the corpus into a cited, sign-off-ready briefing where the engineer accepts,
           revises or rejects each drafted claim. It is still in development — additional testing is
           underway — and is not yet shipped.</p>
@@ -194,9 +210,13 @@
       </div>
     </section>
 
-    <!-- Configuration effectivity -->
-    <section class="section" aria-labelledby="effectivity-heading">
-      <div class="wrap">
+    <!-- 05 · Effectivity -->
+    <section class="section band" aria-labelledby="effectivity-heading">
+      <div class="wrap reveal">
+        <div class="desig">
+          <span class="mono-label">05 / Effectivity</span>
+          <span class="mono-label desig-note">S1000D · three-valued</span>
+        </div>
         <h2 id="effectivity-heading">Effectivity: binding an answer to a configuration</h2>
         <div class="prose">
           <p>
@@ -215,8 +235,8 @@
             With no configuration selected, behaviour is unchanged: nothing is withheld.
           </p>
         </div>
-        <p class="cap-metric measure">
-          Evidence: 0 wrong-variant leaks across the committed effectivity benchmark — eight
+        <p class="evidence">
+          0 wrong-variant leaks across the committed effectivity benchmark — eight
           configuration-scoped questions over a disclosed, purpose-authored S1000D corpus with a
           genuine pre-/post-modification module pair.
         </p>
@@ -224,7 +244,7 @@
     </section>
 
     <section class="section cta-band" aria-labelledby="cta-heading">
-      <div class="wrap cta-inner">
+      <div class="wrap cta-inner reveal">
         <h2 id="cta-heading">See the gate against your own documents</h2>
         <p>
           A scoped, paid pilot runs on your hardware, behind your firewall, against success
@@ -267,6 +287,14 @@
           <li><a href="legal/accessibility.html">Accessibility</a></li>
         </ul>
       </nav>
+    </div>
+    <div class="wrap">
+      <dl class="title-block" aria-label="Document reference">
+        <div><dt>Product</dt><dd>Cortessa</dd></div>
+        <div><dt>Reference</dt><dd>cortessa.co.uk</dd></div>
+        <div><dt>Issue</dt><dd>2026-08</dd></div>
+        <div><dt>Distribution</dt><dd>Public release</dd></div>
+      </dl>
     </div>
     <div class="wrap footer-fine">
       <p>&copy; 2026 Cortessa. Built self-contained: no CDNs, no external fonts, no trackers.</p>
