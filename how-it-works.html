@@ -9,6 +9,17 @@
   <meta name="color-scheme" content="light dark">
   <link rel="stylesheet" href="assets/css/styles.css">
   <link rel="icon" href="assets/img/cortessa.ico" sizes="any">
+  <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
+  <meta name="theme-color" content="#0b121c">
+  <meta property="og:site_name" content="Cortessa">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="How it works — Cortessa">
+  <meta property="og:description" content="The provenance gate: Verified, Draft or Refused. Pure local retrieval, three assurance tiers, and how Ask and Audit work end to end.">
+  <meta property="og:url" content="https://cortessa.co.uk/how-it-works.html">
+  <meta property="og:image" content="https://cortessa.co.uk/assets/img/og-card.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
@@ -16,7 +27,7 @@
   <header class="site-header">
     <div class="wrap header-inner">
       <a class="brand" href="index.html" aria-label="Cortessa home">
-        <img class="brand-logo" src="assets/img/cortessa-logo.png" width="256" height="256" alt="" aria-hidden="true">
+        <img class="brand-logo" src="assets/img/cortessa-mark.png" width="512" height="512" alt="" aria-hidden="true">
         <span class="brand-name">Cortessa</span>
       </a>
       <nav class="site-nav" aria-label="Primary">
@@ -111,7 +122,7 @@
         <ul class="tier-list" aria-label="Assurance tiers">
           <li><strong>Offline (default)</strong> — pure local retrieval; nothing leaves the machine to answer.</li>
           <li><strong>In-region cloud</strong> — optional AI in-region (UK, London / eu-west-2); opt-in and logged.</li>
-          <li><strong>On-device</strong> — optional AI fully on-device; the same guarantee holds, with 0% hallucination measured on-device.</li>
+          <li><strong>On-device</strong> — optional AI fully on-device; the same gate applies, and nothing leaves the machine. In the independent blind exam this mode refused all 12 out-of-corpus questions with 0 fabrications.</li>
         </ul>
       </div>
     </section>
@@ -183,6 +194,35 @@
       </div>
     </section>
 
+    <!-- Configuration effectivity -->
+    <section class="section" aria-labelledby="effectivity-heading">
+      <div class="wrap">
+        <h2 id="effectivity-heading">Effectivity: binding an answer to a configuration</h2>
+        <div class="prose">
+          <p>
+            Supersession and effectivity are different claims. Supersession is about time:
+            Rev&nbsp;E replaced Rev&nbsp;D. Effectivity is about configuration: Rev&nbsp;D still
+            applies to hulls 1–4 and Rev&nbsp;E from hull&nbsp;5 — both are current at once, and
+            quoting the wrong one for the variant in front of you is a safety event.
+          </p>
+          <p>
+            For S1000D technical publications, Cortessa evaluates each data module's declared
+            applicability against the product configuration selected for the session. The
+            evaluation is three-valued — <strong>applies</strong>, <strong>does not apply</strong>,
+            or <strong>undecidable</strong> — and undecidable is flagged on the answer, never
+            silently resolved. Modules withheld because they belong to a different variant are
+            reported alongside the answer, so the engineer can see what was excluded and why.
+            With no configuration selected, behaviour is unchanged: nothing is withheld.
+          </p>
+        </div>
+        <p class="cap-metric measure">
+          Evidence: 0 wrong-variant leaks across the committed effectivity benchmark — eight
+          configuration-scoped questions over a disclosed, purpose-authored S1000D corpus with a
+          genuine pre-/post-modification module pair.
+        </p>
+      </div>
+    </section>
+
     <section class="section cta-band" aria-labelledby="cta-heading">
       <div class="wrap cta-inner">
         <h2 id="cta-heading">See the gate against your own documents</h2>
@@ -203,12 +243,13 @@
     <div class="wrap footer-inner">
       <div class="footer-brand">
         <span class="footer-brand-row">
-          <img class="brand-logo" src="assets/img/cortessa-logo.png" width="256" height="256" alt="" aria-hidden="true">
+          <img class="brand-logo" src="assets/img/cortessa-mark.png" width="512" height="512" alt="" aria-hidden="true">
           <span class="brand-name">Cortessa</span>
         </span>
         <p>Sovereign document intelligence for defence.</p>
       </div>
       <nav aria-label="Footer">
+        <p class="footer-col-title">Explore</p>
         <ul class="footer-links">
           <li><a href="how-it-works.html">How it works</a></li>
           <li><a href="security.html">Security &amp; sovereignty</a></li>
@@ -218,6 +259,7 @@
         </ul>
       </nav>
       <nav aria-label="Legal">
+        <p class="footer-col-title">Legal</p>
         <ul class="footer-links">
           <li><a href="legal/privacy.html">Privacy</a></li>
           <li><a href="legal/terms.html">Terms</a></li>

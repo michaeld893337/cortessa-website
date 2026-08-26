@@ -9,6 +9,17 @@
   <meta name="color-scheme" content="light dark">
   <link rel="stylesheet" href="assets/css/styles.css">
   <link rel="icon" href="assets/img/cortessa.ico" sizes="any">
+  <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
+  <meta name="theme-color" content="#0b121c">
+  <meta property="og:site_name" content="Cortessa">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Cortessa — Sovereign document intelligence for defence">
+  <meta property="og:description" content="Cortessa answers from your approved documents with every claim cited to its source — or it refuses. Offline, air-gap-safe, on a sovereign workstation on your desk.">
+  <meta property="og:url" content="https://cortessa.co.uk/">
+  <meta property="og:image" content="https://cortessa.co.uk/assets/img/og-card.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
@@ -16,7 +27,7 @@
   <header class="site-header">
     <div class="wrap header-inner">
       <a class="brand" href="index.html" aria-label="Cortessa home">
-        <img class="brand-logo" src="assets/img/cortessa-logo.png" width="256" height="256" alt="" aria-hidden="true">
+        <img class="brand-logo" src="assets/img/cortessa-mark.png" width="512" height="512" alt="" aria-hidden="true">
         <span class="brand-name">Cortessa</span>
       </a>
       <nav class="site-nav" aria-label="Primary">
@@ -40,16 +51,23 @@
     <!-- Hero: states the guarantee -->
     <section class="hero" aria-labelledby="hero-heading">
       <div class="wrap">
-        <p class="eyebrow">Sovereign document intelligence for defence</p>
-        <h1 id="hero-heading">Every answer cited to its source&nbsp;— or it refuses.</h1>
-        <p class="lede">
-          Cortessa answers from your approved document set with every claim traced to a
-          cited source span. It runs offline on a sovereign workstation on your desk.
-          Blind-tested on real, public documents: 0 fabrications passed the gate.
-        </p>
-        <div class="hero-actions">
-          <a class="btn btn-primary" href="contact.html">Request a scoped pilot</a>
-          <a class="btn btn-ghost" href="how-it-works.html">See how it works</a>
+        <div class="hero-grid">
+          <div>
+            <p class="eyebrow">Sovereign document intelligence for defence</p>
+            <h1 id="hero-heading">Every answer cited to its source&nbsp;— or it refuses.</h1>
+            <p class="lede">
+              Cortessa answers from your approved document set with every claim traced to a
+              cited source span. It runs offline on a sovereign workstation on your desk.
+              Blind-tested on real, public documents: 0 fabrications passed the gate.
+            </p>
+            <div class="hero-actions">
+              <a class="btn btn-primary" href="contact.html">Request a scoped pilot</a>
+              <a class="btn btn-ghost" href="how-it-works.html">See how it works</a>
+            </div>
+          </div>
+          <div class="hero-visual" aria-hidden="true">
+            <img class="hero-mark" src="assets/img/cortessa-mark.png" width="512" height="512" alt="" loading="eager" fetchpriority="high">
+          </div>
         </div>
 
         <!-- Proof strip -->
@@ -119,6 +137,30 @@
       </div>
     </section>
 
+    <!-- Configuration effectivity -->
+    <section class="section" aria-labelledby="effectivity-heading">
+      <div class="wrap">
+        <h2 id="effectivity-heading">The right revision for the right variant</h2>
+        <p class="section-intro">
+          Supersession is a claim about time — Rev&nbsp;E replaced Rev&nbsp;D. Effectivity is a
+          claim about configuration — Rev&nbsp;D still applies to hulls 1–4, Rev&nbsp;E from
+          hull&nbsp;5, both current at once. Serving the wrong one to the wrong variant is a
+          safety event, and a search engine cannot tell the difference.
+        </p>
+        <ul class="feature-list">
+          <li><strong>Configuration-aware answers.</strong> For S1000D technical publications,
+            an answer is bound to the product configuration it applies to — modules for a
+            different variant are withheld and reported, not silently blended in.</li>
+          <li><strong>Undecidable is flagged, never guessed.</strong> Where applicability cannot
+            be decided from the data, the answer says so — the same refusal ethos as the
+            provenance gate.</li>
+          <li><strong>Benchmarked.</strong> 0 wrong-variant leaks across the committed
+            effectivity benchmark — eight configuration-scoped questions over a disclosed,
+            purpose-authored S1000D corpus.</li>
+        </ul>
+      </div>
+    </section>
+
     <!-- Three capabilities -->
     <section class="section invert" aria-labelledby="capabilities-heading">
       <div class="wrap">
@@ -184,7 +226,7 @@
         <ul class="tier-list" aria-label="Assurance tiers">
           <li><strong>Offline (default)</strong> — pure local retrieval; nothing leaves the machine.</li>
           <li><strong>In-region cloud</strong> — optional AI via a UK (London) entry region; opt-in and logged.</li>
-          <li><strong>On-device</strong> — optional AI fully on-device (0% hallucination on-device).</li>
+          <li><strong>On-device</strong> — optional AI fully on-device; the same gate applies, nothing leaves the machine.</li>
         </ul>
       </div>
     </section>
@@ -259,12 +301,13 @@
     <div class="wrap footer-inner">
       <div class="footer-brand">
         <span class="footer-brand-row">
-          <img class="brand-logo" src="assets/img/cortessa-logo.png" width="256" height="256" alt="" aria-hidden="true">
+          <img class="brand-logo" src="assets/img/cortessa-mark.png" width="512" height="512" alt="" aria-hidden="true">
           <span class="brand-name">Cortessa</span>
         </span>
         <p>Sovereign document intelligence for defence.</p>
       </div>
       <nav aria-label="Footer">
+        <p class="footer-col-title">Explore</p>
         <ul class="footer-links">
           <li><a href="how-it-works.html">How it works</a></li>
           <li><a href="security.html">Security &amp; sovereignty</a></li>
@@ -274,6 +317,7 @@
         </ul>
       </nav>
       <nav aria-label="Legal">
+        <p class="footer-col-title">Legal</p>
         <ul class="footer-links">
           <li><a href="legal/privacy.html">Privacy</a></li>
           <li><a href="legal/terms.html">Terms</a></li>
