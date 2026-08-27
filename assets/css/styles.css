@@ -978,6 +978,36 @@ img, svg { max-width: 100%; height: auto; }
 @media (max-width: 46rem) { .appliance-thumbs { grid-template-columns: 1fr; } }
 
 /* ============================================================================
+   Console captures — live product screenshots, framed like plates
+   ============================================================================ */
+.console-shot { margin: var(--space-6) 0 0; }
+.console-shot img {
+  display: block;
+  width: 100%;
+  border: var(--hairline) solid var(--border-strong);
+}
+.invert .console-shot img { border-color: var(--nav-rule); }
+.console-shot figcaption {
+  font-family: var(--font-mono);
+  font-size: var(--fs-mono-sm);
+  line-height: 1.65;
+  color: var(--text-muted);
+  padding-top: var(--space-3);
+  max-width: var(--measure);
+}
+.console-shot figcaption::before {
+  content: "LIVE CAPTURE";
+  display: block;
+  font-size: var(--fs-mono-xs);
+  font-weight: 600;
+  letter-spacing: var(--track-mono);
+  color: var(--text);
+  margin-bottom: var(--space-2);
+}
+.invert .console-shot figcaption { color: var(--nav-muted); }
+.invert .console-shot figcaption::before { color: var(--nav-accent); }
+
+/* ============================================================================
    Contact
    ============================================================================ */
 .contact-grid {
