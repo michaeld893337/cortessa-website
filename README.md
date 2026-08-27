@@ -20,20 +20,25 @@ python -m http.server 8099
 - **Content:** `index.html` (home), `how-it-works.html`, `security.html`, `sectors.html`,
   `about.html`, `contact.html`
 - **Legal:** `legal/privacy.html`, `legal/terms.html`, `legal/cookies.html`,
-  `legal/accessibility.html` — currently "coming soon" placeholders; the finalised versions
-  publish after legal review.
+  `legal/accessibility.html` — published (v1.0, 2026-08-27): finalised from the
+  `legal-drafts/legal-source/` drafts by the law-expert agent with owner-confirmed facts
+  (sole trader, Scots law, info@ contact); the per-change legal reasoning + sources live in
+  the decisions report archived at `legal-drafts/legal-source/decisions-report-2026-08-27.md`.
+  No solicitor has reviewed them (flagged) — a one-off Scots-qualified review remains advisable.
+- **Extras:** `404.html` (bespoke, served by GitHub Pages), `.well-known/security.txt`.
 
 ## Deployment
 Served via GitHub Pages at **https://cortessa.co.uk/** (www 301-redirects to the apex).
 The custom domain is pinned by the committed `CNAME` file — **do not delete it**; without it a
 push can drop the domain binding and 404 the site. The site is **indexable** (owner go,
 2026-08-26): content pages carry canonical URLs and are listed in `sitemap.xml` (referenced
-from `robots.txt`). The four legal pages remain `noindex` while they are placeholders — lift
-that when counsel-approved copy is published.
+from `robots.txt`). All ten pages — six content + four legal — are indexable and in the
+sitemap since 2026-08-27.
 
 ## Status
-- **Contact** is a holding state until a real pilot-enquiry inbox is wired in.
-- **Legal pages** are placeholders pending counsel-approved copy.
+- **Contact is live**: info@cortessa.co.uk and michael.davidson@cortessa.co.uk forward via
+  Cloudflare Email Routing (configured 2026-08-27) to the owner's mailbox.
+- **Legal pages** are published v1.0 (see above); legal-page `noindex` lifted, sitemap extended.
 
 ## Standards
 Content traces to approved facts; performance metrics always carry their test qualifier;

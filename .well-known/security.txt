@@ -1,0 +1,5 @@
+Contact: mailto:info@cortessa.co.uk
+Expires: 2027-08-27T00:00:00.000Z
+Preferred-Languages: en
+Canonical: https://cortessa.co.uk/.well-known/security.txt
+Policy: https://cortessa.co.uk/legal/terms.html

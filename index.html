@@ -7,6 +7,8 @@
   <meta name="description" content="Cortessa answers from your approved documents with every claim cited to its source — or it refuses. Offline, air-gap-safe, on a sovereign workstation on your desk.">
   <link rel="canonical" href="https://cortessa.co.uk/">
   <meta name="color-scheme" content="light dark">
+  <link rel="preload" href="assets/fonts/PlexSans-Regular.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="assets/fonts/PlexMono-Regular.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="assets/css/styles.css">
   <link rel="icon" href="assets/img/cortessa.ico" sizes="any">
   <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
@@ -20,6 +22,31 @@
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
   <meta name="twitter:card" content="summary_large_image">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Organization",
+        "@id": "https://cortessa.co.uk/#org",
+        "name": "Cortessa",
+        "url": "https://cortessa.co.uk/",
+        "logo": "https://cortessa.co.uk/assets/img/cortessa-mark.png",
+        "description": "Sovereign document intelligence for defence: every answer cited to its source, or it refuses. Offline, air-gap-safe, on a sovereign workstation.",
+        "founder": {"@type": "Person", "name": "Michael Davidson"},
+        "email": "info@cortessa.co.uk",
+        "address": {"@type": "PostalAddress", "addressLocality": "Glasgow", "addressCountry": "GB"}
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://cortessa.co.uk/#website",
+        "url": "https://cortessa.co.uk/",
+        "name": "Cortessa",
+        "publisher": {"@id": "https://cortessa.co.uk/#org"}
+      }
+    ]
+  }
+  </script>
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>

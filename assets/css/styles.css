@@ -448,19 +448,19 @@ img, svg { max-width: 100%; height: auto; }
 .btn-ghost:hover { border-color: var(--text); }
 
 /* Buttons inside navy contexts flip to the cyan/navy pairing. */
-.invert .btn-primary, .hero .btn-primary, .cta-band .btn-primary {
+.invert .btn-primary, .hero .btn-primary, .page-hero .btn-primary, .cta-band .btn-primary {
   background: var(--nav-accent);
   color: var(--nav-accent-ink);
   border-color: var(--nav-accent);
 }
-.invert .btn-primary:hover, .hero .btn-primary:hover, .cta-band .btn-primary:hover {
+.invert .btn-primary:hover, .hero .btn-primary:hover, .page-hero .btn-primary:hover, .cta-band .btn-primary:hover {
   background: #7fe0f0; border-color: #7fe0f0;
 }
-.invert .btn-ghost, .hero .btn-ghost, .cta-band .btn-ghost {
+.invert .btn-ghost, .hero .btn-ghost, .page-hero .btn-ghost, .cta-band .btn-ghost {
   color: var(--nav-text);
   border-color: var(--nav-rule);
 }
-.invert .btn-ghost:hover, .hero .btn-ghost:hover, .cta-band .btn-ghost:hover {
+.invert .btn-ghost:hover, .hero .btn-ghost:hover, .page-hero .btn-ghost:hover, .cta-band .btn-ghost:hover {
   border-color: var(--nav-accent);
   color: var(--nav-accent);
 }
@@ -863,6 +863,42 @@ img, svg { max-width: 100%; height: auto; }
 .prose ul, .prose ol { padding-left: 1.25rem; margin: 0 0 var(--space-5); }
 .prose li { margin-bottom: var(--space-2); }
 
+/* Ruled data table inside prose (legal pages) */
+.prose .table-wrap { overflow-x: auto; margin: 0 0 var(--space-5); }
+.prose table {
+  width: 100%;
+  border-collapse: collapse;
+  border-top: var(--hairline) solid var(--rule);
+  font-size: var(--fs-200);
+}
+.prose th {
+  text-align: left;
+  font-family: var(--font-mono);
+  font-size: var(--fs-mono-xs);
+  font-weight: 600;
+  letter-spacing: var(--track-mono);
+  text-transform: uppercase;
+  color: var(--text);
+  padding: var(--space-3) var(--space-4) var(--space-3) 0;
+  border-bottom: var(--hairline) solid var(--border-strong);
+}
+.prose td {
+  vertical-align: top;
+  padding: var(--space-3) var(--space-4) var(--space-3) 0;
+  border-bottom: var(--hairline) solid var(--border);
+  color: var(--text-muted);
+}
+
+/* Version line under a legal page title */
+.doc-meta {
+  font-family: var(--font-mono);
+  font-size: var(--fs-mono-sm);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--nav-muted);
+  margin: 0;
+}
+
 .note {
   max-width: var(--measure);
   margin-top: var(--space-6);
@@ -1071,4 +1107,32 @@ img, svg { max-width: 100%; height: auto; }
   .hero .proof-strip { opacity: 0; animation: fade 700ms ease 600ms forwards; }
   @keyframes rise { to { opacity: 1; transform: none; } }
   @keyframes fade { to { opacity: 1; } }
+}
+
+/* ============================================================================
+   Print — a controlled document prints like one
+   ============================================================================ */
+@media print {
+  .site-header, .site-footer, .skip-link, .nav-toggle, .hero-actions,
+  .cta-band, .hero-visual { display: none !important; }
+  .hero, .page-hero, .invert, .band, body {
+    background: #ffffff !important;
+    background-image: none !important;
+    color: #10161d !important;
+  }
+  .hero h1, .page-hero h1, .invert h2, .invert h3, .invert p,
+  .hero .lede, .page-hero .lede { color: #10161d !important; }
+  .section { padding-block: 1.5rem; }
+  a { color: #10161d; text-decoration: underline; }
+  .js .reveal { opacity: 1 !important; transform: none !important; }
+  main::after {
+    content: "CORTESSA \00b7 cortessa.co.uk \00b7 UNCONTROLLED WHEN PRINTED";
+    display: block;
+    margin-top: 2rem;
+    padding-top: 0.5rem;
+    border-top: 1px solid #10161d;
+    font-family: "IBM Plex Mono", monospace;
+    font-size: 9px;
+    letter-spacing: 0.14em;
+  }
 }
