@@ -10,3 +10,6 @@ desktop.ini
 *.log
 
 # Nothing here should require secrets — this is a static, self-contained site.
+
+# Browser-pane launch config (local only)
+.claude/

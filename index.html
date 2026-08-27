@@ -105,8 +105,25 @@
       </div>
     </section>
 
+    <!-- Contents: the document's own index -->
+    <nav class="contents" aria-label="Contents">
+      <div class="wrap">
+        <p class="mono-label contents-title">Contents</p>
+        <ol class="contents-list">
+          <li><a href="#evidence"><span aria-hidden="true">01</span> Evidence</a></li>
+          <li><a href="#gate"><span aria-hidden="true">02</span> The gate</a></li>
+          <li><a href="#console"><span aria-hidden="true">03</span> The console</a></li>
+          <li><a href="#effectivity"><span aria-hidden="true">04</span> Effectivity</a></li>
+          <li><a href="#capabilities"><span aria-hidden="true">05</span> Capabilities</a></li>
+          <li><a href="#deployment"><span aria-hidden="true">06</span> Deployment</a></li>
+          <li><a href="#appliance"><span aria-hidden="true">07</span> The appliance</a></li>
+          <li><a href="#this-site"><span aria-hidden="true">08</span> This site</a></li>
+        </ol>
+      </div>
+    </nav>
+
     <!-- 01 · Evidence -->
-    <section class="section invert" aria-labelledby="proof-heading">
+    <section id="evidence" class="section invert" aria-labelledby="proof-heading">
       <div class="wrap reveal">
         <div class="desig">
           <span class="mono-label">01 / Evidence</span>
@@ -142,7 +159,7 @@
     </section>
 
     <!-- 02 · The gate -->
-    <section class="section" aria-labelledby="guarantee-heading">
+    <section id="gate" class="section" aria-labelledby="guarantee-heading">
       <div class="wrap reveal">
         <div class="desig">
           <span class="mono-label">02 / The gate</span>
@@ -173,7 +190,7 @@
 
 
     <!-- 03 · The console -->
-    <section class="section invert" aria-labelledby="console-heading">
+    <section id="console" class="section invert" aria-labelledby="console-heading">
       <div class="wrap reveal">
         <div class="desig">
           <span class="mono-label">03 / The console</span>
@@ -187,9 +204,11 @@
           with its current successor, not silently blended in.
         </p>
         <figure class="console-shot">
-          <img src="assets/img/console-ask.webp" width="1920" height="1200" loading="lazy"
-               alt="The Cortessa console answering a question about maximum allowable touch temperature. A gate strip reads 12 retrieved, 0 verified, 1 draft. The answer cites source [1]. The sources panel lists CCT-REQ-1130 RevE-1 2016 as cited and certified, and CCT-REQ-1130 RevD-1 2015 marked SUPERSEDED with an arrow to the current 2016 revision.">
-          <figcaption>Ask, in local mode &mdash; the answer is cited to CCT-REQ-1130 Rev&nbsp;E and
+          <div class="plate">
+            <img src="assets/img/console-ask.webp" width="1920" height="1200" loading="lazy"
+                 alt="The Cortessa console answering a question about maximum allowable touch temperature. A gate strip reads 12 retrieved, 0 verified, 1 draft. The answer cites source [1]. The sources panel lists CCT-REQ-1130 RevE-1 2016 as cited and certified, and CCT-REQ-1130 RevD-1 2015 marked SUPERSEDED with an arrow to the current 2016 revision.">
+          </div>
+          <figcaption data-label="Fig. 03-1 · Live capture">Ask, in local mode &mdash; the answer is cited to CCT-REQ-1130 Rev&nbsp;E and
           held at Draft by the provenance gate; the Rev&nbsp;D predecessor is shown struck
           through with its current successor. Every element in the frame is real: the corpus,
           the citations, the supersession chain, the refusal to over-claim.</figcaption>
@@ -198,7 +217,7 @@
     </section>
 
     <!-- 04 · Effectivity -->
-    <section class="section band" aria-labelledby="effectivity-heading">
+    <section id="effectivity" class="section band" aria-labelledby="effectivity-heading">
       <div class="wrap reveal">
         <div class="desig">
           <span class="mono-label">04 / Effectivity</span>
@@ -226,7 +245,7 @@
     </section>
 
     <!-- 05 · Capabilities -->
-    <section class="section invert" aria-labelledby="capabilities-heading">
+    <section id="capabilities" class="section invert" aria-labelledby="capabilities-heading">
       <div class="wrap reveal">
         <div class="desig">
           <span class="mono-label">05 / Capabilities</span>
@@ -284,7 +303,7 @@
     </section>
 
     <!-- 06 · Deployment -->
-    <section class="section" aria-labelledby="defence-heading">
+    <section id="deployment" class="section" aria-labelledby="defence-heading">
       <div class="wrap reveal">
         <div class="desig">
           <span class="mono-label">06 / Deployment</span>
@@ -303,7 +322,7 @@
               The same guarantee travels to civil aerospace, nuclear, energy, rail, pharma, legal
               and government estates. One product, one guarantee, many document estates.
             </p>
-            <p><a class="text-link" href="sectors.html">Explore sectors &amp; use cases &rarr;</a></p>
+            <p><a class="text-link" href="sectors.html">Explore sectors &amp; use cases</a></p>
           </div>
           <ul class="tier-list" aria-label="Assurance tiers">
             <li><strong>Offline (default)</strong> <span>pure local retrieval; nothing leaves the machine.</span></li>
@@ -315,7 +334,7 @@
     </section>
 
     <!-- 07 · The appliance -->
-    <section class="section invert appliance" aria-labelledby="appliance-heading">
+    <section id="appliance" class="section invert appliance" aria-labelledby="appliance-heading">
       <div class="wrap reveal">
         <div class="desig">
           <span class="mono-label">07 / The appliance</span>
@@ -329,9 +348,11 @@
         </p>
 
         <figure class="appliance-media">
-          <img src="assets/img/box-front.jpg" width="1800" height="1125" loading="lazy"
-               alt="Cortessa appliance concept, front three-quarter view: a low, near-black unit with a honeycomb intake grille, the cyan Cortessa emblem on a machined badge, and the Cortessa wordmark.">
-          <figcaption>Concept visualisation — industrial design in progress</figcaption>
+          <div class="plate">
+            <img src="assets/img/box-front.jpg" width="1800" height="1125" loading="lazy"
+                 alt="Cortessa appliance concept, front three-quarter view: a low, near-black unit with a honeycomb intake grille, the cyan Cortessa emblem on a machined badge, and the Cortessa wordmark.">
+          </div>
+          <figcaption>Fig. 07-1 · Concept visualisation — industrial design in progress</figcaption>
         </figure>
 
         <div class="appliance-thumbs">
@@ -350,7 +371,7 @@
     </section>
 
     <!-- 08 · This site -->
-    <section class="section" aria-labelledby="build-heading">
+    <section id="this-site" class="section" aria-labelledby="build-heading">
       <div class="wrap reveal">
         <div class="desig">
           <span class="mono-label">08 / This site</span>
@@ -416,6 +437,7 @@
         <div><dt>Product</dt><dd>Cortessa</dd></div>
         <div><dt>Reference</dt><dd>cortessa.co.uk</dd></div>
         <div><dt>Issue</dt><dd>2026-08</dd></div>
+        <div><dt>Sheet</dt><dd>01 / 06</dd></div>
         <div><dt>Distribution</dt><dd>Public release</dd></div>
       </dl>
     </div>

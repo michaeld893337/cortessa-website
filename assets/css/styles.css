@@ -170,7 +170,17 @@
 html {
   -webkit-text-size-adjust: 100%;
   scroll-padding-top: 5.5rem;
+  scrollbar-color: var(--border-strong) transparent;
 }
+
+/* Cross-page transitions: a quiet crossfade, with the chrome held steady.
+   Progressive — engines without the at-rule simply navigate. */
+@view-transition { navigation: auto; }
+@media (prefers-reduced-motion: reduce) {
+  @view-transition { navigation: none; }
+}
+.site-header { view-transition-name: site-header; }
+.site-footer { view-transition-name: site-footer; }
 
 body {
   margin: 0;
@@ -182,7 +192,11 @@ body {
   overflow-wrap: break-word;
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
+  hanging-punctuation: first allow-end;
 }
+
+/* Paragraph-level line breaking: no runts where the engine supports it. */
+p, li, figcaption, dd { text-wrap: pretty; }
 
 /* Display type: weight 400, tight tracking. Hierarchy comes from scale.      */
 h1, h2, h3, h4 {
@@ -246,17 +260,27 @@ img, svg { max-width: 100%; height: auto; }
 /* Section designator row: hairline rule + "01 / NAME" + optional annotation.
    The numbering is real — each page reads as a numbered document.            */
 .desig {
+  position: relative;
   display: flex;
   align-items: baseline;
   justify-content: space-between;
   gap: var(--space-4);
-  border-top: var(--hairline) solid var(--rule);
   padding-top: var(--space-3);
   margin-bottom: clamp(1.75rem, 4vw, 3rem);
 }
+/* The rule is a pseudo-element so it can be DRAWN on reveal (scaleX),
+   which a border cannot. Full-width by default — inert without JS.        */
+.desig::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: var(--hairline);
+  background: var(--rule);
+  transform-origin: left center;
+}
 .desig .mono-label { color: var(--text); }
 .desig .desig-note { color: var(--text-muted); text-align: right; }
-.invert .desig { border-top-color: var(--nav-rule); }
+.invert .desig::before { background: var(--nav-rule); }
 .invert .desig .mono-label { color: var(--nav-text); }
 .invert .desig .desig-note { color: var(--nav-muted); }
 
@@ -320,7 +344,12 @@ img, svg { max-width: 100%; height: auto; }
   justify-content: space-between;
   min-height: 4.25rem;
   gap: var(--space-4);
+  transition: min-height var(--transition);
 }
+/* The chrome condenses once the document is in motion. */
+.site-header.is-scrolled .header-inner { min-height: 3.5rem; }
+.brand-logo { transition: width var(--transition), height var(--transition); }
+.site-header.is-scrolled .brand-logo { width: 1.75rem; height: 1.75rem; }
 
 .brand {
   display: inline-flex;
@@ -432,8 +461,9 @@ img, svg { max-width: 100%; height: auto; }
   text-decoration: none;
   border: var(--hairline) solid transparent;
   transition: background var(--transition), color var(--transition),
-              border-color var(--transition);
+              border-color var(--transition), transform 80ms ease;
 }
+.btn:active { transform: translateY(1px); }
 .btn-primary {
   background: var(--accent-strong);
   color: var(--accent-ink);
@@ -478,7 +508,14 @@ img, svg { max-width: 100%; height: auto; }
   text-transform: uppercase;
   text-decoration: none;
 }
+.text-link::after {
+  content: "\2192";
+  display: inline-block;
+  margin-left: 0.45em;
+  transition: transform var(--transition);
+}
 .text-link:hover { text-decoration: underline; }
+.text-link:hover::after { transform: translateX(0.3em); }
 .invert .text-link { color: var(--nav-accent); }
 
 /* ============================================================================
@@ -546,6 +583,26 @@ img, svg { max-width: 100%; height: auto; }
   background: url("../img/guilloche.svg") center / contain no-repeat;
   opacity: 0.5;
 }
+@media (prefers-reduced-motion: no-preference) {
+  .hero-visual::before { animation: rosette 360s linear infinite; }
+  @keyframes rosette { to { transform: rotate(1turn); } }
+}
+/* Registration brackets: four corner ticks framing the mark, as on a plate. */
+.hero-visual::after {
+  content: "";
+  position: absolute;
+  inset: 4%;
+  pointer-events: none;
+  background:
+    linear-gradient(var(--nav-rule), var(--nav-rule)) top left    / 1.25rem 1px no-repeat,
+    linear-gradient(var(--nav-rule), var(--nav-rule)) top left    / 1px 1.25rem no-repeat,
+    linear-gradient(var(--nav-rule), var(--nav-rule)) top right   / 1.25rem 1px no-repeat,
+    linear-gradient(var(--nav-rule), var(--nav-rule)) top right   / 1px 1.25rem no-repeat,
+    linear-gradient(var(--nav-rule), var(--nav-rule)) bottom left / 1.25rem 1px no-repeat,
+    linear-gradient(var(--nav-rule), var(--nav-rule)) bottom left / 1px 1.25rem no-repeat,
+    linear-gradient(var(--nav-rule), var(--nav-rule)) bottom right/ 1.25rem 1px no-repeat,
+    linear-gradient(var(--nav-rule), var(--nav-rule)) bottom right/ 1px 1.25rem no-repeat;
+}
 .hero-mark {
   position: relative;
   width: min(58%, 15rem);
@@ -595,6 +652,46 @@ img, svg { max-width: 100%; height: auto; }
   .proof-strip { flex-direction: column; align-items: flex-start; gap: var(--space-2); }
   .proof-strip li + li::before { display: none; }
 }
+
+/* ============================================================================
+   Contents — the document's own index, set between the cover and chapter 01
+   ============================================================================ */
+.contents {
+  background: var(--nav-bg);
+  color: var(--nav-text);
+  padding-block: var(--space-5) var(--space-6);
+}
+.contents-title {
+  color: var(--nav-muted);
+  margin: 0 0 var(--space-3);
+}
+.contents-list {
+  list-style: none;
+  margin: 0; padding: 0;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  border-top: var(--hairline) solid var(--nav-rule);
+  border-left: var(--hairline) solid var(--nav-border);
+}
+.contents-list li { border-right: var(--hairline) solid var(--nav-border); border-bottom: var(--hairline) solid var(--nav-border); }
+.contents-list a {
+  display: flex;
+  align-items: baseline;
+  gap: var(--space-3);
+  padding: var(--space-3) var(--space-4);
+  font-family: var(--font-mono);
+  font-size: var(--fs-mono-sm);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: var(--nav-muted);
+  transition: color var(--transition), background var(--transition);
+}
+.contents-list a span { color: var(--nav-accent); }
+.contents-list a:hover { color: var(--nav-text); background: var(--nav-bg-raise); }
+.contents :focus-visible { outline-color: var(--nav-focus); }
+@media (max-width: 60rem) { .contents-list { grid-template-columns: 1fr 1fr; } }
+@media (max-width: 40rem) { .contents-list { grid-template-columns: 1fr; } }
 
 /* Sub-page hero: same dark chapter, shorter. */
 .page-hero {
@@ -862,6 +959,7 @@ img, svg { max-width: 100%; height: auto; }
 .prose h3 { margin-top: var(--space-6); }
 .prose ul, .prose ol { padding-left: 1.25rem; margin: 0 0 var(--space-5); }
 .prose li { margin-bottom: var(--space-2); }
+.prose li::marker { color: var(--text-muted); }
 
 /* Ruled data table inside prose (legal pages) */
 .prose .table-wrap { overflow-x: auto; margin: 0 0 var(--space-5); }
@@ -987,6 +1085,24 @@ img, svg { max-width: 100%; height: auto; }
   border: var(--hairline) solid var(--border-strong);
 }
 .invert .console-shot img { border-color: var(--nav-rule); }
+
+/* Plate wrapper: registration crosshairs at opposing corners, as printed
+   on a controlled drawing. Decorative — pointer-inert, colour from chrome. */
+.plate { position: relative; }
+.plate::before, .plate::after {
+  content: "";
+  position: absolute;
+  width: 13px; height: 13px;
+  pointer-events: none;
+  color: var(--border-strong);
+  background:
+    linear-gradient(currentColor, currentColor) center / 1px 100% no-repeat,
+    linear-gradient(currentColor, currentColor) center / 100% 1px no-repeat;
+}
+.invert .plate::before, .invert .plate::after { color: var(--nav-rule); }
+.plate::before { top: -7px; left: -7px; }
+.plate::after  { bottom: -7px; right: -7px; }
+
 .console-shot figcaption {
   font-family: var(--font-mono);
   font-size: var(--fs-mono-sm);
@@ -996,7 +1112,8 @@ img, svg { max-width: 100%; height: auto; }
   max-width: var(--measure);
 }
 .console-shot figcaption::before {
-  content: "LIVE CAPTURE";
+  content: attr(data-label);
+  text-transform: uppercase;
   display: block;
   font-size: var(--fs-mono-xs);
   font-weight: 600;
@@ -1073,7 +1190,8 @@ img, svg { max-width: 100%; height: auto; }
 /* The title block itself: a bordered field grid, as on a controlled drawing. */
 .title-block {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-auto-flow: column;      /* one row regardless of field count (4 or 5) */
+  grid-auto-columns: 1fr;
   border: var(--hairline) solid var(--nav-border);
 }
 .title-block > div {
@@ -1097,7 +1215,7 @@ img, svg { max-width: 100%; height: auto; }
 }
 @media (max-width: 56rem) {
   .footer-inner { grid-template-columns: 1fr; }
-  .title-block { grid-template-columns: 1fr 1fr; }
+  .title-block { grid-auto-flow: row; grid-template-columns: 1fr 1fr; }
   .title-block > div:nth-child(odd) { border-left: none; }
   .title-block > div:nth-child(n+3) { border-top: var(--hairline) solid var(--nav-border); }
 }
@@ -1123,6 +1241,45 @@ img, svg { max-width: 100%; height: auto; }
   }
   .js .reveal.is-visible { opacity: 1; transform: none; }
 
+  /* The section rule draws itself once the chapter is on screen. */
+  .js .reveal .desig::before {
+    transform: scaleX(0);
+    transition: transform 1100ms cubic-bezier(.22, .61, .21, 1) 120ms;
+  }
+  .js .reveal.is-visible .desig::before { transform: scaleX(1); }
+
+  /* Ruled collections land row by row — a table being typeset, not a page
+     fading in. The 2.5s failsafe shows parents, so children can never be
+     stuck hidden either.                                                  */
+  .js .reveal :is(.stat-table, .gate-grid, .cap-index, .tier-list,
+                  .feature-list, .sector-table, .steps) > * {
+    opacity: 0;
+    transform: translateY(10px);
+    transition: opacity 550ms cubic-bezier(.2, .6, .2, 1),
+                transform 550ms cubic-bezier(.2, .6, .2, 1);
+  }
+  .js .reveal.is-visible :is(.stat-table, .gate-grid, .cap-index, .tier-list,
+                             .feature-list, .sector-table, .steps) > * {
+    opacity: 1;
+    transform: none;
+  }
+  .js .reveal.is-visible :is(.stat-table, .gate-grid, .cap-index, .tier-list,
+                             .feature-list, .sector-table, .steps) > :nth-child(1) { transition-delay: 100ms; }
+  .js .reveal.is-visible :is(.stat-table, .gate-grid, .cap-index, .tier-list,
+                             .feature-list, .sector-table, .steps) > :nth-child(2) { transition-delay: 170ms; }
+  .js .reveal.is-visible :is(.stat-table, .gate-grid, .cap-index, .tier-list,
+                             .feature-list, .sector-table, .steps) > :nth-child(3) { transition-delay: 240ms; }
+  .js .reveal.is-visible :is(.stat-table, .gate-grid, .cap-index, .tier-list,
+                             .feature-list, .sector-table, .steps) > :nth-child(4) { transition-delay: 310ms; }
+  .js .reveal.is-visible :is(.stat-table, .gate-grid, .cap-index, .tier-list,
+                             .feature-list, .sector-table, .steps) > :nth-child(5) { transition-delay: 380ms; }
+  .js .reveal.is-visible :is(.stat-table, .gate-grid, .cap-index, .tier-list,
+                             .feature-list, .sector-table, .steps) > :nth-child(6) { transition-delay: 450ms; }
+  .js .reveal.is-visible :is(.stat-table, .gate-grid, .cap-index, .tier-list,
+                             .feature-list, .sector-table, .steps) > :nth-child(7) { transition-delay: 520ms; }
+  .js .reveal.is-visible :is(.stat-table, .gate-grid, .cap-index, .tier-list,
+                             .feature-list, .sector-table, .steps) > :nth-child(n+8) { transition-delay: 590ms; }
+
   /* Hero load sequence: one orchestrated moment. */
   .hero .rise {
     opacity: 0;
@@ -1144,7 +1301,7 @@ img, svg { max-width: 100%; height: auto; }
    ============================================================================ */
 @media print {
   .site-header, .site-footer, .skip-link, .nav-toggle, .hero-actions,
-  .cta-band, .hero-visual { display: none !important; }
+  .cta-band, .hero-visual, .contents { display: none !important; }
   .hero, .page-hero, .invert, .band, body {
     background: #ffffff !important;
     background-image: none !important;
