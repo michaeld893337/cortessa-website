@@ -130,13 +130,14 @@
         </div>
         <h2 id="tiers-heading">Three assurance tiers</h2>
         <p class="section-intro">
-          Three modes, each shown live on a classification ribbon so the operator always knows
-          the boundary they are working within.
+          The box answers on its own. The model and the ingestion pipeline live on it and run full
+          time, and every mode is shown live on a classification ribbon so the operator always
+          knows the boundary they are working within.
         </p>
         <ul class="tier-list" aria-label="Assurance tiers">
-          <li><strong>Offline (default)</strong> <span>pure local retrieval; nothing leaves the machine to answer.</span></li>
-          <li><strong>In-region cloud</strong> <span>optional AI in-region (UK, London / eu-west-2); opt-in and logged.</span></li>
-          <li><strong>On-device</strong> <span>optional AI fully on-device; the same gate applies, and nothing leaves the machine. In the independent blind exam this mode refused all 12 out-of-corpus questions with 0 fabrications.</span></li>
+          <li><strong>On-device (standard)</strong> <span>the model and the whole ingestion pipeline are resident on the box and run full time; nothing leaves the machine. In the independent blind exam this mode refused all 12 out-of-corpus questions with 0 fabrications.</span></li>
+          <li><strong>Retrieval only</strong> <span>the floor beneath it &mdash; ranked source passages with their citations, no model in the loop. Always available; never a failure.</span></li>
+          <li><strong>In-region cloud &mdash; off by default</strong> <span>a future option for a site whose policy later permits one. It ships switched off, and can be locked out entirely so it cannot be selected at all. Opt-in and logged if it is ever enabled (UK, London / eu-west-2).</span></li>
         </ul>
       </div>
     </section>

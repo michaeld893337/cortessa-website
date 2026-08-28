@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Security &amp; sovereignty — Cortessa</title>
-  <meta name="description" content="Air-gap-safe and OFFICIAL-tier by construction: no external calls, on-device and in-region options, offline cryptographic licensing, and auditability.">
+  <meta name="description" content="Air-gap-safe and OFFICIAL-tier by construction: the model runs on the box, no external calls, offline cryptographic licensing, and auditability.">
   <link rel="canonical" href="https://cortessa.co.uk/security.html">
   <meta name="color-scheme" content="light dark">
   <link rel="preload" href="assets/fonts/PlexSans-Regular.woff2" as="font" type="font/woff2" crossorigin>
@@ -16,7 +16,7 @@
   <meta property="og:site_name" content="Cortessa">
   <meta property="og:type" content="website">
   <meta property="og:title" content="Security &amp; sovereignty — Cortessa">
-  <meta property="og:description" content="Air-gap-safe and OFFICIAL-tier by construction: no external calls, on-device and in-region options, offline cryptographic licensing, and auditability.">
+  <meta property="og:description" content="Air-gap-safe and OFFICIAL-tier by construction: the model runs on the box, no external calls, offline cryptographic licensing, and auditability.">
   <meta property="og:url" content="https://cortessa.co.uk/security.html">
   <meta property="og:image" content="https://cortessa.co.uk/assets/img/og-card.png">
   <meta property="og:image:width" content="1200">
@@ -91,17 +91,19 @@
       <div class="wrap reveal">
         <div class="desig">
           <span class="mono-label">02 / Modes</span>
-          <span class="mono-label desig-note">Always opt-in · shown on the ribbon</span>
+          <span class="mono-label desig-note">On-device standard · shown on the ribbon</span>
         </div>
-        <h2 id="modes-heading">On-device and in-region options, always opt-in</h2>
+        <h2 id="modes-heading">The model is on the box; the cloud is a switch you need never flip</h2>
         <p class="section-intro">
-          When a deployment chooses to bring an AI model into the loop, it does so explicitly and
-          within a stated boundary. The classification ribbon shows the active mode at all times.
+          The unit answers with a model already resident on it, inside your boundary. The off-box
+          tier exists so that a site whose policy later permits a regional cloud option is not
+          rebuilt to get one — it ships switched off and can be locked out permanently. The
+          classification ribbon shows the active mode at all times.
         </p>
         <ul class="tier-list" aria-label="Assurance tiers">
-          <li><strong>Offline (default)</strong> <span>pure local retrieval; nothing leaves the machine to answer.</span></li>
-          <li><strong>In-region cloud</strong> <span>optional AI kept in-region (UK, London / eu-west-2); opt-in and logged.</span></li>
-          <li><strong>On-device</strong> <span>optional AI fully on-device; the same gate applies, and nothing leaves the machine.</span></li>
+          <li><strong>On-device (standard)</strong> <span>the model and the whole ingestion pipeline are resident on the box and run full time; nothing leaves the machine.</span></li>
+          <li><strong>Retrieval only</strong> <span>the floor beneath it — ranked source passages with their citations, no model in the loop. Always available; never a failure.</span></li>
+          <li><strong>In-region cloud — off by default</strong> <span>a future option for a site whose policy later permits one. It ships switched off, and can be locked out entirely so it cannot be selected at all. Opt-in and logged if it is ever enabled (UK, London / eu-west-2).</span></li>
         </ul>
       </div>
     </section>
@@ -147,7 +149,7 @@
         </div>
         <ul class="feature-list">
           <li><strong>Deterministic gate.</strong> Never-false-positive by design — the guarantee is enforced in code, not left to a prompt.</li>
-          <li><strong>In-region option logged.</strong> When in-region AI is used, it is opt-in and logged, so the boundary crossing is visible.</li>
+          <li><strong>The off-box tier is off, and lockable.</strong> It ships disabled and hidden; an administrator must switch it on deliberately, and an allowlist can remove it permanently. If it is ever used it is logged, so the boundary crossing stays visible.</li>
           <li><strong>Self-contained footprint.</strong> No server to harden, no CDN to trust, no tracker to review.</li>
           <li><strong>The engineer signs off.</strong> Cortessa hands over cited evidence; it never certifies on your behalf.</li>
         </ul>
