@@ -86,8 +86,9 @@
           </li>
           <li>
             <span class="stat-num">1.0&hairsp;/&hairsp;1.0</span>
-            <span class="stat-label">audit recall and precision across four seeded error classes;
-            15 / 15 genuine findings, 0 false positives, on a real NASA document family. Protocol B3.</span>
+            <span class="stat-label">audit recall and precision on the seeded regression set, across
+            four seeded error classes. Separately, 15 / 15 genuine findings on a blind run over a real
+            NASA document family. Protocol B3.</span>
           </li>
           <li>
             <span class="stat-num">0</span>
@@ -137,8 +138,8 @@
               </tr>
               <tr>
                 <td>Audit</td>
-                <td>Seeded corpus</td>
-                <td>Four planted error classes</td>
+                <td>Seeded synthetic corpus</td>
+                <td>Four planted error classes, scored within those classes</td>
                 <td class="num">Recall 1.0 · precision 1.0</td>
                 <td>Committed benchmark · B3</td>
               </tr>
@@ -146,7 +147,7 @@
                 <td>Audit, blind</td>
                 <td>Real NASA document family</td>
                 <td>Unseeded run, findings hand-checked</td>
-                <td class="num">15/15 · 0 false positives</td>
+                <td class="num">15 / 15 genuine findings</td>
                 <td>Measured · B3</td>
               </tr>
               <tr>
@@ -261,9 +262,11 @@
           </p>
         </div>
         <p class="evidence">
-          Seeded benchmark: recall 1.0 and precision 1.0 across all four error classes.
-          Blind run: 15 / 15 genuine findings with 0 false positives on the real document
-          family. Findings are cited and adjudicable — an engineer disposes of each one, and
+          Seeded benchmark: recall 1.0 and precision 1.0 across all four error classes — a
+          synthetic corpus, precision scored within the seeded classes. Blind run: 15 / 15 genuine
+          findings on the real document family. Neither figure is a general precision claim, and
+          no precision figure has yet been measured on the full 156-document demonstration corpus.
+          Findings are cited and adjudicable — an engineer disposes of each one, and
           every disposition is recorded to the ledger.
         </p>
       </div>
