@@ -1,0 +1,385 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data:; font-src 'self'; connect-src 'self'; object-src 'none'; base-uri 'self'; form-action 'self'">
+  <title>Evidence &amp; validation — Cortessa</title>
+  <meta name="description" content="The evidence register: how every figure Cortessa publishes was measured — protocols, corpora, blind grading, definitions, limitations, and the hash-manifested artifacts behind them.">
+  <link rel="canonical" href="https://cortessa.co.uk/evidence.html">
+  <meta name="color-scheme" content="light dark">
+  <link rel="preload" href="assets/fonts/PlexSans-Regular.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="assets/fonts/PlexMono-Regular.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <link rel="icon" href="assets/img/cortessa.ico" sizes="any">
+  <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
+  <meta name="theme-color" content="#0b121c">
+  <meta property="og:site_name" content="Cortessa">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Evidence &amp; validation — Cortessa">
+  <meta property="og:description" content="The evidence register: how every figure Cortessa publishes was measured — protocols, corpora, blind grading, definitions, limitations, and the hash-manifested artifacts behind them.">
+  <meta property="og:url" content="https://cortessa.co.uk/evidence.html">
+  <meta property="og:image" content="https://cortessa.co.uk/assets/img/og-card.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a class="brand" href="index.html" aria-label="Cortessa home">
+        <img class="brand-logo" src="assets/img/cortessa-mark.png" width="512" height="512" alt="" aria-hidden="true">
+        <span class="brand-name">Cortessa</span>
+      </a>
+      <nav class="site-nav" aria-label="Primary">
+        <button class="nav-toggle" aria-expanded="false" aria-controls="nav-menu">
+          <span class="nav-toggle-bar" aria-hidden="true"></span>
+          <span class="visually-hidden">Menu</span>
+        </button>
+        <ul id="nav-menu" class="nav-menu">
+          <li><a href="how-it-works.html">How it works</a></li>
+          <li><a href="evidence.html" aria-current="page">Evidence</a></li>
+          <li><a href="security.html">Security</a></li>
+          <li><a href="sectors.html">Sectors</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a class="nav-cta" href="pilot.html">Request a pilot</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <section class="page-hero" aria-labelledby="page-heading">
+      <div class="wrap">
+        <p class="mono-label rise">Evidence &amp; validation</p>
+        <h1 id="page-heading" class="rise">Every figure, with the protocol that produced it</h1>
+        <p class="lede rise">
+          A number without its test context is an adjective. This page is the register: what was
+          measured, on what corpus, under what protocol, graded by whom, with what definitions —
+          and where the raw artifacts live. The limitations are listed with the same care as
+          the results.
+        </p>
+      </div>
+    </section>
+
+    <!-- 01 · Register -->
+    <section class="section invert" aria-labelledby="register-heading">
+      <div class="wrap reveal">
+        <div class="desig">
+          <span class="mono-label">01 / Register</span>
+          <span class="mono-label desig-note">Blind &middot; real public corpora</span>
+        </div>
+        <h2 id="register-heading">The headline claims</h2>
+        <ul class="stat-table" aria-label="Registered results">
+          <li>
+            <span class="stat-num">~97%</span>
+            <span class="stat-label">retrieval with 0 provenance breaches across a 480-question
+            blind evaluation; all 16 fabrication attempts gated. Protocol B1, below.</span>
+          </li>
+          <li>
+            <span class="stat-num">12&hairsp;/&hairsp;12</span>
+            <span class="stat-label">out-of-corpus questions refused — 0 fabrications — in an
+            independent, oracle-authored 60-question blind exam, fully offline. Protocol B2.</span>
+          </li>
+          <li>
+            <span class="stat-num">1.0&hairsp;/&hairsp;1.0</span>
+            <span class="stat-label">audit recall and precision across four seeded error classes;
+            15 / 15 genuine findings, 0 false positives, on a real NASA document family. Protocol B3.</span>
+          </li>
+          <li>
+            <span class="stat-num">0</span>
+            <span class="stat-label">wrong-variant leaks across the committed S1000D effectivity
+            benchmark — eight configuration-scoped questions. Protocol B4.</span>
+          </li>
+        </ul>
+        <p class="stat-note">Every figure on this page was measured blind — the engine never sees
+        an answer key — on real, public corpora, and each protocol's raw artifacts are archived
+        under a SHA-256 manifest (section 07). Accuracy figures are a floor set by interim
+        development hardware, not a ceiling of the design.</p>
+      </div>
+    </section>
+
+    <!-- 02 · Protocol B1 -->
+    <section class="section" aria-labelledby="b1-heading">
+      <div class="wrap reveal">
+        <div class="desig">
+          <span class="mono-label">02 / Protocol B1</span>
+          <span class="mono-label desig-note">480-question blind evaluation</span>
+        </div>
+        <h2 id="b1-heading">The full blind evaluation</h2>
+        <p class="section-intro">
+          The largest run in the register: a blind evaluation over a 700-document public corpus,
+          with the question key authored by an independent oracle and the answers graded by an
+          independent judge. Three separations, so no single party can flatter the result.
+        </p>
+        <ol class="steps">
+          <li>
+            <h3>Corpus</h3>
+            <p>700 real, public documents indexed to 29,506 retrievable chunks with 0 indexing
+            failures, in an isolated copy of the system.</p>
+          </li>
+          <li>
+            <h3>Question authoring</h3>
+            <p>An independent source-only oracle — reading the raw documents, never Cortessa's
+            index or output — authored 486 candidate question-and-answer items. A verbatim
+            integrity gate (the expected answer must appear in the source) sealed 480 of 486
+            into the evaluation key. The engine never saw the key.</p>
+          </li>
+          <li>
+            <h3>Engines</h3>
+            <p>Two independent small on-device language models answered the same 480 questions
+            against the same index, fully offline on interim development hardware.</p>
+          </li>
+          <li>
+            <h3>Blind grading</h3>
+            <p>An independent AI judge from a different model family — no shared failure modes
+            with the answering engines — graded every answer against the sealed key, driven by
+            deterministic scorecard scripts.</p>
+          </li>
+        </ol>
+        <p class="evidence">
+          Retrieval ~97% on both engines — engine-independent, because retrieval is a property
+          of the ingestion pipeline, not the model. 0 provenance breaches: the engines attempted
+          fabrication on 16 items and the deterministic gate caught all 16 — no ungrounded value
+          reached Verified. Strict answer accuracy 76.9% in the shipped configuration, converging
+          with two further independent blind runs on different corpora. Raw artifacts —
+          the sealed key, both engines' answers, verdicts and metrics, and the exact index —
+          are archived under a SHA-256 manifest with an outer digest.
+        </p>
+      </div>
+    </section>
+
+    <!-- 03 · Protocol B2 -->
+    <section class="section band" aria-labelledby="b2-heading">
+      <div class="wrap reveal">
+        <div class="desig">
+          <span class="mono-label">03 / Protocol B2</span>
+          <span class="mono-label desig-note">Independent oracle exam</span>
+        </div>
+        <h2 id="b2-heading">The independent blind exam</h2>
+        <div class="prose">
+          <p>
+            A separate, smaller exam designed to test the refusal behaviour as hard as the
+            answering: an oracle authored 60 questions over a real 43-paper physics corpus,
+            deliberately including questions whose answers are <em>not in the corpus at all</em>.
+            The correct behaviour on those is refusal — anything else is fabrication.
+          </p>
+        </div>
+        <p class="evidence">
+          83% strict accuracy, fully offline and on-device. All 12 out-of-corpus questions
+          refused — 0 fabrications. The engine never sees the answer key; the oracle never sees
+          the engine.
+        </p>
+      </div>
+    </section>
+
+    <!-- 04 · Protocol B3 -->
+    <section class="section" aria-labelledby="b3-heading">
+      <div class="wrap reveal">
+        <div class="desig">
+          <span class="mono-label">04 / Protocol B3</span>
+          <span class="mono-label desig-note">Cross-document audit</span>
+        </div>
+        <h2 id="b3-heading">The audit benchmark</h2>
+        <div class="prose">
+          <p>
+            Audit is measured two ways. First, a committed seeded benchmark: known errors of four
+            classes — numeric conflicts, supersession, broken references, stale content — are
+            planted in a corpus, and the audit must find all of them and nothing else.
+            Second, a blind run over a real NASA programme document family with no seeding at
+            all, where every finding is checked by hand against the sources.
+          </p>
+        </div>
+        <p class="evidence">
+          Seeded benchmark: recall 1.0 and precision 1.0 across all four error classes.
+          Blind run: 15 / 15 genuine findings with 0 false positives on the real document
+          family. Findings are cited and adjudicable — an engineer disposes of each one, and
+          every disposition is recorded to the ledger.
+        </p>
+      </div>
+    </section>
+
+    <!-- 05 · Protocol B4 -->
+    <section class="section band" aria-labelledby="b4-heading">
+      <div class="wrap reveal">
+        <div class="desig">
+          <span class="mono-label">05 / Protocol B4</span>
+          <span class="mono-label desig-note">S1000D effectivity</span>
+        </div>
+        <h2 id="b4-heading">The effectivity benchmark</h2>
+        <div class="prose">
+          <p>
+            For configuration-aware answering, the failure that matters is a wrong-variant leak:
+            quoting a module that does not apply to the product configuration in front of you.
+            The benchmark asks eight configuration-scoped questions over a disclosed,
+            purpose-authored S1000D corpus containing a genuine pre-/post-modification module
+            pair — so the wrong answer is always available to leak.
+          </p>
+        </div>
+        <p class="evidence">
+          0 wrong-variant leaks across the benchmark. Withheld modules are reported alongside
+          the answer, and applicability that cannot be decided from the data is flagged
+          undecidable — never silently resolved. The corpus is disclosed and purpose-authored,
+          which is stated wherever the figure is used.
+        </p>
+      </div>
+    </section>
+
+    <!-- 06 · Definitions -->
+    <section class="section" aria-labelledby="defs-heading">
+      <div class="wrap reveal">
+        <div class="desig">
+          <span class="mono-label">06 / Definitions</span>
+          <span class="mono-label desig-note">What the words mean here</span>
+        </div>
+        <h2 id="defs-heading">Failure is defined before it is counted</h2>
+        <ul class="feature-list">
+          <li><strong>Provenance breach.</strong> An ungrounded value — a number or identifier
+            not present in the cited source — reaching the user marked Verified. The headline
+            safety figure counts these, and only these.</li>
+          <li><strong>Never-false-positive.</strong> The gate's design property: it is
+            deterministic string-evidence checking, not model judgement, so it cannot promote a
+            claim to Verified without a near-verbatim source span. It can be over-cautious
+            (holding a true claim at Draft); it cannot be over-confident.</li>
+          <li><strong>Fabrication.</strong> The engine inventing content with no source support.
+            Fabrications the gate catches are recorded as gated, not as breaches — the count of
+            attempts and the count of breaches are reported separately.</li>
+          <li><strong>Refusal.</strong> Declining to answer when the fact is not in the corpus.
+            For out-of-corpus questions, refusal is the correct answer and is scored as such.</li>
+          <li><strong>False positive (audit).</strong> A reported finding that hand-checking
+            against the sources shows is not a genuine inconsistency.</li>
+          <li><strong>Wrong-variant leak (effectivity).</strong> A data module served for a
+            product configuration its declared applicability excludes.</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- 07 · Limitations -->
+    <section class="section band" aria-labelledby="limits-heading">
+      <div class="wrap reveal">
+        <div class="desig">
+          <span class="mono-label">07 / Limitations</span>
+          <span class="mono-label desig-note">Disclosed, not discovered</span>
+        </div>
+        <h2 id="limits-heading">What these results do not claim</h2>
+        <ul class="feature-list">
+          <li><strong>Interim hardware floor.</strong> Every figure was measured on interim
+            development hardware with small on-device models. Accuracy figures are a floor of
+            the current configuration, not a ceiling of the design.</li>
+          <li><strong>Multi-document synthesis is the measured weak point.</strong> Questions
+            requiring reasoning across several documents at once score markedly lower than
+            single-source questions on the interim models. The provenance guarantee holds
+            regardless — a weak answer is held at Draft or refused, not passed off — and the
+            path past the ceiling is a larger on-device model, not more pipeline work.</li>
+          <li><strong>Not sector-specific.</strong> The corpora are real and public (NASA/NTRS,
+            arXiv and physics document sets). A proof point for any particular estate is
+            established with the customer during a pilot before it is claimed.</li>
+          <li><strong>Refusal calibration is a trade.</strong> The shipped configuration trades
+            a small amount of refusal strictness for answer accuracy; the trade and its
+            measurements are recorded in the run artifacts.</li>
+          <li><strong>Author is not in these results.</strong> The Author capability is in
+            development and carries no published figures. Its results will join this register
+            when it ships.</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- 08 · Artifacts -->
+    <section class="section" aria-labelledby="artifacts-heading">
+      <div class="wrap reveal">
+        <div class="desig">
+          <span class="mono-label">08 / Artifacts</span>
+          <span class="mono-label desig-note">Hash-manifested &middot; re-runnable</span>
+        </div>
+        <h2 id="artifacts-heading">Where the evidence lives</h2>
+        <div class="prose">
+          <p>
+            Each protocol's raw artifacts — sealed question keys, engine answers, verdicts,
+            metrics and the exact index evaluated — are archived under a manifest that records
+            every file with its size and SHA-256 digest, plus an outer digest of the manifest
+            itself. Verify the outer digest, then verify each file against its recorded digest:
+            the same evidence-pack design the product uses.
+          </p>
+          <p>
+            The runs are re-runnable from the archived harnesses. In a pilot conversation we
+            walk through the artifacts and the protocols directly — the register above is the
+            summary, not the substitute.
+          </p>
+        </div>
+        <div class="note">
+          <p><span class="note-label">Independent verification</span> The blind separations —
+          oracle, engine, judge — are designed so no single party can flatter a result. What the
+          register does not yet include is third-party certification; a pilot measured against
+          your own success criteria, on your own documents, is the strongest verification we can
+          offer today, and the one we ask to be judged on.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section cta-band" aria-labelledby="cta-heading">
+      <div class="wrap cta-inner reveal">
+        <h2 id="cta-heading">Judge it against your own documents</h2>
+        <p>
+          A scoped, paid pilot runs on your hardware, behind your firewall, against success
+          criteria you set — and ends with an evidence pack, not a slide deck.
+        </p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="pilot.html">See how a pilot runs</a>
+          <a class="btn btn-ghost" href="how-it-works.html">How the gate works</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap footer-inner">
+      <div class="footer-brand">
+        <span class="footer-brand-row">
+          <img class="brand-logo" src="assets/img/cortessa-mark.png" width="512" height="512" alt="" aria-hidden="true">
+          <span class="brand-name">Cortessa</span>
+        </span>
+        <p>Sovereign document intelligence.</p>
+      </div>
+      <nav aria-label="Footer">
+        <p class="footer-col-title">Explore</p>
+        <ul class="footer-links">
+          <li><a href="how-it-works.html">How it works</a></li>
+          <li><a href="evidence.html">Evidence &amp; validation</a></li>
+          <li><a href="security.html">Security &amp; sovereignty</a></li>
+          <li><a href="sectors.html">Sectors</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="pilot.html">The pilot</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <nav aria-label="Legal">
+        <p class="footer-col-title">Legal</p>
+        <ul class="footer-links">
+          <li><a href="legal/privacy.html">Privacy</a></li>
+          <li><a href="legal/terms.html">Terms</a></li>
+          <li><a href="legal/cookies.html">Cookies</a></li>
+          <li><a href="legal/accessibility.html">Accessibility</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="wrap">
+      <dl class="title-block" aria-label="Document reference">
+        <div><dt>Product</dt><dd>Cortessa</dd></div>
+        <div><dt>Reference</dt><dd>cortessa.co.uk</dd></div>
+        <div><dt>Issue</dt><dd>2026-08</dd></div>
+        <div><dt>Sheet</dt><dd>03 / 08</dd></div>
+        <div><dt>Distribution</dt><dd>Public release</dd></div>
+      </dl>
+    </div>
+    <div class="wrap footer-fine">
+      <p>&copy; 2026 Cortessa. Built self-contained: no CDNs, no external fonts, no trackers.</p>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
