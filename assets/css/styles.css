@@ -996,6 +996,39 @@ img, svg { max-width: 100%; height: auto; }
   color: var(--text-muted);
 }
 
+/* Benchmark matrix — the full-width ruled results table (evidence page).
+   Same grammar as the prose table, usable on navy chapters.               */
+.matrix { overflow-x: auto; margin-top: var(--space-6); }
+.matrix table {
+  width: 100%;
+  border-collapse: collapse;
+  border-top: var(--hairline) solid var(--rule);
+  font-size: var(--fs-200);
+}
+.matrix th {
+  text-align: left;
+  font-family: var(--font-mono);
+  font-size: var(--fs-mono-xs);
+  font-weight: 600;
+  letter-spacing: var(--track-mono);
+  text-transform: uppercase;
+  color: var(--text);
+  padding: var(--space-3) var(--space-4) var(--space-3) 0;
+  border-bottom: var(--hairline) solid var(--border-strong);
+}
+.matrix td {
+  vertical-align: top;
+  padding: var(--space-3) var(--space-4) var(--space-3) 0;
+  border-bottom: var(--hairline) solid var(--border);
+  color: var(--text-muted);
+}
+.matrix td:first-child { color: var(--text); }
+.matrix .num { font-variant-numeric: tabular-nums; white-space: nowrap; }
+.invert .matrix table { border-top-color: var(--nav-rule); }
+.invert .matrix th { color: var(--nav-text); border-bottom-color: var(--nav-rule); }
+.invert .matrix td { color: var(--nav-muted); border-bottom-color: var(--nav-border); }
+.invert .matrix td:first-child { color: var(--nav-text); }
+
 /* Version line under a legal page title */
 .doc-meta {
   font-family: var(--font-mono);

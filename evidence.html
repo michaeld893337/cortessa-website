@@ -99,6 +99,73 @@
         an answer key — on real, public corpora, and each protocol's raw artifacts are archived
         under a SHA-256 manifest (section 07). Accuracy figures are a floor set by interim
         development hardware, not a ceiling of the design.</p>
+
+        <div class="matrix">
+          <table>
+            <caption class="visually-hidden">Benchmark matrix: every registered result with its corpus, test and status</caption>
+            <thead>
+              <tr><th>Capability</th><th>Corpus</th><th>Test</th><th>Result</th><th>Status</th></tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Retrieval</td>
+                <td>700 public documents</td>
+                <td>480 blind questions, oracle-authored sealed key</td>
+                <td class="num">~97%</td>
+                <td>Measured · B1</td>
+              </tr>
+              <tr>
+                <td>Provenance safety</td>
+                <td>700 public documents</td>
+                <td>16 fabrication attempts in the same run</td>
+                <td class="num">0 breaches — 16/16 gated</td>
+                <td>Measured · B1</td>
+              </tr>
+              <tr>
+                <td>Strict answering</td>
+                <td>700 public documents</td>
+                <td>Blind grading, independent AI judge</td>
+                <td class="num">76.9%</td>
+                <td>Measured · B1</td>
+              </tr>
+              <tr>
+                <td>Refusal</td>
+                <td>43-paper physics corpus</td>
+                <td>12 out-of-corpus questions in a 60-question blind exam</td>
+                <td class="num">12/12 refused · 0 fabrications</td>
+                <td>Independent · B2</td>
+              </tr>
+              <tr>
+                <td>Audit</td>
+                <td>Seeded corpus</td>
+                <td>Four planted error classes</td>
+                <td class="num">Recall 1.0 · precision 1.0</td>
+                <td>Committed benchmark · B3</td>
+              </tr>
+              <tr>
+                <td>Audit, blind</td>
+                <td>Real NASA document family</td>
+                <td>Unseeded run, findings hand-checked</td>
+                <td class="num">15/15 · 0 false positives</td>
+                <td>Measured · B3</td>
+              </tr>
+              <tr>
+                <td>Effectivity</td>
+                <td>Disclosed S1000D corpus</td>
+                <td>Eight configuration-scoped questions</td>
+                <td class="num">0 wrong-variant leaks</td>
+                <td>Committed benchmark · B4</td>
+              </tr>
+              <tr>
+                <td>Author</td>
+                <td>&mdash;</td>
+                <td>&mdash;</td>
+                <td>No published figures</td>
+                <td>In development</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
       </div>
     </section>
 
