@@ -817,17 +817,26 @@ img, svg { max-width: 100%; height: auto; }
   letter-spacing: var(--track-mono);
   color: var(--nav-accent);
 }
-.cap-status {
+/* Product-status system: every capability and artefact carries one of three
+   honest labels. SHIPPED / IN DEVELOPMENT / CONCEPT — the site's equivalent
+   of the gate's three states.                                               */
+.status {
   font-family: var(--font-mono);
   font-size: var(--fs-mono-xs);
   font-weight: 400;
   letter-spacing: var(--track-mono);
   text-transform: uppercase;
-  color: var(--nav-draft);
-  border: var(--hairline) solid var(--nav-border);
+  border: var(--hairline) solid var(--border-strong);
   padding: 0.15rem 0.5rem;
   white-space: nowrap;
 }
+.status-shipped { color: var(--verified); }
+.status-indev { color: var(--draft); }
+.status-concept { color: var(--text-muted); }
+.invert .status, .hero .status { border-color: var(--nav-border); }
+.invert .status-shipped, .hero .status-shipped { color: var(--nav-verified); }
+.invert .status-indev, .hero .status-indev { color: var(--nav-draft); }
+.invert .status-concept, .hero .status-concept { color: var(--nav-muted); }
 .cap-role {
   font-family: var(--font-mono);
   font-size: var(--fs-mono-xs);
@@ -1139,6 +1148,12 @@ img, svg { max-width: 100%; height: auto; }
   padding-top: var(--space-5);
 }
 .contact-card h2 { font-size: var(--h3); }
+.contact-card .mono-label { display: block; margin-bottom: var(--space-3); }
+
+/* Utility spacing (replaces the last inline style attributes — the CSP
+   forbids them). */
+.gap-top { margin-top: var(--space-4); }
+.hero-tall { min-height: 52vh; }
 @media (max-width: 56rem) { .contact-grid { grid-template-columns: 1fr; } }
 
 /* ============================================================================
