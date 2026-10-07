@@ -76,30 +76,39 @@
         <ul class="stat-table" aria-label="Registered results">
           <li>
             <span class="stat-num">~97%</span>
-            <span class="stat-label">retrieval with 0 provenance breaches across a 480-question
-            blind evaluation; all 16 fabrication attempts gated. Protocol B1, below.</span>
+            <span class="stat-label">retrieval hit-rate across a 480-question blind evaluation
+            over a 700-document, 29,506-chunk public corpus. Protocol B1, below.</span>
           </li>
           <li>
-            <span class="stat-num">12&hairsp;/&hairsp;12</span>
-            <span class="stat-label">out-of-corpus questions refused — 0 fabrications — in an
-            independent, oracle-authored 60-question blind exam, fully offline. Protocol B2.</span>
+            <span class="stat-num">76.9%</span>
+            <span class="stat-label">strict factual accuracy in the shipped configuration on the
+            same sealed set; 91% single-fact and 92% entity disambiguation. Protocol B1.</span>
           </li>
           <li>
-            <span class="stat-num">1.0&hairsp;/&hairsp;1.0</span>
-            <span class="stat-label">audit recall and precision on the seeded regression set, across
-            four seeded error classes. Separately, 15 / 15 genuine findings on a blind run over a real
-            NASA document family. Protocol B3.</span>
+            <span class="stat-num">16&hairsp;/&hairsp;16</span>
+            <span class="stat-label">model fabrication attempts held back by the provenance gate in
+            that run; none reached a user as Verified. Protocol B1.</span>
           </li>
           <li>
-            <span class="stat-num">0</span>
-            <span class="stat-label">wrong-variant leaks across the committed S1000D effectivity
-            benchmark — eight configuration-scoped questions. Protocol B4.</span>
+            <span class="stat-num">8&hairsp;/&hairsp;8</span>
+            <span class="stat-label">configuration-scoped questions answered with the effectivity
+            filter active and 0 wrong-variant leaks; unfiltered baseline: 4 / 8 and 4 leaks. B4.</span>
           </li>
         </ul>
-        <p class="stat-note">Every figure on this page was measured blind — the engine never sees
-        an answer key — on real, public corpora, and each protocol's raw artifacts are archived
-        under a SHA-256 manifest (section 07). Accuracy figures are a floor set by interim
-        development hardware, not a ceiling of the design.</p>
+        <p class="stat-note">The evaluation protocols were internally executed with blind
+        separations — the engine never saw the sealed key; a separate source-only oracle authored
+        it and a different model family judged the answers. Raw artifacts are archived under a
+        SHA-256 manifest. Independent external replication is a pilot objective.</p>
+
+        <figure class="console-shot evidence-figure">
+          <div class="plate">
+            <img src="assets/img/accuracy-breakdown-2026.webp" width="2142" height="731" loading="lazy"
+                 alt="Measured blind evaluation performance: 97 percent retrieval hit-rate, 92 percent entity disambiguation, 91 percent single-fact accuracy and 76 percent strict factual accuracy overall; 16 of 16 model fabrications gated with none reaching a user as Verified.">
+          </div>
+          <figcaption data-label="Fig. 01-1 · Measured performance">Results from the 480-item sealed
+          set on interim hardware. Cross-document reasoning is the known weak area and is reported,
+          not hidden inside the overall score.</figcaption>
+        </figure>
 
         <div class="matrix">
           <table>
@@ -118,14 +127,14 @@
               <tr>
                 <td>Provenance safety</td>
                 <td>700 public documents</td>
-                <td>16 fabrication attempts in the same run</td>
-                <td class="num">0 breaches — 16/16 gated</td>
+                <td>16 model fabrication attempts in the same run</td>
+                <td class="num">16/16 held back · none Verified</td>
                 <td>Measured · B1</td>
               </tr>
               <tr>
                 <td>Strict answering</td>
                 <td>700 public documents</td>
-                <td>Blind grading, independent AI judge</td>
+                <td>Blind grading, separate AI judge</td>
                 <td class="num">76.9%</td>
                 <td>Measured · B1</td>
               </tr>
@@ -134,7 +143,7 @@
                 <td>43-paper physics corpus</td>
                 <td>12 out-of-corpus questions in a 60-question blind exam</td>
                 <td class="num">12/12 refused · 0 fabrications</td>
-                <td>Independent · B2</td>
+                <td>Measured · B2</td>
               </tr>
               <tr>
                 <td>Audit</td>
@@ -153,8 +162,8 @@
               <tr>
                 <td>Effectivity</td>
                 <td>Disclosed S1000D corpus</td>
-                <td>Eight configuration-scoped questions</td>
-                <td class="num">0 wrong-variant leaks</td>
+                <td>Eight configuration-scoped questions; unfiltered baseline 4/8 with 4 leaks</td>
+                <td class="num">8/8 · 0 wrong-variant leaks</td>
                 <td>Committed benchmark · B4</td>
               </tr>
               <tr>
@@ -180,8 +189,9 @@
         <h2 id="b1-heading">The full blind evaluation</h2>
         <p class="section-intro">
           The largest run in the register: a blind evaluation over a 700-document public corpus,
-          with the question key authored by an independent oracle and the answers graded by an
-          independent judge. Three separations, so no single party can flatter the result.
+          with the question key authored by a separate source-only oracle and the answers graded
+          by a judge from a different model family. The venture ran the protocol; external
+          independent replication has not yet occurred.
         </p>
         <ol class="steps">
           <li>
@@ -191,29 +201,29 @@
           </li>
           <li>
             <h3>Question authoring</h3>
-            <p>An independent source-only oracle — reading the raw documents, never Cortessa's
+            <p>A separate source-only oracle — reading the raw documents, never Cortessa's
             index or output — authored 486 candidate question-and-answer items. A verbatim
             integrity gate (the expected answer must appear in the source) sealed 480 of 486
             into the evaluation key. The engine never saw the key.</p>
           </li>
           <li>
             <h3>Engines</h3>
-            <p>Two independent small on-device language models answered the same 480 questions
+            <p>Two different small on-device language models answered the same 480 questions
             against the same index, fully offline on interim development hardware.</p>
           </li>
           <li>
             <h3>Blind grading</h3>
-            <p>An independent AI judge from a different model family — no shared failure modes
+            <p>A separate AI judge from a different model family — no shared model family
             with the answering engines — graded every answer against the sealed key, driven by
             deterministic scorecard scripts.</p>
           </li>
         </ol>
         <p class="evidence">
           Retrieval ~97% on both engines — engine-independent, because retrieval is a property
-          of the ingestion pipeline, not the model. 0 provenance breaches: the engines attempted
-          fabrication on 16 items and the deterministic gate caught all 16 — no ungrounded value
-          reached Verified. Strict answer accuracy 76.9% in the shipped configuration, converging
-          with two further independent blind runs on different corpora. Raw artifacts —
+          of the ingestion pipeline, not the model. In this run the engines attempted fabrication
+          on 16 items and the deterministic gate held back all 16 — no ungrounded value reached
+          Verified. Strict answer accuracy was 76.9% in the shipped configuration, converging
+          with two further blind runs on different corpora. Raw artifacts —
           the sealed key, both engines' answers, verdicts and metrics, and the exact index —
           are archived under a SHA-256 manifest with an outer digest.
         </p>
@@ -225,9 +235,9 @@
       <div class="wrap reveal">
         <div class="desig">
           <span class="mono-label">03 / Protocol B2</span>
-          <span class="mono-label desig-note">Independent oracle exam</span>
+          <span class="mono-label desig-note">Separate oracle exam</span>
         </div>
-        <h2 id="b2-heading">The independent blind exam</h2>
+        <h2 id="b2-heading">The separate blind exam</h2>
         <div class="prose">
           <p>
             A separate, smaller exam designed to test the refusal behaviour as hard as the
@@ -290,10 +300,11 @@
           </p>
         </div>
         <p class="evidence">
-          0 wrong-variant leaks across the benchmark. Withheld modules are reported alongside
-          the answer, and applicability that cannot be decided from the data is flagged
-          undecidable — never silently resolved. The corpus is disclosed and purpose-authored,
-          which is stated wherever the figure is used.
+          Without the filter, the system answered 4 of 8 questions and leaked the wrong variant
+          four times. With the effectivity filter active, it answered 8 of 8 with 0 leaks. The
+          product kill switch restores the unfiltered baseline, isolating the filter's effect.
+          The corpus is disclosed and purpose-authored; external validity against a licensed CSDB
+          is an explicit pilot objective.
         </p>
       </div>
     </section>
@@ -310,10 +321,9 @@
           <li><strong>Provenance breach.</strong> An ungrounded value — a number or identifier
             not present in the cited source — reaching the user marked Verified. The headline
             safety figure counts these, and only these.</li>
-          <li><strong>Never-false-positive.</strong> The gate's design property: it is
-            deterministic string-evidence checking, not model judgement, so it cannot promote a
-            claim to Verified without a near-verbatim source span. It can be over-cautious
-            (holding a true claim at Draft); it cannot be over-confident.</li>
+          <li><strong>Provenance gate.</strong> Deterministic string-evidence checking, not model
+            judgement. A versioned containment policy decides whether a claimed span is eligible
+            for Verified, and the cited source remains available for human inspection.</li>
           <li><strong>Fabrication.</strong> The engine inventing content with no source support.
             Fabrications the gate catches are recorded as gated, not as breaches — the count of
             attempts and the count of breaches are reported separately.</li>
@@ -343,7 +353,8 @@
             requiring reasoning across several documents at once score markedly lower than
             single-source questions on the interim models. The provenance guarantee holds
             regardless — a weak answer is held at Draft or refused, not passed off — and the
-            path past the ceiling is a larger on-device model, not more pipeline work.</li>
+            path past the ceiling is a governed multi-hop layer, table-aware claim extraction and
+            a larger on-device model.</li>
           <li><strong>Not sector-specific.</strong> The corpora are real and public (NASA/NTRS,
             arXiv and physics document sets). A proof point for any particular estate is
             established with the customer during a pilot before it is claimed.</li>
@@ -380,11 +391,10 @@
           </p>
         </div>
         <div class="note">
-          <p><span class="note-label">Independent verification</span> The blind separations —
-          oracle, engine, judge — are designed so no single party can flatter a result. What the
-          register does not yet include is third-party certification; a pilot measured against
-          your own success criteria, on your own documents, is the strongest verification we can
-          offer today, and the one we ask to be judged on.</p>
+          <p><span class="note-label">External replication next</span> The oracle, engine and judge
+          are separated, but the venture executed the protocol. The register does not yet include
+          a third-party rerun or certification. Independent replication and a pilot measured
+          against the customer's own success criteria are the next evidence steps.</p>
         </div>
       </div>
     </section>
@@ -440,7 +450,7 @@
       <dl class="title-block" aria-label="Document reference">
         <div><dt>Product</dt><dd>Cortessa</dd></div>
         <div><dt>Reference</dt><dd>cortessa.co.uk</dd></div>
-        <div><dt>Issue</dt><dd>2026-08</dd></div>
+        <div><dt>Issue</dt><dd>2026-10</dd></div>
         <div><dt>Sheet</dt><dd>03 / 08</dd></div>
         <div><dt>Distribution</dt><dd>Public release</dd></div>
       </dl>

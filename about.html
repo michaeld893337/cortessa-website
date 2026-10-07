@@ -102,8 +102,8 @@
           <p>
             Cortessa answers from an approved document set with every claim cited to its source —
             or it refuses. Each output is provenance-gated as Verified, Draft or Refused, and the
-            gate is deterministic and never-false-positive: a number or identifier not present in
-            the source cannot pass as Verified.
+            gate applies a deterministic, versioned containment policy before a claim can pass as
+            Verified; the cited source remains available for the engineer to inspect.
           </p>
           <p>
             Safety here is not a prompt you hope the model obeys — it is enforced in code. And
@@ -230,7 +230,7 @@
       <dl class="title-block" aria-label="Document reference">
         <div><dt>Product</dt><dd>Cortessa</dd></div>
         <div><dt>Reference</dt><dd>cortessa.co.uk</dd></div>
-        <div><dt>Issue</dt><dd>2026-08</dd></div>
+        <div><dt>Issue</dt><dd>2026-10</dd></div>
         <div><dt>Sheet</dt><dd>06 / 08</dd></div>
         <div><dt>Distribution</dt><dd>Public release</dd></div>
       </dl>

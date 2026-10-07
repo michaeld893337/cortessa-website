@@ -148,23 +148,33 @@
           <p>
             Because the product is a single self-contained executable with no external calls, its
             behaviour is inspectable within your boundary. The provenance gate is deterministic:
-            the same input yields the same Verified / Draft / Refused decision, and a value not
-            present in the source cannot pass as Verified.
+            the same input and policy version yield the same Verified / Draft / Refused decision,
+            with the cited source retained for human inspection.
           </p>
         </div>
         <ul class="feature-list">
-          <li><strong>Deterministic gate.</strong> Never-false-positive by design — the guarantee is enforced in code, not left to a prompt.</li>
+          <li><strong>Deterministic gate.</strong> Versioned containment rules are enforced in code, not left to a prompt.</li>
           <li><strong>The off-box tier is off, and lockable.</strong> It ships disabled and hidden; an administrator must switch it on deliberately, and an allowlist can remove it permanently. If it is ever used it is logged, so the boundary crossing stays visible.</li>
           <li><strong>Self-contained footprint.</strong> No server to harden, no CDN to trust, no tracker to review.</li>
           <li><strong>The engineer signs off.</strong> Cortessa hands over cited evidence; it never certifies on your behalf.</li>
         </ul>
         <p class="evidence">
-          In a 480-question blind evaluation, retrieval was ~97% with 0 provenance breaches and
-          all 16 fabrication attempts gated. In an independent, oracle-authored blind exam on a real
-          physics corpus, 12 of 12 out-of-corpus questions were refused with 0 fabrications, fully
-          offline. Figures were measured blind on real, public corpora; raw run artifacts are
-          hash-manifested.
+          In the 480-question blind evaluation, retrieval was ~97%, strict factual accuracy was
+          76.9% in the shipped configuration, and all 16 model fabrication attempts were held back
+          by the gate. In a separate 60-question exam on a real physics corpus, 12 of 12
+          out-of-corpus questions were refused with 0 fabrications, fully offline. Both protocols
+          were internally executed with blind separations; raw artifacts are hash-manifested.
         </p>
+        <figure class="console-shot">
+          <div class="plate">
+            <img src="assets/img/console-governance-2026.webp" width="2560" height="1250" loading="lazy"
+                 alt="The Cortessa Governance dashboard showing ledger integrity verified, 123 ledger entries, 155 of 156 documents certified and current, the versioned provenance gate, and local on-device operation with no network egress.">
+          </div>
+          <figcaption data-label="Fig. 04-1 · Live capture">The governance control plane records
+          identity, ledger integrity, certification currency, assertion policy and egress posture
+          in one inspectable view. This capture shows the shipped demonstration corpus; the visible
+          classification ribbon is demonstration UI state, not a claim of accreditation.</figcaption>
+        </figure>
       </div>
     </section>
 
@@ -219,7 +229,7 @@
       <dl class="title-block" aria-label="Document reference">
         <div><dt>Product</dt><dd>Cortessa</dd></div>
         <div><dt>Reference</dt><dd>cortessa.co.uk</dd></div>
-        <div><dt>Issue</dt><dd>2026-08</dd></div>
+        <div><dt>Issue</dt><dd>2026-10</dd></div>
         <div><dt>Sheet</dt><dd>04 / 08</dd></div>
         <div><dt>Distribution</dt><dd>Public release</dd></div>
       </dl>

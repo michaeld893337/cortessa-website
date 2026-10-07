@@ -58,8 +58,8 @@
         <h1 id="page-heading" class="rise">The gate is enforced in code, not hoped for</h1>
         <p class="lede rise">
           Every output Cortessa produces is provenance-gated — labelled Verified, Draft or
-          Refused. The gate is deterministic and never-false-positive: a number or identifier
-          that is not in the source cannot pass as Verified.
+          Refused. The gate applies a deterministic, versioned containment policy before a claim
+          can pass as Verified, and keeps the cited source open for inspection.
         </p>
       </div>
     </section>
@@ -93,7 +93,7 @@
         <div class="note">
           <p><span class="note-label">Why deterministic matters</span> Safety is not a prompt you
           hope the model obeys — it is enforced in code. In blind testing on real, public
-          documents, all 16 fabrication attempts were gated and no ungrounded value reached
+          documents, all 16 fabrication attempts in that run were gated and no ungrounded value reached
           Verified — 0 fabrications across both blind evaluations.</p>
         </div>
       </div>
@@ -137,7 +137,7 @@
           knows the boundary they are working within.
         </p>
         <ul class="tier-list" aria-label="Assurance tiers">
-          <li><strong>On-device (standard)</strong> <span>the model and the whole ingestion pipeline are resident on the box and run full time; nothing leaves the machine. In the independent blind exam this mode refused all 12 out-of-corpus questions with 0 fabrications.</span></li>
+          <li><strong>On-device (standard)</strong> <span>the model and the whole ingestion pipeline are resident on the box and run full time; nothing leaves the machine. In the separate 60-question blind exam this mode refused all 12 out-of-corpus questions with 0 fabrications.</span></li>
           <li><strong>Retrieval only</strong> <span>the floor beneath it &mdash; ranked source passages with their citations, no model in the loop. Always available; never a failure.</span></li>
           <li><strong>In-region cloud &mdash; off by default</strong> <span>a future option for a site whose policy later permits one. It ships switched off, and can be locked out entirely so it cannot be selected at all. Opt-in and logged if it is ever enabled (UK, London / eu-west-2).</span></li>
         </ul>
@@ -171,12 +171,11 @@
           </li>
         </ol>
         <p class="evidence">
-          ~97% retrieval with 0 provenance breaches across a 480-question blind evaluation
-          (all 16 fabrication attempts gated; artifacts hash-manifested). Independently, an
-          oracle-authored 60-question blind exam on a real 43-paper physics corpus — the engine
-          never sees the answer key — returned 83% strict accuracy with 12 / 12 out-of-corpus
-          questions refused and 0 fabrications, fully offline. Accuracy is a floor set by interim
-          hardware, not a ceiling of the design.
+          In the 480-question blind evaluation, retrieval was ~97%, strict factual accuracy was
+          76.9% in the shipped configuration, and all 16 model fabrication attempts were held back
+          by the gate. A separate 60-question exam on a real 43-paper physics corpus returned 83%
+          strict accuracy, with 12 / 12 out-of-corpus questions refused and 0 fabrications. Both
+          were run internally with blind separations; external replication is a pilot objective.
         </p>
 
       </div>
@@ -217,12 +216,13 @@
 
         <figure class="console-shot">
           <div class="plate">
-            <img src="assets/img/console-audit.webp" width="1920" height="1200" loading="lazy"
-                 alt="The Cortessa Audit board after a live run over the public NASA corpus: 57 findings with a review progress bar, severity filters, and a finding card titled 6061-T651 coverage gap showing three evidence spans from named source PDFs and a disposition strip with Real, Known, False positive and Irrelevant buttons.">
+            <img src="assets/img/console-audit-2026.webp" width="2560" height="1970" loading="lazy"
+                 alt="The Cortessa Audit board after a live run over the public NASA corpus: 42 findings with a review progress bar, severity filters, and coverage-gap cards showing evidence spans from named source PDFs and disposition controls for Real, Known, False positive and Irrelevant.">
           </div>
-          <figcaption data-label="Fig. 05-1 · Live capture">Audit, live over the same public corpus &mdash; 57 findings, each carrying its
+          <figcaption data-label="Fig. 05-1 · Live capture">Audit, live over the same public corpus &mdash; 42 findings, each carrying its
           evidence spans and an adjudication strip. Cortessa proposes; the engineer disposes,
-          and every disposition is recorded to the ledger.</figcaption>
+          and every disposition is recorded to the ledger. The visible classification ribbon is
+          demonstration UI state, not a claim of accreditation.</figcaption>
         </figure>
 
         <div class="note">
@@ -260,9 +260,9 @@
           </p>
         </div>
         <p class="evidence">
-          0 wrong-variant leaks across the committed effectivity benchmark — eight
-          configuration-scoped questions over a disclosed, purpose-authored S1000D corpus with a
-          genuine pre-/post-modification module pair.
+          Unfiltered retrieval answered 4 of 8 questions and leaked the wrong variant four times.
+          With the effectivity filter active, all 8 were answered with 0 wrong-variant leaks, on a
+          disclosed, purpose-authored S1000D corpus with a genuine pre-/post-modification module pair.
         </p>
       </div>
     </section>
@@ -318,7 +318,7 @@
       <dl class="title-block" aria-label="Document reference">
         <div><dt>Product</dt><dd>Cortessa</dd></div>
         <div><dt>Reference</dt><dd>cortessa.co.uk</dd></div>
-        <div><dt>Issue</dt><dd>2026-08</dd></div>
+        <div><dt>Issue</dt><dd>2026-10</dd></div>
         <div><dt>Sheet</dt><dd>02 / 08</dd></div>
         <div><dt>Distribution</dt><dd>Public release</dd></div>
       </dl>

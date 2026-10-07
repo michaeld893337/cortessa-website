@@ -50,6 +50,10 @@ Mark: the Cortessa orbital **jewel** render (`assets/img/cortessa-mark.png`, fro
 `renders/c_mark_jewel.png`, 2026-07-29 — the current mark; the earlier flat tile
 `cortessa-logo.png` is retained only for history). Favicon `cortessa.ico` and
 `apple-touch-icon.png` are derived from the same render; `og-card.png` is the social card.
+The public product captures were refreshed from the current demonstration build on 2026-09-23
+(`console-ask-2026.webp`, `console-audit-2026.webp`, `console-governance-2026.webp`). The appliance
+concept set was refreshed on 2026-10-07 using the approved 2026-09-18 publicity image as the
+front-view reference (`box-front-2026.webp`, `box-rear-2026.webp`, `box-badge-2026.webp`).
 Guilloche security-print motifs (`guilloche.svg`, `guilloche_tile.svg`) come from the product
 design system. Typefaces: IBM Plex Sans / Plex Mono (vendored). Palette: navy `#0b121c`,
 accent cyan `#5cd2e6` (dark-background only — it fails contrast on white), paper `#fbfcfd`,
