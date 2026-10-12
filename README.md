@@ -24,7 +24,13 @@ python -m http.server 8099
   `legal-drafts/legal-source/` drafts by the law-expert agent with owner-confirmed facts
   (sole trader, Scots law, info@ contact); the per-change legal reasoning + sources live in
   the decisions report archived at `legal-drafts/legal-source/decisions-report-2026-08-27.md`.
-  No solicitor has reviewed them (flagged) — a one-off Scots-qualified review remains advisable.
+  **2026-10-12:** the operator and data controller changed to **Cortessa Ltd** (registered in
+  Scotland, SC905639) — Privacy/Terms v1.2, Cookies/Accessibility v1.1, each page now carries
+  its own version history; recorded in the same decisions report as an addendum.
+  No solicitor has reviewed them (flagged) — a one-off Scots-qualified review remains advisable,
+  and the change of controller is exactly the kind of change that review exists for.
+- **Statutory disclosure:** every page footer carries the company's registered name, place of
+  registration, company number and registered office (`.footer-statutory`). Do not remove it.
 - **Extras:** `404.html` (bespoke, served by GitHub Pages), `.well-known/security.txt`.
 
 ## Deployment

@@ -1277,6 +1277,7 @@ img, svg { max-width: 100%; height: auto; }
   color: var(--nav-muted);
 }
 .footer-fine p { margin: 0; }
+.footer-fine .footer-statutory { margin-top: var(--space-2); }
 
 /* ============================================================================
    Reveal-on-scroll — progressive; inert without JS and under reduced motion
