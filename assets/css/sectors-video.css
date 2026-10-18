@@ -1,0 +1,35 @@
+/* Sector films are isolated here so the shared site stylesheet remains unchanged. */
+.sector-film {
+  margin: var(--space-5) 0 0;
+}
+
+.sector-film video {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16 / 9;
+  background: #02070c;
+  border: var(--hairline) solid var(--nav-border);
+}
+
+.sector-film figcaption {
+  margin-top: var(--space-2);
+  color: var(--text-muted);
+  font-family: var(--font-mono);
+  font-size: var(--fs-mono-xs);
+  letter-spacing: var(--track-mono);
+  line-height: 1.55;
+  text-transform: uppercase;
+}
+
+.sector-film figcaption a {
+  color: inherit;
+}
+
+.invert .sector-film figcaption {
+  color: var(--nav-muted);
+}
+
+.sector-film--featured {
+  max-width: 70rem;
+}

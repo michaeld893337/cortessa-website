@@ -1,0 +1,178 @@
+WEBVTT
+
+00:00.350 --> 00:05.169
+Rail engineering teams work across standards, maintenance instructions, change
+notices and asset records.
+
+00:05.169 --> 00:13.323
+Before a change is accepted or work is authorised, the reviewer needs the
+governing source, the correct revision and a defensible route
+
+00:13.323 --> 00:14.806
+back to the evidence.
+
+00:14.806 --> 00:21.478
+When those relationships are difficult to inspect, scarce engineering time is
+spent reconstructing the document trail instead of
+
+00:21.478 --> 00:22.590
+judging the work.
+
+00:23.590 --> 00:30.135
+A single asset class can depend on infrastructure standards, rolling-stock
+instructions, maintenance procedures, technical bulletins
+
+00:30.135 --> 00:31.881
+and local change records.
+
+00:31.881 --> 00:34.063
+One document may supersede another.
+
+00:34.063 --> 00:36.681
+A referenced clause may have moved.
+
+00:36.681 --> 00:39.735
+Terminology and effectivity can differ between revisions.
+
+00:39.735 --> 00:42.354
+The challenge is not simply search.
+
+00:42.354 --> 00:47.590
+It is establishing which source governed the question at the relevant time.
+
+00:48.590 --> 00:51.801
+Choose one asset class and one review workflow.
+
+00:51.801 --> 00:57.421
+Agree the authoritative documents, representative historic revisions and the
+questions the evaluation must answer.
+
+00:57.421 --> 01:02.239
+Set the access boundary, the reviewers and the evidence standard in advance.
+
+01:02.239 --> 01:09.464
+Cortessa is then tested against matched tasks from the current process,
+including difficult documents, missing references and questions
+
+01:09.464 --> 01:11.070
+that should be refused.
+
+01:12.070 --> 01:18.682
+Cortessa is intended to operate on a dedicated sovereign workstation inside an
+agreed organisational boundary.
+
+01:18.682 --> 01:24.853
+The approved corpus, local index, on-device model and source viewer remain
+within that environment.
+
+01:24.853 --> 01:29.261
+Runtime operation does not depend on a public cloud service.
+
+01:29.261 --> 01:34.550
+The rail organisation defines permitted users, documents, identity controls
+and security posture.
+
+01:35.550 --> 01:38.474
+Audit is the centre of the Cortessa workflow.
+
+01:38.474 --> 01:44.323
+It works across the bounded engineering corpus rather than waiting for one
+question at a time.
+
+01:44.323 --> 01:52.365
+It can surface a reference the corpus does not hold, terminology that changes
+between documents, an instruction that appears to rely on
+
+01:52.365 --> 01:54.924
+a superseded source, or uncertainty about effectivity.
+
+01:54.924 --> 01:59.310
+Each candidate is presented for investigation, not treated as an automatic
+finding.
+
+02:00.310 --> 02:05.137
+Every audit result must lead back to the passage that created it.
+
+02:05.137 --> 02:11.172
+The reviewer can open the source, inspect surrounding wording and confirm the
+revision and context.
+
+02:11.172 --> 02:16.401
+If the evidence is absent, Cortessa can refuse rather than fill the gap.
+
+02:16.401 --> 02:24.045
+The engineer decides whether the discrepancy is real, irrelevant or already
+controlled, then records the outcome through the existing
+
+02:24.045 --> 02:24.447
+process.
+
+02:24.447 --> 02:28.470
+Verified shows provenance; it does not establish the engineering conclusion.
+
+02:29.470 --> 02:36.723
+Asset context, engineering risk, operational constraints and applicable
+standards cannot be delegated to a language model.
+
+02:36.723 --> 02:41.710
+Cortessa can make the evidence route and uncertainty easier to inspect.
+
+02:41.710 --> 02:48.963
+The authorised engineer determines applicability, resolves apparent conflicts
+and decides whether a change or instruction is
+
+02:48.963 --> 02:49.417
+acceptable.
+
+02:49.417 --> 02:55.310
+Cortessa does not approve engineering change, establish ROGS compliance or
+control railway operations.
+
+02:56.310 --> 02:58.418
+Reviewers need more than fluent output.
+
+02:58.418 --> 03:04.390
+They need the source route, the document state and the policy governing what
+the system may present.
+
+03:04.390 --> 03:08.606
+Identity, document currency, assertion policy and egress posture remain
+visible governance concerns.
+
+03:08.606 --> 03:15.280
+Local activity can be recorded in a ledger so the organisation can inspect
+what the system did and when.
+
+03:15.280 --> 03:20.550
+That record can support an evidence package; it does not replace the
+engineering approval record.
+
+03:21.550 --> 03:26.799
+Compare Cortessa with the current workflow using the same documents and tasks.
+
+03:26.799 --> 03:34.235
+Measure time to the governing source, reviewer effort, accepted and rejected
+findings, false-finding burden, unanswered questions and
+
+03:34.235 --> 03:34.673
+traceability.
+
+03:34.673 --> 03:38.172
+Include stale references, conflicting wording and absent sources.
+
+03:38.172 --> 03:40.796
+Record corpus preparation and setup effort.
+
+03:40.796 --> 03:48.670
+The result should show where Cortessa helps, where it fails and what must
+change before any wider use.
+
+03:49.670 --> 03:56.517
+Bring one bounded rail engineering workflow, an agreed document set and the
+people authorised to judge it.
+
+03:56.517 --> 03:59.336
+Evaluate the evidence route before considering expansion.
+
+03:59.336 --> 04:01.350
+Start a conversation with Cortessa.

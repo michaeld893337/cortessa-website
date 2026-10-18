@@ -1,0 +1,250 @@
+WEBVTT
+
+00:00.350 --> 00:08.360
+A group policy may begin at headquarters, but it has to remain defensible
+across jurisdictions, legal entities and lines of business.
+
+00:08.360 --> 00:17.515
+Before a policy is approved, a control is attested or an assurance opinion is
+formed, reviewers need the governing source, the applicable wording and
+
+00:17.515 --> 00:20.185
+a clear record of what was checked.
+
+00:20.185 --> 00:26.670
+When that evidence is fragmented across a multinational document estate,
+documentary uncertainty becomes operational and regulatory risk.
+
+00:27.670 --> 00:31.060
+A large bank does not work from one document.
+
+00:31.060 --> 00:37.086
+Group policy connects to local addenda, procedures, control descriptions,
+approved exceptions, change records and external requirements.
+
+00:37.086 --> 00:43.112
+The same policy family may apply differently by country, regulator, legal
+entity, product or effective date.
+
+00:43.112 --> 00:46.501
+A local requirement can add to the group minimum.
+
+00:46.501 --> 00:49.514
+An exception can change the route to approval.
+
+00:49.514 --> 00:55.541
+A cited source can be replaced while the policy that depends on it remains in
+circulation.
+
+00:55.541 --> 00:58.554
+The review problem is not simply finding words.
+
+00:58.554 --> 01:01.190
+It is establishing the relationships between them.
+
+01:02.190 --> 01:04.768
+The credible starting point is bounded.
+
+01:04.768 --> 01:10.353
+Select one policy family, a small number of jurisdictions and representative
+legal entities.
+
+01:10.353 --> 01:18.516
+Agree the authoritative corpus: the current group policy and revision history,
+local addenda, public regulator material, cleared procedures and
+
+01:18.516 --> 01:22.812
+control descriptions, and the approved record of exceptions and
+interpretations.
+
+01:22.812 --> 01:30.975
+Define which questions the evaluation will test, who can see the material, and
+who is authorised to decide applicability.
+
+01:30.975 --> 01:36.990
+Cortessa is evaluated inside that agreed scope; it does not claim universal
+regulatory coverage.
+
+01:37.990 --> 01:44.168
+Cortessa is intended to run on a dedicated sovereign workstation inside an
+agreed boundary.
+
+01:44.168 --> 01:50.346
+The approved corpus, local index, on-device model and source viewer remain
+within that environment.
+
+01:50.346 --> 01:54.759
+Runtime operation does not depend on a public cloud service.
+
+01:54.759 --> 02:00.055
+The bank defines the permitted documents, users, identity controls and
+security posture.
+
+02:00.055 --> 02:05.350
+Cortessa supports evidence review without widening access or becoming the
+policy owner.
+
+02:06.350 --> 02:10.915
+Ask lets a reviewer question the approved document set in natural language.
+
+02:10.915 --> 02:14.719
+The useful result is not fluent prose on its own.
+
+02:14.719 --> 02:23.850
+It is an answer tied to inspectable source passages, so the reviewer can open
+the document, read the surrounding wording and check the effective
+
+02:23.850 --> 02:24.230
+context.
+
+02:24.230 --> 02:29.176
+Where the cited evidence supports the wording, the route to source is visible.
+
+02:29.176 --> 02:36.784
+Where it does not, policy can keep the response in Draft or withhold it rather
+than present it as verified.
+
+02:36.784 --> 02:37.925
+Verified establishes provenance.
+
+02:37.925 --> 02:42.110
+It does not establish legal interpretation, policy correctness or
+jurisdictional applicability.
+
+02:43.110 --> 02:48.395
+Audit works across the selected corpus rather than waiting for one question at
+a time.
+
+02:48.395 --> 02:56.851
+It can surface an addendum that cites a source the corpus does not hold, a
+group clause without an inspectable route to authority, inconsistent
+
+02:56.851 --> 03:01.783
+terminology or dates, revision uncertainty, or an unexplained divergence
+between group and local wording.
+
+03:01.783 --> 03:05.659
+Each result must lead back to the passage that created it.
+
+03:05.659 --> 03:13.057
+The reviewer can inspect the source, determine whether the discrepancy is real
+and record the outcome through the bank's existing process.
+
+03:13.057 --> 03:15.524
+A surfaced discrepancy is a review question.
+
+03:15.524 --> 03:17.990
+It is not a finding of non-compliance.
+
+03:18.990 --> 03:23.763
+A multinational bank cannot outsource local interpretation to a language
+model.
+
+03:23.763 --> 03:29.404
+The relevant legal entity, jurisdiction, regulator, policy state and effective
+date all matter.
+
+03:29.404 --> 03:38.515
+Local compliance and legal specialists determine what applies, how an apparent
+conflict should be resolved, and whether an exception is valid.
+
+03:38.515 --> 03:41.987
+Cortessa makes the evidence route and uncertainty visible.
+
+03:41.987 --> 03:44.590
+The authorised specialist makes the judgement.
+
+03:45.590 --> 03:50.870
+The first line owns the business activity, its controls and its operational
+evidence.
+
+03:50.870 --> 03:56.150
+The second line sets the framework, oversees risk and challenges
+interpretation or implementation.
+
+03:56.150 --> 04:00.212
+The third line independently assesses the framework and the evidence.
+
+04:00.212 --> 04:06.304
+Cortessa can support source investigation and traceability for each line,
+while preserving their separate responsibilities.
+
+04:06.304 --> 04:11.990
+It does not become the control owner, the compliance authority or the internal
+auditor.
+
+04:12.990 --> 04:16.050
+The operating picture should show more than an answer.
+
+04:16.050 --> 04:22.510
+Reviewers need the source route, the document state and the policy governing
+what the system is allowed to present.
+
+04:22.510 --> 04:26.590
+Identity, document currency, assertion policy and egress posture are visible
+governance concerns.
+
+04:26.590 --> 04:33.390
+Audit activity can be recorded in a local ledger so the organisation can
+inspect what the system did and when.
+
+04:33.390 --> 04:36.110
+That record can support an assurance evidence package.
+
+04:36.110 --> 04:41.550
+It does not make every conclusion correct, and it does not replace the bank's
+approval record.
+
+04:42.550 --> 04:47.750
+The right first engagement is a bounded paid evaluation, not a theatre
+demonstration.
+
+04:47.750 --> 04:50.950
+Compare matched tasks against the bank's current workflow.
+
+04:50.950 --> 04:58.550
+Measure the time to locate and inspect the governing source, reviewer effort,
+accepted and rejected findings, false-finding burden, unanswered
+
+04:58.550 --> 05:00.550
+questions, traceability and evidence-package completeness.
+
+05:00.550 --> 05:03.750
+Include difficult documents, conflicting wording and absent sources.
+
+05:03.750 --> 05:08.150
+Record corpus preparation and setup effort as part of the result.
+
+05:08.150 --> 05:14.950
+The evaluation should show where Cortessa helps, where it fails and what must
+change before any expansion.
+
+05:15.950 --> 05:18.454
+Observed failures become bounded development work.
+
+05:18.454 --> 05:25.967
+Retrieval gaps, document handling, access requirements and workflow friction
+are remediated and retested against the agreed task set.
+
+05:25.967 --> 05:35.150
+The outcome is an evidence package for the next decision: whether the workflow
+merits further hardening, a wider corpus or another jurisdiction.
+
+05:35.150 --> 05:40.576
+Cortessa claims no bank deployment, regulator approval, complete obligation
+mapping or guaranteed saving.
+
+05:40.576 --> 05:44.750
+The value has to be demonstrated in the customer's environment.
+
+05:45.750 --> 05:47.548
+Bring one policy family.
+
+05:47.548 --> 05:48.897
+Select the jurisdictions.
+
+05:48.897 --> 05:50.695
+Agree the evidence standard.
+
+05:50.695 --> 05:55.190
+Start a conversation about a scoped global-banking evaluation with Cortessa.

@@ -1,0 +1,201 @@
+WEBVTT
+
+00:00.350 --> 00:03.651
+In nuclear engineering, an assertion is not enough.
+
+00:03.651 --> 00:11.077
+Reviewers need to know which requirement supports it, which revision applies
+and how the evidence connects through design
+
+00:11.077 --> 00:13.552
+substantiation, operating constraints and controlled records.
+
+00:13.552 --> 00:16.853
+That evidence remains the responsibility of authorised specialists.
+
+00:16.853 --> 00:24.692
+Cortessa is designed to help them investigate a bounded document estate,
+surface documentary questions and return to the source,
+
+00:24.692 --> 00:29.230
+without becoming the design authority, the safety assessor or the regulator.
+
+00:30.230 --> 00:36.424
+A controlled plant modification or safety-case change can connect
+requirements, calculations, design descriptions, operating rules,
+
+00:36.424 --> 00:38.489
+referenced standards and revision histories.
+
+00:38.489 --> 00:43.857
+Each source has an owner, status and defined role in the approval process.
+
+00:43.857 --> 00:51.290
+The practical challenge is reconstructing the chain: what wording supports the
+assertion, whether the cited document is present,
+
+00:51.290 --> 00:58.310
+whether a reference has been superseded and whether apparently similar terms
+mean the same thing in context.
+
+00:59.310 --> 01:01.897
+The credible evaluation is deliberately bounded.
+
+01:01.897 --> 01:07.501
+Select one change pack and use only public, synthetic or explicitly cleared
+documents.
+
+01:07.501 --> 01:13.537
+Agree the authoritative corpus, revision set, expected source routes and
+questions before testing begins.
+
+01:13.537 --> 01:19.141
+Define which specialists can see the material and who may adjudicate the
+results.
+
+01:19.141 --> 01:22.159
+Cortessa is assessed against that fixed scope.
+
+01:22.159 --> 01:29.919
+It does not claim access to plant information, complete safety-case coverage
+or suitability for classified or sensitive nuclear
+
+01:29.919 --> 01:30.350
+material.
+
+01:31.350 --> 01:35.895
+Cortessa runs on a dedicated sovereign workstation inside the agreed boundary.
+
+01:35.895 --> 01:42.505
+The approved corpus, ingestion pipeline, local index, on-device model and
+source viewer remain on that machine.
+
+01:42.505 --> 01:46.637
+Runtime operation does not depend on a public cloud service.
+
+01:46.637 --> 01:50.768
+The organisation defines the permitted documents, users and security posture.
+
+01:50.768 --> 01:53.660
+Retrieval-only operation remains available as the floor.
+
+01:53.660 --> 02:01.510
+Cortessa supports evidence review; it does not connect to plant control,
+monitor operating conditions or take any operational action.
+
+02:02.510 --> 02:05.819
+Audit is the centre of the Cortessa workflow.
+
+02:05.819 --> 02:12.850
+It works across the selected nuclear evidence chain rather than waiting for
+one question at a time.
+
+02:12.850 --> 02:18.226
+It can surface stale references, supersession questions, terminology
+differences and missing documentary links.
+
+02:18.226 --> 02:24.430
+Each candidate enters authorised review; it is not automatically a safety,
+compliance or licence finding.
+
+02:25.430 --> 02:29.731
+Every audit result leads back to the passages that created it.
+
+02:29.731 --> 02:35.987
+The authorised specialist can open the source, inspect surrounding wording and
+confirm document state and context.
+
+02:35.987 --> 02:40.678
+If evidence is absent, Cortessa can refuse rather than fill the gap.
+
+02:40.678 --> 02:47.716
+The authorised reviewer decides whether the discrepancy is genuine, material,
+already resolved or outside scope, then records the
+
+02:47.716 --> 02:49.671
+outcome through the established process.
+
+02:49.671 --> 02:53.190
+Verified shows provenance; it does not establish safety significance.
+
+02:54.190 --> 02:59.142
+Safety significance, design intent and regulatory applicability require
+qualified human judgement.
+
+02:59.142 --> 03:05.444
+The licensee, design authority and independent assurance functions retain
+their established responsibilities and separation.
+
+03:05.444 --> 03:10.395
+Cortessa can make the evidence route and uncertainty easier to inspect.
+
+03:10.395 --> 03:19.849
+It does not approve a modification, validate a safety case, discharge a
+licence condition or certify that an argument is adequate.
+
+03:19.849 --> 03:24.350
+Formal decisions and approvals remain in the organisation's controlled
+systems.
+
+03:25.350 --> 03:28.730
+The operating picture should show more than an answer.
+
+03:28.730 --> 03:35.867
+Reviewers need the source route, the document state and the policy governing
+what the system is allowed to present.
+
+03:35.867 --> 03:40.374
+Identity, document currency, assertion policy and egress posture are visible
+governance concerns.
+
+03:40.374 --> 03:47.135
+Local activity can be recorded in a ledger to support review of what the
+system did and when.
+
+03:47.135 --> 03:50.140
+That record may contribute to an evidence package.
+
+03:50.140 --> 03:56.150
+It does not make conclusions correct and does not replace nuclear records,
+approvals or independent assessment.
+
+03:57.150 --> 04:00.675
+Compare matched tasks against the existing review baseline.
+
+04:00.675 --> 04:08.605
+Measure time to reconstruct an agreed assertion-to-source chain, time to
+locate the current revision, reviewer effort, cited candidate
+
+04:08.605 --> 04:12.570
+findings, specialist agreement, appropriate refusals and sampled source-path
+reproducibility.
+
+04:12.570 --> 04:16.095
+Include absent evidence, difficult revisions and ambiguous terminology.
+
+04:16.095 --> 04:18.738
+Record corpus preparation and setup effort.
+
+04:18.738 --> 04:27.550
+The result should identify useful support, failure modes and remediation
+before any decision about a larger corpus or another workflow.
+
+04:28.550 --> 04:30.809
+Bring one cleared change pack.
+
+04:30.809 --> 04:34.876
+Agree the specialists, the baseline and the evidence standard.
+
+04:34.876 --> 04:40.750
+Test whether Cortessa helps reviewers reconstruct the source chain and
+adjudicate documentary questions.
+
+04:40.750 --> 04:46.172
+Cortessa claims no nuclear deployment, regulatory approval, safety-case
+acceptance or safety outcome.
+
+04:46.172 --> 04:49.335
+It never replaces the authorised decision maker.
+
+04:49.335 --> 04:52.950
+Start a conversation about a scoped nuclear evaluation.

@@ -1,0 +1,166 @@
+WEBVTT
+
+00:00.350 --> 00:06.308
+Pharmaceutical quality teams work through controlled procedures, work
+instructions, validation summaries and change records.
+
+00:06.308 --> 00:15.246
+Before a quality decision is approved, the reviewer needs the current source,
+the applicable wording and a defensible record of what
+
+00:15.246 --> 00:16.097
+was checked.
+
+00:16.097 --> 00:21.630
+When that trail is fragmented, experienced people spend valuable time
+reconstructing documentary context.
+
+00:22.630 --> 00:29.302
+A single quality process can depend on a standard operating procedure, linked
+work instructions, validation material, approved change
+
+00:29.302 --> 00:30.785
+controls and historic revisions.
+
+00:30.785 --> 00:32.267
+A clause can move.
+
+00:32.267 --> 00:34.121
+A reference can be replaced.
+
+00:34.121 --> 00:38.198
+An effective date can change what applied at a particular time.
+
+00:38.198 --> 00:41.534
+The review problem is not simply finding a phrase.
+
+00:41.534 --> 00:44.870
+It is establishing the controlled relationship between the sources.
+
+00:45.870 --> 00:50.030
+Choose one non-production quality workflow and agree the authoritative corpus.
+
+00:50.030 --> 00:55.438
+Define the users, access boundary, test questions and evidence standard before
+evaluation begins.
+
+00:55.438 --> 01:00.846
+Include difficult documents, superseded wording, absent references and
+questions the system should refuse.
+
+01:00.846 --> 01:08.750
+Compare the same tasks against the current review process, rather than
+treating a polished demonstration as proof of fitness.
+
+01:09.750 --> 01:15.311
+Cortessa is intended to run on a dedicated sovereign workstation inside an
+agreed boundary.
+
+01:15.311 --> 01:20.873
+The approved corpus, local index, on-device model and source viewer remain
+within that environment.
+
+01:20.873 --> 01:24.845
+Runtime operation does not depend on a public cloud service.
+
+01:24.845 --> 01:29.215
+The organisation defines permitted documents, users, identity controls and
+security posture.
+
+01:29.215 --> 01:32.790
+Cortessa does not become the quality system of record.
+
+01:33.790 --> 01:36.924
+Audit is the centre of the Cortessa workflow.
+
+01:36.924 --> 01:43.583
+It works across the bounded quality corpus to surface a missing reference,
+inconsistent terminology, uncertain effectivity, unexplained
+
+01:43.583 --> 01:48.676
+revision differences or a procedure that appears to rely on a superseded
+source.
+
+01:48.676 --> 01:51.418
+Each candidate enters a controlled review queue.
+
+01:51.418 --> 01:56.510
+It is not automatically treated as a deviation or a finding of non-compliance.
+
+01:57.510 --> 02:01.974
+Each audit result leads back to the passage that created it.
+
+02:01.974 --> 02:08.061
+Quality specialists can open the source, inspect surrounding wording and
+confirm revision and document state.
+
+02:08.061 --> 02:13.336
+If the evidence is absent, Cortessa can refuse rather than fill the gap.
+
+02:13.336 --> 02:20.640
+Authorised quality personnel determine relevance, accept or reject the
+candidate, and record the outcome through the existing process.
+
+02:20.640 --> 02:25.510
+Verified shows provenance; it does not establish GMP compliance or validation
+status.
+
+02:26.510 --> 02:34.242
+Process context, product impact and the organisation's quality framework
+cannot be delegated to a language model.
+
+02:34.242 --> 02:38.108
+Cortessa can expose the evidence route and uncertainty.
+
+02:38.108 --> 02:42.941
+Authorised quality personnel determine applicability, significance and the
+required action.
+
+02:42.941 --> 02:50.190
+Cortessa does not release batches, replace the qualified person, validate
+itself or provide MHRA approval.
+
+02:51.190 --> 02:56.969
+Reviewers need the source route, document state and the policy governing what
+the system may present.
+
+02:56.969 --> 03:01.304
+Identity, document currency, assertion policy and egress posture remain
+visible governance concerns.
+
+03:01.304 --> 03:08.167
+Local activity can be recorded in a ledger so the organisation can inspect
+what the system did and when.
+
+03:08.167 --> 03:15.030
+The record can support an evidence package, but it does not replace approved
+quality records or establish data-integrity compliance.
+
+03:16.030 --> 03:22.452
+Measure time to the current approved source, citation completeness,
+supersession visibility, accepted and rejected findings, correct
+
+03:22.452 --> 03:24.058
+refusals and reviewer effort.
+
+03:24.058 --> 03:26.466
+Record corpus preparation and setup burden.
+
+03:26.466 --> 03:34.092
+The result should show where Cortessa helps, where it fails and what must be
+remediated before any next stage.
+
+03:34.092 --> 03:39.310
+Evidence from the customer's own workflow is more valuable than a generic
+claim.
+
+03:40.310 --> 03:46.030
+Bring one bounded, non-production quality workflow and the people authorised
+to judge it.
+
+03:46.030 --> 03:51.310
+Evaluate the evidence route, remediate observed gaps and retest before
+considering expansion.
+
+03:51.310 --> 03:53.510
+Start a conversation with Cortessa.

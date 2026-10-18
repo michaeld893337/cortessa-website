@@ -1,0 +1,205 @@
+WEBVTT
+
+00:00.350 --> 00:07.162
+An aircraft returns to service because authorised people can show which
+requirement, instruction and revision governs the work.
+
+00:07.162 --> 00:14.353
+The physical task may happen in a hangar, but the approval depends on a
+controlled chain of documentary evidence.
+
+00:14.353 --> 00:20.030
+When that chain is fragmented across engineering instructions, maintenance
+publications, service information and referenced standards,
+
+00:20.030 --> 00:23.815
+finding the right source becomes part of the engineering workload.
+
+00:23.815 --> 00:29.870
+Cortessa is designed to help reviewers investigate that evidence without
+taking the decision away from them.
+
+00:30.870 --> 00:33.963
+A controlled change rarely lives in one document.
+
+00:33.963 --> 00:41.310
+A requirement can lead to an engineering order, an instruction, an illustrated
+publication, a service communication and an external
+
+00:41.310 --> 00:41.697
+standard.
+
+00:41.697 --> 00:45.563
+Each may carry its own applicability, revision and approval state.
+
+00:45.563 --> 00:49.043
+The review problem is not simply finding matching words.
+
+00:49.043 --> 00:56.777
+It is establishing whether the source is current, whether the reference is
+present, whether the terminology still aligns and whether
+
+00:56.777 --> 01:01.030
+the evidence applies to the aircraft, configuration and task under review.
+
+01:02.030 --> 01:06.589
+The credible starting point is one bounded engineering-change or
+maintenance-instruction pack.
+
+01:06.589 --> 01:14.049
+Agree the authoritative documents, their revision history and the public,
+synthetic or customer-cleared material that may be used.
+
+01:14.049 --> 01:21.923
+Define the questions, the expected source routes, the baseline review process
+and the authorised engineers who will adjudicate results.
+
+01:21.923 --> 01:24.824
+Cortessa is evaluated against that fixed scope.
+
+01:24.824 --> 01:31.870
+It does not claim to understand every aircraft programme, replace an approved
+data system or determine airworthiness.
+
+01:32.870 --> 01:37.583
+Cortessa runs on a dedicated sovereign workstation inside the agreed boundary.
+
+01:37.583 --> 01:44.437
+The approved corpus, ingestion pipeline, local index, on-device model and
+source viewer remain on that machine.
+
+01:44.437 --> 01:48.722
+Runtime operation does not depend on a public cloud service.
+
+01:48.722 --> 01:53.006
+The organisation controls the permitted documents, users and security posture.
+
+01:53.006 --> 01:56.005
+Retrieval-only operation remains available as the floor.
+
+01:56.005 --> 02:04.145
+The purpose is bounded document investigation inside the existing engineering
+environment, not a connection to aircraft systems or an
+
+02:04.145 --> 02:05.430
+expansion of access.
+
+02:06.430 --> 02:09.799
+Audit is the centre of the Cortessa workflow.
+
+02:09.799 --> 02:16.537
+It works across the selected engineering pack rather than waiting for one
+question at a time.
+
+02:16.537 --> 02:22.433
+It can surface supersession questions, orphaned references, terminology
+differences, effectivity uncertainty and stale wording.
+
+02:22.433 --> 02:28.750
+Each candidate enters engineering review; it is not automatically an
+airworthiness, regulatory or safety finding.
+
+02:29.750 --> 02:34.176
+Every audit result leads back to the passages that created it.
+
+02:34.176 --> 02:40.211
+The engineer can open the source, inspect surrounding wording and check
+revision, effectivity and applicability.
+
+02:40.211 --> 02:45.039
+If evidence is absent, Cortessa can refuse rather than fill the gap.
+
+02:45.039 --> 02:52.684
+The engineer decides whether the issue is real, irrelevant, already controlled
+or worth investigation, then records the outcome through
+
+02:52.684 --> 02:53.891
+the existing process.
+
+02:53.891 --> 02:57.110
+Verified shows provenance; it does not establish applicability.
+
+02:58.110 --> 03:01.489
+Configuration, effectivity and airworthiness significance require engineering
+judgement.
+
+03:01.489 --> 03:08.246
+The responsible engineer decides which source governs, whether an apparent
+conflict matters and what action follows.
+
+03:08.246 --> 03:12.470
+Cortessa makes the source route, uncertainty and review question visible.
+
+03:12.470 --> 03:19.650
+It does not approve technical data, release an aircraft, certify a repair or
+sign an engineering decision.
+
+03:19.650 --> 03:26.830
+Existing design, quality and airworthiness authorities remain distinct, and
+their formal records remain the record of approval.
+
+03:27.830 --> 03:29.916
+Reviewers need more than an answer.
+
+03:29.916 --> 03:37.216
+They need to see the source route, the document state and the policy governing
+what the system is allowed to present.
+
+03:37.216 --> 03:42.082
+Identity, document currency, assertion policy and egress posture are part of
+that operating picture.
+
+03:42.082 --> 03:48.340
+Local activity can be recorded in a ledger to support review of what the
+system did and when.
+
+03:48.340 --> 03:51.120
+That record can contribute to an evidence package.
+
+03:51.120 --> 03:57.030
+It does not make a conclusion correct and does not replace the organisation's
+configuration or approval record.
+
+03:58.030 --> 04:01.273
+Compare matched tasks against the current review baseline.
+
+04:01.273 --> 04:09.381
+Measure time to locate and open the governing source, reviewer effort, the
+number and category of cited findings, reviewer agreement,
+
+04:09.381 --> 04:13.030
+appropriate refusals and the reproducibility of sampled source paths.
+
+04:13.030 --> 04:16.679
+Include difficult documents, superseded references and deliberately absent
+evidence.
+
+04:16.679 --> 04:19.111
+Record corpus preparation and setup effort.
+
+04:19.111 --> 04:27.625
+The evaluation should show where Cortessa helps, where it fails and what must
+change before any consideration of a wider document
+
+04:27.625 --> 04:28.030
+estate.
+
+04:29.030 --> 04:31.044
+Bring one controlled engineering pack.
+
+04:31.044 --> 04:34.668
+Agree the reviewers, the baseline and the evidence standard.
+
+04:34.668 --> 04:41.514
+Test whether Cortessa makes the governing source easier to find and the
+documentary questions easier to adjudicate.
+
+04:41.514 --> 04:45.944
+Cortessa claims no aircraft deployment, certification, dispatch improvement or
+safety outcome.
+
+04:45.944 --> 04:49.568
+Those outcomes must never be assumed from a demonstration.
+
+04:49.568 --> 04:52.790
+Start a conversation about a scoped civil-aerospace evaluation.

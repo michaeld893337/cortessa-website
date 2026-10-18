@@ -1,0 +1,202 @@
+WEBVTT
+
+00:00.350 --> 00:06.930
+Across generation, networks and critical energy infrastructure, field work
+depends on controlled instructions and the engineering
+
+00:06.930 --> 00:08.164
+evidence behind them.
+
+00:08.164 --> 00:16.389
+Before a planned task is approved, reviewers need to know which standard
+governs, which revision applies and what the inspection
+
+00:16.389 --> 00:17.212
+evidence supports.
+
+00:17.212 --> 00:22.147
+Cortessa is designed to help authorised teams investigate that bounded
+document estate.
+
+00:22.147 --> 00:29.550
+It makes source routes and documentary questions visible without becoming an
+operational system or taking the approval decision.
+
+00:30.550 --> 00:36.674
+A planned-outage or asset-maintenance pack can connect group engineering
+standards, site instructions, inspection records, asset
+
+00:36.674 --> 00:39.123
+policies, approved deviations and external references.
+
+00:39.123 --> 00:44.430
+Those documents may be maintained by different teams and revised on different
+schedules.
+
+00:44.430 --> 00:51.778
+The review problem is establishing whether the governing source is present and
+current, whether terminology and applicability align,
+
+00:51.778 --> 00:58.310
+and whether every important statement can be traced back to evidence the
+authorised reviewer can inspect.
+
+00:59.310 --> 01:06.662
+The credible starting point is one bounded work pack for a single asset class
+and site context.
+
+01:06.662 --> 01:13.149
+Agree the approved standards, instructions, inspection evidence and revision
+history that form the evaluation corpus.
+
+01:13.149 --> 01:19.203
+Define the matched tasks, expected source routes, baseline process and
+authorised roles before testing.
+
+01:19.203 --> 01:22.231
+Use public, synthetic or explicitly cleared material.
+
+01:22.231 --> 01:29.150
+Cortessa is evaluated inside that scope; it does not claim continuous
+visibility across an operator's estate.
+
+01:30.150 --> 01:35.002
+Cortessa runs on a dedicated sovereign workstation inside the agreed boundary.
+
+01:35.002 --> 01:42.060
+The approved corpus, ingestion pipeline, local index, on-device model and
+source viewer remain on that machine.
+
+01:42.060 --> 01:46.471
+Runtime operation does not depend on a public cloud service.
+
+01:46.471 --> 01:50.882
+The operator controls the permitted documents, users and security posture.
+
+01:50.882 --> 01:53.970
+Retrieval-only operation remains available as the floor.
+
+01:53.970 --> 02:01.910
+Cortessa supports document review; it is not connected to supervisory control,
+protection, scheduling or any live operational system.
+
+02:02.910 --> 02:05.973
+Audit is the centre of the Cortessa workflow.
+
+02:05.973 --> 02:12.099
+It works across the selected work pack rather than waiting for one question at
+a time.
+
+02:12.099 --> 02:17.841
+It can surface stale or superseded references, missing documentary links,
+terminology differences and effectivity questions.
+
+02:17.841 --> 02:24.350
+Each candidate enters engineering review; it is not automatically evidence of
+equipment failure, non-compliance or unsafe operation.
+
+02:25.350 --> 02:29.813
+Every audit result leads back to the passages that created it.
+
+02:29.813 --> 02:36.304
+Engineering and assurance specialists can open the source, inspect surrounding
+wording and check revision and applicability.
+
+02:36.304 --> 02:41.173
+If evidence is absent, Cortessa can refuse rather than fill the gap.
+
+02:41.173 --> 02:48.476
+Authorised specialists decide whether the issue is genuine, material, already
+controlled or outside scope, then record the outcome
+
+02:48.476 --> 02:50.099
+through the existing process.
+
+02:50.099 --> 02:53.750
+Verified shows provenance; it does not establish asset condition.
+
+02:54.750 --> 03:00.470
+Engineering and operational decisions depend on asset context, site rules and
+authorised judgement.
+
+03:00.470 --> 03:07.510
+The responsible people decide which document governs, whether a discrepancy
+matters and whether work may proceed.
+
+03:07.510 --> 03:11.030
+Cortessa makes the evidence route and uncertainty visible.
+
+03:11.030 --> 03:19.390
+It does not approve a work pack, determine asset health, authorise an outage
+or replace engineering, operations, asset-integrity or
+
+03:19.390 --> 03:20.270
+safety authority.
+
+03:20.270 --> 03:24.670
+Formal decisions remain in the operator's controlled processes and systems.
+
+03:25.670 --> 03:27.833
+Reviewers need more than an answer.
+
+03:27.833 --> 03:34.322
+They need the source route, document state and the policy governing what the
+system is allowed to present.
+
+03:34.322 --> 03:38.648
+Identity, document currency, assertion policy and egress posture are visible
+governance concerns.
+
+03:38.648 --> 03:45.137
+Local activity can be recorded in a ledger to support review of what the
+system did and when.
+
+03:45.137 --> 03:48.021
+That record may contribute to an evidence package.
+
+03:48.021 --> 03:54.150
+It does not make conclusions correct and does not replace the operator's
+work-control, asset or approval record.
+
+03:55.150 --> 03:58.882
+Compare matched tasks against the existing review baseline.
+
+03:58.882 --> 04:06.812
+Measure time to identify and open the governing instruction, reviewer effort,
+cited candidate findings, reviewer usefulness and
+
+04:06.812 --> 04:10.544
+duplicate rates, appropriate refusals and sampled source-path reproducibility.
+
+04:10.544 --> 04:14.276
+Include difficult revisions, excluded evidence and ambiguous terminology.
+
+04:14.276 --> 04:17.075
+Record setup, ingestion and corpus-curation effort.
+
+04:17.075 --> 04:27.804
+The evaluation should show where Cortessa helps, where it fails and what must
+change before any decision to extend the document set or
+
+04:27.804 --> 04:28.270
+workflow.
+
+04:29.270 --> 04:31.495
+Bring one controlled work pack.
+
+04:31.495 --> 04:35.499
+Agree the asset scope, reviewers, baseline and evidence standard.
+
+04:35.499 --> 04:41.283
+Test whether Cortessa helps the team locate governing instructions and
+adjudicate documentary questions.
+
+04:41.283 --> 04:47.956
+Cortessa claims no energy deployment, outage reduction, availability gain,
+cost saving, compliance or safety outcome.
+
+04:47.956 --> 04:51.071
+Those results must be measured, not assumed.
+
+04:51.071 --> 04:54.630
+Start a conversation about a scoped energy evaluation.
