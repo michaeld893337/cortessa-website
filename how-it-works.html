@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data:; font-src 'self'; connect-src 'self'; object-src 'none'; base-uri 'self'; form-action 'self'">
   <title>How it works — Cortessa</title>
-  <meta name="description" content="The provenance gate: Verified, Draft or Refused. Pure local retrieval, three assurance tiers, and how Ask and Audit work end to end.">
+  <meta name="description" content="How Cortessa combines self-sufficient local Audit and Ask with human approval and a governed offline revision path across a regulated site.">
   <link rel="canonical" href="https://cortessa.co.uk/how-it-works.html">
   <meta name="color-scheme" content="light dark">
   <link rel="preload" href="assets/fonts/PlexSans-Regular.woff2" as="font" type="font/woff2" crossorigin>
@@ -17,7 +17,7 @@
   <meta property="og:site_name" content="Cortessa">
   <meta property="og:type" content="website">
   <meta property="og:title" content="How it works — Cortessa">
-  <meta property="og:description" content="The provenance gate: Verified, Draft or Refused. Pure local retrieval, three assurance tiers, and how Ask and Audit work end to end.">
+  <meta property="og:description" content="Local Audit and Ask, human approval and governed offline revision exchange across the Cortessa site architecture.">
   <meta property="og:url" content="https://cortessa.co.uk/how-it-works.html">
   <meta property="og:image" content="https://cortessa.co.uk/assets/img/og-card.png">
   <meta property="og:image:width" content="1200">
@@ -40,6 +40,7 @@
         </button>
         <ul id="nav-menu" class="nav-menu">
           <li><a href="how-it-works.html" aria-current="page">How it works</a></li>
+          <li><a href="architecture.html">Site architecture</a></li>
           <li><a href="evidence.html">Evidence</a></li>
           <li><a href="security.html">Security</a></li>
           <li><a href="sectors.html">Sectors</a></li>
@@ -106,13 +107,12 @@
           <span class="mono-label">02 / Retrieval</span>
           <span class="mono-label desig-note">Local by default</span>
         </div>
-        <h2 id="retrieval-heading">Pure local retrieval by default</h2>
+        <h2 id="retrieval-heading">Self-sufficient at every engineer's desk</h2>
         <div class="prose">
           <p>
-            In its default mode, Cortessa answers by retrieving from your approved document set on
-            the machine itself. Nothing leaves the machine to answer a question — no corpus, no
-            query, no fragment of a document. It runs entirely on a dedicated sovereign workstation
-            on the analyst's desk — a single executable: no server, no cloud, no internet dependency.
+            Each engineer box holds its approved documents and runs ingestion, indexing, retrieval
+            and the resident model locally. The corpus and query are not sent to an external service.
+            Analysis stays on-box even when the box participates in the governed internal site network.
           </p>
           <p>
             Because retrieval is local and the gate is deterministic, the same guarantee holds
@@ -137,9 +137,9 @@
           knows the boundary they are working within.
         </p>
         <ul class="tier-list" aria-label="Assurance tiers">
-          <li><strong>On-device (standard)</strong> <span>the model and the whole ingestion pipeline are resident on the box and run full time; nothing leaves the machine. In the separate 60-question blind exam this mode refused all 12 out-of-corpus questions with 0 fabrications.</span></li>
+          <li><strong>On-device (standard)</strong> <span>the model and the whole ingestion pipeline are resident on the box and run full time; analysis stays local. In the separate 60-question blind exam this mode refused all 12 out-of-corpus questions with 0 fabrications.</span></li>
           <li><strong>Retrieval only</strong> <span>the floor beneath it &mdash; ranked source passages with their citations, no model in the loop. Always available; never a failure.</span></li>
-          <li><strong>In-region cloud &mdash; off by default</strong> <span>a future option for a site whose policy later permits one. It ships switched off, and can be locked out entirely so it cannot be selected at all. Opt-in and logged if it is ever enabled (UK, London / eu-west-2).</span></li>
+          <li><strong>Governed site exchange &mdash; in development</strong> <span>approved revisions are designed to move through enrolled departmental nodes and the on-site hub while analysis remains local.</span></li>
         </ul>
       </div>
     </section>
@@ -271,8 +271,8 @@
       <div class="wrap cta-inner reveal">
         <h2 id="cta-heading">See the gate against your own documents</h2>
         <p>
-          A scoped, paid pilot runs on your hardware, behind your firewall, against success
-          criteria you set — led by Audit.
+          A scoped, paid pilot proves Audit and Ask on a bounded corpus first, then defines the
+          departmental authority and revision route needed for a wider site deployment.
         </p>
         <div class="hero-actions">
           <a class="btn btn-primary" href="pilot.html">Request a scoped pilot</a>
@@ -296,6 +296,7 @@
         <p class="footer-col-title">Explore</p>
         <ul class="footer-links">
           <li><a href="how-it-works.html">How it works</a></li>
+          <li><a href="architecture.html">Site architecture</a></li>
           <li><a href="evidence.html">Evidence &amp; validation</a></li>
           <li><a href="security.html">Security &amp; sovereignty</a></li>
           <li><a href="sectors.html">Sectors</a></li>

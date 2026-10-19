@@ -40,6 +40,7 @@
         </button>
         <ul id="nav-menu" class="nav-menu">
           <li><a href="how-it-works.html">How it works</a></li>
+          <li><a href="architecture.html">Site architecture</a></li>
           <li><a href="evidence.html">Evidence</a></li>
           <li><a href="security.html" aria-current="page">Security</a></li>
           <li><a href="sectors.html">Sectors</a></li>
@@ -74,7 +75,7 @@
         <h2 id="calls-heading">No external calls at runtime</h2>
         <div class="prose">
           <p>
-            In its default mode nothing leaves the machine to answer a question. There is no
+            Analysis stays on the engineer box. There is no
             corpus upload, no query sent to a third party, no telemetry that phones home. Cortessa
             is a self-contained console: no web fonts, no CDNs, no external services — designed
             around the constraints of UK OFFICIAL environments. Classification and accreditation
@@ -98,17 +99,16 @@
           <span class="mono-label">02 / Modes</span>
           <span class="mono-label desig-note">On-device standard · shown on the ribbon</span>
         </div>
-        <h2 id="modes-heading">The model is on the box; the cloud is a switch you need never flip</h2>
+        <h2 id="modes-heading">The model is on the box; the site network stays inside the boundary</h2>
         <p class="section-intro">
-          The unit answers with a model already resident on it, inside your boundary. The off-box
-          tier exists so that a site whose policy later permits a regional cloud option is not
-          rebuilt to get one — it ships switched off and can be locked out permanently. The
-          classification ribbon shows the active mode at all times.
+          The unit answers with a model already resident on it, inside your boundary. The target
+          internal network carries governed revisions, not external model calls. The classification
+          ribbon shows the active local assurance mode at all times.
         </p>
         <ul class="tier-list" aria-label="Assurance tiers">
-          <li><strong>On-device (standard)</strong> <span>the model and the whole ingestion pipeline are resident on the box and run full time; nothing leaves the machine.</span></li>
+          <li><strong>On-device (standard)</strong> <span>the model and the whole ingestion pipeline are resident on the box and run full time; analysis stays local.</span></li>
           <li><strong>Retrieval only</strong> <span>the floor beneath it — ranked source passages with their citations, no model in the loop. Always available; never a failure.</span></li>
-          <li><strong>In-region cloud — off by default</strong> <span>a future option for a site whose policy later permits one. It ships switched off, and can be locked out entirely so it cannot be selected at all. Opt-in and logged if it is ever enabled (UK, London / eu-west-2).</span></li>
+          <li><strong>Governed site exchange — in development</strong> <span>approved revisions are designed to move through enrolled nodes without moving analysis or decision authority to a central service.</span></li>
         </ul>
       </div>
     </section>
@@ -128,9 +128,9 @@
             without the machine ever needing to reach a licensing server on the internet.
           </p>
           <p>
-            The commercial model matches the security model: near-zero infrastructure to stand up,
-            nothing to expose, nothing to leak. One file, activated cryptographically, on a
-            dedicated workstation inside your boundary.
+            Each engineer box activates cryptographically without contacting a licensing server.
+            Departmental nodes and the on-site hub are part of the target internal architecture;
+            their production deployment and governance are being developed separately.
           </p>
         </div>
       </div>
@@ -154,8 +154,8 @@
         </div>
         <ul class="feature-list">
           <li><strong>Deterministic gate.</strong> Versioned containment rules are enforced in code, not left to a prompt.</li>
-          <li><strong>The off-box tier is off, and lockable.</strong> It ships disabled and hidden; an administrator must switch it on deliberately, and an allowlist can remove it permanently. If it is ever used it is logged, so the boundary crossing stays visible.</li>
-          <li><strong>Self-contained footprint.</strong> No server to harden, no CDN to trust, no tracker to review.</li>
+          <li><strong>Internal movement is explicit.</strong> Signed revisions carry their owner, lineage and scope; receipt does not silently make them current or searchable.</li>
+          <li><strong>Contained footprint.</strong> Local analysis has no CDN, tracker or external runtime service; internal nodes remain inside the governed site boundary.</li>
           <li><strong>The engineer signs off.</strong> Cortessa hands over cited evidence; it never certifies on your behalf.</li>
         </ul>
         <p class="evidence">
@@ -182,8 +182,8 @@
       <div class="wrap cta-inner reveal">
         <h2 id="cta-heading">Evaluate it inside your own boundary</h2>
         <p>
-          A scoped, paid pilot runs on your hardware, behind your firewall, disconnected if you
-          need it to be.
+          A scoped, paid pilot runs inside your boundary and proves the local evidence workflow
+          before any departmental or site-network design is proposed.
         </p>
         <div class="hero-actions">
           <a class="btn btn-primary" href="pilot.html">Request a scoped pilot</a>
@@ -207,6 +207,7 @@
         <p class="footer-col-title">Explore</p>
         <ul class="footer-links">
           <li><a href="how-it-works.html">How it works</a></li>
+          <li><a href="architecture.html">Site architecture</a></li>
           <li><a href="evidence.html">Evidence &amp; validation</a></li>
           <li><a href="security.html">Security &amp; sovereignty</a></li>
           <li><a href="sectors.html">Sectors</a></li>

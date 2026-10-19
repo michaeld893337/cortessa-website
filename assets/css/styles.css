@@ -427,7 +427,7 @@ img, svg { max-width: 100%; height: auto; }
 .nav-toggle-bar::before { top: -7px; }
 .nav-toggle-bar::after { top: 7px; }
 
-@media (max-width: 52rem) {
+@media (max-width: 72rem) {
   .nav-toggle { display: block; }
   .nav-menu {
     display: none;
@@ -1371,5 +1371,53 @@ img, svg { max-width: 100%; height: auto; }
     font-family: "IBM Plex Mono", monospace;
     font-size: 9px;
     letter-spacing: 0.14em;
+  }
+}
+
+/* Site architecture — one readable topology, no decorative network noise. */
+.architecture-strip {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: clamp(0.75rem, 2vw, 1.5rem);
+  align-items: stretch;
+  margin-top: var(--space-6);
+  padding: 0;
+  list-style: none;
+  padding: clamp(1rem, 3vw, 2rem);
+  border: var(--hairline) solid var(--rule);
+  background: var(--bg-band);
+}
+.architecture-column {
+  min-width: 0;
+  padding: var(--space-4);
+  border: 1px solid var(--nav-accent);
+  background: var(--nav-bg);
+  color: var(--nav-text);
+}
+.architecture-column .mono-label { display: block; margin-bottom: var(--space-3); color: var(--nav-accent); }
+.architecture-column ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-weight: 500;
+  line-height: 1.55;
+}
+.architecture-column + .architecture-column::before {
+  content: "→";
+  position: absolute;
+  left: calc(-0.5 * clamp(0.75rem, 2vw, 1.5rem));
+  top: 50%;
+  color: var(--draft);
+  font-size: clamp(1.5rem, 4vw, 2.75rem);
+  line-height: 1;
+  transform: translate(-50%, -50%);
+}
+.architecture-column { position: relative; }
+@media (max-width: 48rem) {
+  .architecture-strip { grid-template-columns: 1fr; }
+  .architecture-column + .architecture-column::before {
+    left: 50%;
+    top: calc(-0.5 * clamp(0.75rem, 2vw, 1.5rem));
+    transform: translate(-50%, -50%) rotate(90deg);
   }
 }

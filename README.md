@@ -1,6 +1,6 @@
 # Cortessa — Marketing Website
 
-The public marketing site for **Cortessa**: sovereign document intelligence for defence.
+The public marketing site for **Cortessa**: sovereign document intelligence for regulated sites.
 
 Static, **fully self-contained**, and offline-capable by design — no CDNs, no external web
 fonts, no analytics or trackers, no external calls at runtime. Every asset is self-hosted,
@@ -17,8 +17,8 @@ python -m http.server 8099
 ```
 
 ## Pages
-- **Content:** `index.html` (home), `how-it-works.html`, `security.html`, `sectors.html`,
-  `about.html`, `contact.html`
+- **Content:** `index.html` (home), `how-it-works.html`, `architecture.html`, `security.html`,
+  `sectors.html`, `evidence.html`, `pilot.html`, `about.html`, `contact.html`
 - **Legal:** `legal/privacy.html`, `legal/terms.html`, `legal/cookies.html`,
   `legal/accessibility.html` — published (v1.0, 2026-08-27): finalised from the
   `legal-drafts/legal-source/` drafts by the law-expert agent with owner-confirmed facts
@@ -30,7 +30,10 @@ python -m http.server 8099
   No solicitor has reviewed them (flagged) — a one-off Scots-qualified review remains advisable,
   and the change of controller is exactly the kind of change that review exists for.
 - **Statutory disclosure:** every page footer carries the company's registered name, place of
-  registration, company number and registered office (`.footer-statutory`). Do not remove it.
+registration, company number and registered office (`.footer-statutory`). Do not remove it.
+- **Architecture maturity:** public copy separates the working self-sufficient local product and
+  signed exchange foundations from peer transport and production site rollout still in development.
+  Do not revive the obsolete standalone-only “no server” story or imply a deployed site network.
 - **Extras:** `404.html` (bespoke, served by GitHub Pages), `.well-known/security.txt`.
 
 ## Deployment
@@ -38,8 +41,7 @@ Served via GitHub Pages at **https://cortessa.co.uk/** (www 301-redirects to the
 The custom domain is pinned by the committed `CNAME` file — **do not delete it**; without it a
 push can drop the domain binding and 404 the site. The site is **indexable** (owner go,
 2026-08-26): content pages carry canonical URLs and are listed in `sitemap.xml` (referenced
-from `robots.txt`). All ten pages — six content + four legal — are indexable and in the
-sitemap since 2026-08-27.
+from `robots.txt`). The architecture page was added to the sitemap on 2026-10-19.
 
 ## Status
 - **Contact is live**: info@cortessa.co.uk and michael.davidson@cortessa.co.uk forward via

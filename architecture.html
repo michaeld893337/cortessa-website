@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data:; font-src 'self'; connect-src 'self'; object-src 'none'; base-uri 'self'; form-action 'self'">
+  <title>Site architecture — Cortessa</title>
+  <meta name="description" content="How Cortessa is being developed as a site-contained controlled-document intelligence environment: engineer boxes, departmental nodes and an on-site hub.">
+  <link rel="canonical" href="https://cortessa.co.uk/architecture.html">
+  <meta name="color-scheme" content="light dark">
+  <link rel="preload" href="assets/fonts/PlexSans-Regular.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="assets/fonts/PlexMono-Regular.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <link rel="icon" href="assets/img/cortessa.ico" sizes="any">
+  <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
+  <meta name="theme-color" content="#0b121c">
+  <meta property="og:site_name" content="Cortessa">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Site architecture — Cortessa">
+  <meta property="og:description" content="Local intelligence at every engineer's desk, connected by a governed offline revision layer inside the site boundary.">
+  <meta property="og:url" content="https://cortessa.co.uk/architecture.html">
+  <meta property="og:image" content="https://cortessa.co.uk/assets/img/og-card.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a class="brand" href="index.html" aria-label="Cortessa home">
+        <img class="brand-logo" src="assets/img/cortessa-mark.png" width="512" height="512" alt="" aria-hidden="true">
+        <span class="brand-name">Cortessa</span>
+      </a>
+      <nav class="site-nav" aria-label="Primary">
+        <button class="nav-toggle" aria-expanded="false" aria-controls="nav-menu"><span class="nav-toggle-bar" aria-hidden="true"></span><span class="visually-hidden">Menu</span></button>
+        <ul id="nav-menu" class="nav-menu">
+          <li><a href="how-it-works.html">How it works</a></li>
+          <li><a href="architecture.html" aria-current="page">Site architecture</a></li>
+          <li><a href="evidence.html">Evidence</a></li>
+          <li><a href="security.html">Security</a></li>
+          <li><a href="sectors.html">Sectors</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a class="nav-cta" href="pilot.html">Request a pilot</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="page-hero" aria-labelledby="page-heading">
+      <div class="wrap">
+        <p class="mono-label rise">Site architecture</p>
+        <h1 id="page-heading" class="rise">Every box works locally. The site remains one governed environment.</h1>
+        <p class="lede rise">Cortessa is being developed around a simple boundary: analysis stays with the engineer; approved revisions can move through an offline, permission-scoped site network; authority stays with people.</p>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="topology-heading">
+      <div class="wrap reveal">
+        <div class="desig"><span class="mono-label">01 / Topology</span><span class="mono-label desig-note">Inside the air-gapped site boundary</span></div>
+        <h2 id="topology-heading">Engineer boxes → departmental nodes → on-site hub</h2>
+        <p class="section-intro">The target architecture does not send prompts, documents or model inference to an external service. It joins self-sufficient engineer boxes through governed internal nodes, while keeping department scope and human ownership explicit.</p>
+        <ol class="architecture-strip" aria-label="Cortessa site architecture">
+          <li class="architecture-column">
+            <span class="mono-label">Engineer boxes</span>
+            <ul><li>Local documents</li><li>Local ingestion and model</li><li>Audit · Ask</li><li>Engineer approval</li></ul>
+          </li>
+          <li class="architecture-column">
+            <span class="mono-label">Departmental nodes</span>
+            <ul><li>Enrolled scope</li><li>Signed revision exchange</li><li>Department-default access</li></ul>
+          </li>
+          <li class="architecture-column">
+            <span class="mono-label">On-site hub</span>
+            <ul><li>Permitted aggregation</li><li>Selected cross-department sharing</li><li>No central approval</li></ul>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="section invert" aria-labelledby="box-heading">
+      <div class="wrap reveal">
+        <div class="desig"><span class="mono-label">02 / Engineer box</span><span class="mono-label desig-note">Self-sufficient local operation</span></div>
+        <h2 id="box-heading">The engineer does not depend on the network to think</h2>
+        <ul class="feature-list">
+          <li><strong>Local corpus.</strong> The box holds the engineer's approved documents and working context.</li>
+          <li><strong>Local pipeline.</strong> Extraction, cleaning, chunking and indexing run on-box.</li>
+          <li><strong>Local model.</strong> Audit and Ask operate without sending the corpus or query outside the box.</li>
+          <li><strong>Human authority.</strong> Cortessa surfaces and cites. The engineer adjudicates and approves.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="revision-heading">
+      <div class="wrap reveal">
+        <div class="desig"><span class="mono-label">03 / Governed revision</span><span class="mono-label desig-note">The evidence travels with the decision</span></div>
+        <h2 id="revision-heading">An approved revision moves. An AI answer does not become site truth.</h2>
+        <ol class="steps">
+          <li><h3>Audit surfaces a candidate</h3><p>The engineer inspects the cited source and records a disposition.</p></li>
+          <li><h3>The engineer approves</h3><p>The revision is bound to its owner, content digest, lineage and sharing scope.</p></li>
+          <li><h3>The department carries it</h3><p>The signed revision can move through enrolled nodes within its permitted scope.</p></li>
+          <li><h3>The receiver reviews it</h3><p>Receipt does not silently certify, supersede or add content to another engineer's searchable corpus.</p></li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="section band" aria-labelledby="authority-heading">
+      <div class="wrap reveal">
+        <div class="desig"><span class="mono-label">04 / Authority</span><span class="mono-label desig-note">No automatic winner</span></div>
+        <h2 id="authority-heading">The network preserves disagreement instead of hiding it</h2>
+        <p class="section-intro">The hub can aggregate only its enrolled scope. It cannot publish an engineer's approval, choose a winning branch by arrival time, invent missing ancestry or erase an existing conflict. Gaps and competing heads remain visible for authorised people to resolve.</p>
+      </div>
+    </section>
+
+    <section class="section invert" aria-labelledby="maturity-heading">
+      <div class="wrap reveal">
+        <div class="desig"><span class="mono-label">05 / Maturity</span><span class="mono-label desig-note">What exists · what remains</span></div>
+        <h2 id="maturity-heading">The product and the target architecture are not being conflated</h2>
+        <div class="gate-grid">
+          <article><p class="mono-label">Implemented foundations</p><h3>Local product and signed exchange contract</h3><p>On-box ingestion, Audit and Ask; engineer adjudication; enrolled identities; signed revision envelopes; scoped visibility; durable local storage; replay and conflict handling.</p></article>
+          <article><p class="mono-label">In development</p><h3>Production site networking and rollout</h3><p>Authenticated peer transport, key provisioning and recovery, delivery scheduling, backup and restore, migration, controlled corpus promotion and real-site deployment.</p></article>
+          <article><p class="mono-label">Not claimed</p><h3>No deployed-network or DMS-replacement claim</h3><p>Cortessa is not presented as accredited, production-deployed, automatically synchronised or already replacing every document- and records-management function.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section cta-band" aria-labelledby="cta-heading">
+      <div class="wrap cta-inner reveal">
+        <h2 id="cta-heading">Start with evidence. Design the site route from there.</h2>
+        <p>A bounded evaluation proves the local Audit and Ask workflow first. The next stage defines the departmental authority, revision path and security boundary needed for a site deployment.</p>
+        <div class="hero-actions"><a class="btn btn-primary" href="pilot.html">Request a scoped pilot</a><a class="btn btn-ghost" href="security.html">Read the security model</a></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap footer-inner">
+      <div class="footer-brand"><span class="footer-brand-row"><img class="brand-logo" src="assets/img/cortessa-mark.png" width="512" height="512" alt="" aria-hidden="true"><span class="brand-name">Cortessa</span></span><p>Sovereign document intelligence.</p></div>
+      <nav aria-label="Footer"><p class="footer-col-title">Explore</p><ul class="footer-links"><li><a href="how-it-works.html">How it works</a></li><li><a href="architecture.html">Site architecture</a></li><li><a href="evidence.html">Evidence &amp; validation</a></li><li><a href="security.html">Security &amp; sovereignty</a></li><li><a href="sectors.html">Sectors</a></li><li><a href="about.html">About</a></li><li><a href="pilot.html">The pilot</a></li><li><a href="contact.html">Contact</a></li></ul></nav>
+      <nav aria-label="Legal"><p class="footer-col-title">Legal</p><ul class="footer-links"><li><a href="legal/privacy.html">Privacy</a></li><li><a href="legal/terms.html">Terms</a></li><li><a href="legal/cookies.html">Cookies</a></li><li><a href="legal/accessibility.html">Accessibility</a></li></ul></nav>
+    </div>
+    <div class="wrap"><dl class="title-block" aria-label="Document reference"><div><dt>Product</dt><dd>Cortessa</dd></div><div><dt>Reference</dt><dd>cortessa.co.uk</dd></div><div><dt>Issue</dt><dd>2026-10</dd></div><div><dt>Sheet</dt><dd>Architecture</dd></div><div><dt>Distribution</dt><dd>Public release</dd></div></dl></div>
+    <div class="wrap footer-fine"><p>&copy; 2026 Cortessa. Built self-contained: no CDNs, no external fonts, no trackers.</p><p class="footer-statutory">Cortessa Ltd is a company registered in Scotland, company number SC905639. Registered office: 37 Sundale Avenue, Glasgow, G76 7TA.</p></div>
+  </footer>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

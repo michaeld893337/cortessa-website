@@ -41,6 +41,7 @@
         </button>
         <ul id="nav-menu" class="nav-menu">
           <li><a href="how-it-works.html">How it works</a></li>
+          <li><a href="architecture.html">Site architecture</a></li>
           <li><a href="evidence.html">Evidence</a></li>
           <li><a href="security.html">Security</a></li>
           <li><a href="sectors.html" aria-current="page">Sectors</a></li>
@@ -66,7 +67,7 @@
     </section>
 
     <!-- 01 · Defence first -->
-    <section class="section" aria-labelledby="defence-heading">
+    <section id="defence-film" class="section" aria-labelledby="defence-heading">
       <div class="wrap reveal">
         <div class="desig">
           <span class="mono-label">01 / Defence</span>
@@ -83,11 +84,12 @@
             review is accurate but scales only with headcount.
           </p>
           <p>
-            Cortessa runs disconnected as a single executable, audits the estate for conflicts and
-            supersession, and gates every claim to a cited source span — or refuses. That is why
-            defence is both the proving ground and the harbour: sovereignty, provenance and
-            air-gap operation are non-negotiable there — the strictest bar any estate sets —
-            and a product built to clear it clears every other estate's bar with margin.
+            Each Cortessa engineer box runs locally, audits its controlled corpus for conflicts and
+            supersession, and gates every claim to a cited source span — or refuses. The target
+            architecture is designed to carry approved revisions through departmental nodes and an
+            on-site hub. Defence makes sovereignty, provenance, air-gap operation and human
+            engineering authority non-negotiable; those constraints shape the product for every
+            other regulated estate.
           </p>
         </div>
         <div class="note">
@@ -95,7 +97,7 @@
           a controlled defence environment. We do not name customers or imply a relationship we
           cannot evidence.</p>
         </div>
-        <figure id="defence-film" class="sector-film sector-film--featured">
+        <figure class="sector-film sector-film--featured" hidden>
           <video controls preload="metadata" poster="assets/video/sectors/defence-poster.jpg" aria-labelledby="defence-heading defence-film-caption">
             <source src="assets/video/sectors/defence.mp4" type="video/mp4">
             <track kind="captions" src="assets/video/sectors/defence.vtt" srclang="en-GB" label="English">
@@ -124,10 +126,11 @@
           own pain — none is an afterthought, and the guarantee does not dilute as it travels.
         </p>
         <div class="sector-table">
-          <article aria-labelledby="banking-heading">
+          <article id="banking-film" aria-labelledby="banking-heading">
             <h3 id="banking-heading">Global banking</h3>
-            <p>Watch how Cortessa supports evidence review before attestation across a controlled banking document estate.</p>
-            <figure id="banking-film" class="sector-film">
+            <p>Group policy, local addenda, legal-entity obligations and assurance evidence must reconcile before attestation.</p>
+            <p class="evidence"><strong>Architecture fit:</strong> local policy and risk teams work on self-sufficient boxes; departmental nodes preserve entity and function scope; authorised revisions move without implying a cross-border public network.</p>
+            <figure class="sector-film" hidden>
               <video controls preload="metadata" poster="assets/video/sectors/banking-poster.jpg" aria-labelledby="banking-heading banking-film-caption">
                 <source src="assets/video/sectors/banking.mp4" type="video/mp4">
                 <track kind="captions" src="assets/video/sectors/banking.vtt" srclang="en-GB" label="English">
@@ -140,10 +143,11 @@
               </div>
             </figure>
           </article>
-          <article aria-labelledby="aerospace-heading">
+          <article id="civil-aerospace-film" aria-labelledby="aerospace-heading">
             <h3 id="aerospace-heading">Civil aerospace</h3>
             <p>Airworthiness and type-certification evidence spread across revisions that must stay internally consistent and current.</p>
-            <figure id="civil-aerospace-film" class="sector-film">
+            <p class="evidence"><strong>Architecture fit:</strong> design, continuing-airworthiness and configuration teams retain local working context while approved revisions follow the site's engineering authority route.</p>
+            <figure class="sector-film" hidden>
               <video controls preload="metadata" poster="assets/video/sectors/civil-aerospace-poster.jpg" aria-labelledby="aerospace-heading aerospace-film-caption">
                 <source src="assets/video/sectors/civil-aerospace.mp4" type="video/mp4">
                 <track kind="captions" src="assets/video/sectors/civil-aerospace.vtt" srclang="en-GB" label="English">
@@ -156,10 +160,11 @@
               </div>
             </figure>
           </article>
-          <article aria-labelledby="nuclear-heading">
+          <article id="nuclear-film" aria-labelledby="nuclear-heading">
             <h3 id="nuclear-heading">Nuclear</h3>
             <p>A configuration-controlled safety case that must stay current and defensible across a vast document estate, permanently, under audit.</p>
-            <figure id="nuclear-film" class="sector-film">
+            <p class="evidence"><strong>Architecture fit:</strong> design engineering, configuration control and safety assurance remain distinct authorities joined by signed, scoped revisions—not automatic plant or safety decisions.</p>
+            <figure class="sector-film" hidden>
               <video controls preload="metadata" poster="assets/video/sectors/nuclear-poster.jpg" aria-labelledby="nuclear-heading nuclear-film-caption">
                 <source src="assets/video/sectors/nuclear.mp4" type="video/mp4">
                 <track kind="captions" src="assets/video/sectors/nuclear.vtt" srclang="en-GB" label="English">
@@ -172,10 +177,11 @@
               </div>
             </figure>
           </article>
-          <article aria-labelledby="energy-heading">
+          <article id="energy-film" aria-labelledby="energy-heading">
             <h3 id="energy-heading">Energy</h3>
             <p>Asset-integrity and compliance documentation where a superseded figure is a finding waiting to happen.</p>
-            <figure id="energy-film" class="sector-film">
+            <p class="evidence"><strong>Architecture fit:</strong> maintenance, integrity and engineering-assurance teams can preserve departmental scope while sharing approved documentary changes inside the site boundary.</p>
+            <figure class="sector-film" hidden>
               <video controls preload="metadata" poster="assets/video/sectors/energy-poster.jpg" aria-labelledby="energy-heading energy-film-caption">
                 <source src="assets/video/sectors/energy.mp4" type="video/mp4">
                 <track kind="captions" src="assets/video/sectors/energy.vtt" srclang="en-GB" label="English">
@@ -188,10 +194,11 @@
               </div>
             </figure>
           </article>
-          <article aria-labelledby="rail-heading">
+          <article id="rail-film" aria-labelledby="rail-heading">
             <h3 id="rail-heading">Rail</h3>
             <p>Standards conformance across a large asset base, where references and figures must reconcile across many documents.</p>
-            <figure id="rail-film" class="sector-film">
+            <p class="evidence"><strong>Architecture fit:</strong> fleet, standards and engineering-acceptance teams work locally, with governed revision lineage across the internal authority chain.</p>
+            <figure class="sector-film" hidden>
               <video controls preload="metadata" poster="assets/video/sectors/rail-poster.jpg" aria-labelledby="rail-heading rail-film-caption">
                 <source src="assets/video/sectors/rail.mp4" type="video/mp4">
                 <track kind="captions" src="assets/video/sectors/rail.vtt" srclang="en-GB" label="English">
@@ -204,10 +211,11 @@
               </div>
             </figure>
           </article>
-          <article aria-labelledby="pharma-heading">
+          <article id="pharmaceutical-film" aria-labelledby="pharma-heading">
             <h3 id="pharma-heading">Pharmaceutical</h3>
             <p>Validated document control under regulatory audit, where provenance and traceability are the whole point.</p>
-            <figure id="pharmaceutical-film" class="sector-film">
+            <p class="evidence"><strong>Architecture fit:</strong> quality, validation and change-control teams retain separate authority while approved revisions move through a controlled site route; validated use still requires representative assurance.</p>
+            <figure class="sector-film" hidden>
               <video controls preload="metadata" poster="assets/video/sectors/pharma-poster.jpg" aria-labelledby="pharma-heading pharma-film-caption">
                 <source src="assets/video/sectors/pharma.mp4" type="video/mp4">
                 <track kind="captions" src="assets/video/sectors/pharma.vtt" srclang="en-GB" label="English">
@@ -220,10 +228,11 @@
               </div>
             </figure>
           </article>
-          <article aria-labelledby="legal-heading">
+          <article id="legal-film" aria-labelledby="legal-heading">
             <h3 id="legal-heading">Legal</h3>
             <p>Large matter and disclosure sets where an answer has to be traceable to the exact source, not a plausible summary.</p>
-            <figure id="legal-film" class="sector-film">
+            <p class="evidence"><strong>Architecture fit:</strong> matter and practice-team boundaries remain explicit. Nothing in the architecture implies cross-client sharing or replaces legal judgement.</p>
+            <figure class="sector-film" hidden>
               <video controls preload="metadata" poster="assets/video/sectors/legal-poster.jpg" aria-labelledby="legal-heading legal-film-caption">
                 <source src="assets/video/sectors/legal.mp4" type="video/mp4">
                 <track kind="captions" src="assets/video/sectors/legal.vtt" srclang="en-GB" label="English">
@@ -236,10 +245,11 @@
               </div>
             </figure>
           </article>
-          <article aria-labelledby="government-heading">
+          <article id="government-film" aria-labelledby="government-heading">
             <h3 id="government-heading">Government</h3>
             <p>Controlled records and policy estates that cannot leave the boundary but still need to be cross-checked and current.</p>
-            <figure id="government-film" class="sector-film">
+            <p class="evidence"><strong>Architecture fit:</strong> policy, records and assurance teams can keep local context while approved revisions move through enrolled departmental scope; public authority remains with accountable officials.</p>
+            <figure class="sector-film" hidden>
               <video controls preload="metadata" poster="assets/video/sectors/government-poster.jpg" aria-labelledby="government-heading government-film-caption">
                 <source src="assets/video/sectors/government.mp4" type="video/mp4">
                 <track kind="captions" src="assets/video/sectors/government.vtt" srclang="en-GB" label="English">
@@ -272,10 +282,10 @@
         </div>
         <h2 id="pattern-heading">The guarantee that carries across all of them</h2>
         <ul class="feature-list">
-          <li><strong>Provenance you can trace.</strong> Verified / Draft / Refused — a value not in the source cannot pass as Verified.</li>
-          <li><strong>Sovereign and offline.</strong> Nothing leaves the machine to answer; air-gap-safe, no external calls.</li>
+          <li><strong>Provenance you can trace.</strong> Verified / Draft / Refused — the deterministic gate records whether a claim is anchored to its cited source; it does not certify correctness.</li>
+          <li><strong>Sovereign and offline.</strong> Analysis stays on-box; governed revisions remain inside the site boundary.</li>
           <li><strong>Audit the whole estate.</strong> Cross-document conflict detection hands engineers cited, adjudicable findings.</li>
-          <li><strong>No infrastructure beyond the desk.</strong> One dedicated workstation, one executable — no server room, no cloud.</li>
+          <li><strong>One governed site model.</strong> Self-sufficient engineer boxes connect through departmental nodes to an on-site hub; production rollout remains in development.</li>
         </ul>
       </div>
     </section>
@@ -309,6 +319,7 @@
         <p class="footer-col-title">Explore</p>
         <ul class="footer-links">
           <li><a href="how-it-works.html">How it works</a></li>
+          <li><a href="architecture.html">Site architecture</a></li>
           <li><a href="evidence.html">Evidence &amp; validation</a></li>
           <li><a href="security.html">Security &amp; sovereignty</a></li>
           <li><a href="sectors.html">Sectors</a></li>

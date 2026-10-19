@@ -11,16 +11,28 @@
   var toggle = document.querySelector(".nav-toggle");
   var menu = document.getElementById("nav-menu");
   if (toggle && menu) {
+    var closeMenu = function () {
+      menu.classList.remove("open");
+      toggle.setAttribute("aria-expanded", "false");
+    };
+
     toggle.addEventListener("click", function () {
       var open = menu.classList.toggle("open");
       toggle.setAttribute("aria-expanded", open ? "true" : "false");
     });
 
+    menu.addEventListener("click", function (e) {
+      if (e.target.closest("a")) closeMenu();
+    });
+
+    document.addEventListener("focusin", function (e) {
+      if (menu.classList.contains("open") && !e.target.closest(".site-header")) closeMenu();
+    });
+
     // Close the menu on Escape for keyboard users.
     document.addEventListener("keydown", function (e) {
       if (e.key === "Escape" && menu.classList.contains("open")) {
-        menu.classList.remove("open");
-        toggle.setAttribute("aria-expanded", "false");
+        closeMenu();
         toggle.focus();
       }
     });

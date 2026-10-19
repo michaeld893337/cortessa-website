@@ -86,7 +86,8 @@
 
   async function shareFilm(button) {
     var figure = button.closest(".sector-film");
-    var url = CANONICAL_PAGE + "#" + figure.id;
+    var destination = figure.closest("[id]");
+    var url = CANONICAL_PAGE + "#" + destination.id;
     var shareData = {
       title: button.dataset.shareTitle,
       text: button.dataset.shareText,
