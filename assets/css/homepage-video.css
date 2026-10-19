@@ -1,0 +1,49 @@
+/* Programme overview — isolated from the shared site and sector-film styles. */
+.programme-overview {
+  scroll-margin-top: 6rem;
+  border-top: var(--hairline) solid var(--border);
+  border-bottom: var(--hairline) solid var(--border);
+  background: var(--bg-band);
+}
+
+.programme-overview h2 {
+  max-width: 19ch;
+}
+
+.programme-overview__film {
+  max-width: 70rem;
+  margin: var(--space-5) 0 0;
+}
+
+.programme-overview__film video {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16 / 9;
+  background: #02070c;
+  border: var(--hairline) solid var(--border-strong);
+}
+
+.programme-overview__film figcaption {
+  margin-top: var(--space-2);
+  color: var(--text-muted);
+  font-family: var(--font-mono);
+  font-size: var(--fs-mono-xs);
+  letter-spacing: var(--track-mono);
+  line-height: 1.55;
+  text-transform: uppercase;
+}
+
+.programme-overview__film figcaption a {
+  color: inherit;
+}
+
+.programme-overview__sectors-link {
+  margin: var(--space-4) 0 0;
+}
+
+@media (max-width: 40rem) {
+  .programme-overview__film {
+    margin-top: var(--space-4);
+  }
+}
