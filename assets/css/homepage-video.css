@@ -1,4 +1,28 @@
-/* Programme overview — isolated from the shared site and sector-film styles. */
+/* Homepage comprehension layout and programme overview — isolated from shared styles. */
+.hero h1 {
+  max-width: 23ch;
+}
+
+.comprehension-grid {
+  margin: var(--space-5) 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.comprehension-grid .gate-card h3 {
+  margin: var(--space-2) 0;
+  font-size: var(--fs-400);
+}
+
+.comprehension-grid .gate-card .mono-label {
+  display: block;
+  color: var(--text-muted);
+}
+
+.invert .comprehension-grid .gate-card .mono-label {
+  color: var(--nav-accent);
+}
+
 .programme-overview {
   scroll-margin-top: 6rem;
   border-top: var(--hairline) solid var(--border);
