@@ -1,0 +1,221 @@
+WEBVTT
+
+00:00.350 --> 00:07.301
+Policing teams work across controlled policy, case material, evidential
+records, disclosure schedules, decision logs and supervisory
+
+00:07.301 --> 00:07.736
+reviews.
+
+00:07.736 --> 00:16.424
+Before an accountable action or recommendation is approved, the authorised
+person needs the governing source, the current wording and a
+
+00:16.424 --> 00:19.031
+defensible route back to the record.
+
+00:19.031 --> 00:22.507
+Cortessa is designed to support that documentary investigation.
+
+00:22.507 --> 00:31.196
+It does not assess guilt, identify suspects, direct operations, make charging
+decisions or determine what a prosecutor or court should
+
+00:31.196 --> 00:31.630
+decide.
+
+00:32.630 --> 00:39.770
+A review can depend on operational policy, local procedure, evidential
+material, disclosure records, supervisory directions and earlier
+
+00:39.770 --> 00:40.190
+decisions.
+
+00:40.190 --> 00:46.070
+Each source has an owner, status, access boundary and place in the formal
+process.
+
+00:46.070 --> 00:49.430
+The challenge is not simply finding matching words.
+
+00:49.430 --> 00:57.410
+It is establishing which source is current, whether every referenced record is
+present, how chronology and amendments connect, and
+
+00:57.410 --> 01:01.190
+whether the route to the original material remains inspectable.
+
+01:02.190 --> 01:09.239
+Cortessa's target policing-site deployment gives each authorised investigator,
+disclosure specialist, analyst or supervisor a
+
+01:09.239 --> 01:12.764
+dedicated, self-sufficient box inside the site boundary.
+
+01:12.764 --> 01:19.310
+Permitted records, ingestion, index, on-device model and source viewer remain
+on that box.
+
+01:19.310 --> 01:23.842
+Audit and Ask run locally against the approved corpus.
+
+01:23.842 --> 01:27.870
+Author remains in development and requires further testing.
+
+01:27.870 --> 01:36.430
+The user controls the local working context and remains responsible for
+interpretation, handling and every approved revision.
+
+01:37.430 --> 01:44.118
+User boxes are designed to connect through permission-scoped departmental
+nodes for investigations, disclosure, professional standards
+
+01:44.118 --> 01:47.685
+and supervisory assurance, then to an on-site hub.
+
+01:47.685 --> 01:56.156
+The exchange remains inside the air-gapped site, with selected sharing only
+where role, case and handling authority permit it.
+
+01:56.156 --> 02:02.844
+This is Cortessa's target site architecture, not a claim of a deployed
+production network today.
+
+02:02.844 --> 02:09.086
+The governed offline revision contract and application foundations exist;
+authenticated transport, key provisioning, delivery
+
+02:09.086 --> 02:13.990
+scheduling, backup, recovery, site assurance and physical rollout remain
+deployment work.
+
+02:14.990 --> 02:17.071
+Audit leads the Cortessa workflow.
+
+02:17.071 --> 02:23.315
+It works across the bounded corpus rather than waiting for one question at a
+time.
+
+02:23.315 --> 02:31.223
+It can surface a policy that cites a missing source, records with revision or
+chronology uncertainty, inconsistent terminology, an
+
+02:31.223 --> 02:36.634
+unresolved reference or a documentary gap that may require disclosure or
+supervisory attention.
+
+02:36.634 --> 02:43.710
+Each candidate is a cited question for review, not a conclusion about
+evidence, misconduct, legality or guilt.
+
+02:44.710 --> 02:50.315
+Every candidate leads back to the passage or record that created it.
+
+02:50.315 --> 02:58.723
+The authorised reviewer can inspect surrounding context, document state,
+chronology and the applicable access boundary before forming a
+
+02:58.723 --> 02:59.190
+judgement.
+
+02:59.190 --> 03:08.532
+Ask supports the same investigation with cited answers from the approved
+corpus and can refuse when the evidence is absent.
+
+03:08.532 --> 03:13.670
+Verified establishes provenance, not truth, admissibility, disclosure
+significance, legality or guilt.
+
+03:14.670 --> 03:22.043
+Evidential weight, investigative judgement, disclosure obligations,
+proportionality, public interest and operational context cannot be
+
+03:22.043 --> 03:24.677
+delegated to a language model.
+
+03:24.677 --> 03:32.577
+Authorised investigators, disclosure officers, supervisors and accountable
+officials determine what applies and what action follows.
+
+03:32.577 --> 03:36.263
+Prosecutors and courts retain their independent roles.
+
+03:36.263 --> 03:44.690
+Cortessa does not identify guilt, prioritise suspects, direct deployment,
+authorise coercive action, make charging recommendations or
+
+03:44.690 --> 03:46.270
+decide judicial outcomes.
+
+03:47.270 --> 03:55.927
+An authorised user's approved revision can carry its signed identity, content
+hash, parent lineage and approved audit context through
+
+03:55.927 --> 04:00.484
+the relevant departmental node and, where authorised, the on-site hub.
+
+04:00.484 --> 04:08.686
+Conflicting branches and missing ancestry remain explicit; the hub cannot
+publish another person's approval or choose the governing
+
+04:08.686 --> 04:09.141
+account.
+
+04:09.141 --> 04:15.976
+Receipt does not certify evidence, supersede the local corpus or make a record
+searchable automatically.
+
+04:15.976 --> 04:22.355
+The receiving user governs import and use under existing case, disclosure and
+handling controls.
+
+04:22.355 --> 04:29.190
+The local Ledger supports inspection but never replaces the formal evidential,
+disclosure or decision record.
+
+04:30.190 --> 04:35.310
+Begin with one closed, synthetic, public or explicitly cleared workflow.
+
+04:35.310 --> 04:41.454
+Agree the corpus, roles, access boundary, baseline and evidence standard
+before testing.
+
+04:41.454 --> 04:48.622
+Include missing records, amendments, ambiguous chronology, difficult scans and
+questions that should be refused.
+
+04:48.622 --> 04:56.814
+Measure time to the governing source, citation completeness, reviewer effort,
+accepted and rejected candidates, appropriate refusals,
+
+04:56.814 --> 04:59.886
+access-control behaviour and sampled source-path reproducibility.
+
+04:59.886 --> 05:02.958
+Then test one governed departmental exchange.
+
+05:02.958 --> 05:08.590
+These are evaluation hypotheses, not claimed operational, investigative or
+justice outcomes.
+
+05:09.590 --> 05:17.093
+Bring one appropriately controlled policy, case-review or disclosure workflow
+and the people authorised to judge it.
+
+05:17.093 --> 05:23.189
+Test the local evidence route and one permission-scoped departmental exchange
+before considering expansion.
+
+05:23.189 --> 05:30.223
+Cortessa claims no policing customer, deployment, completed site rollout,
+accreditation, evidential outcome, operational benefit or
+
+05:30.223 --> 05:31.160
+justice outcome.
+
+05:31.160 --> 05:36.319
+The architecture must be demonstrated and assured in a representative
+environment.
+
+05:36.319 --> 05:40.070
+Start a conversation about a scoped policing evaluation.

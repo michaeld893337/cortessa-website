@@ -1,0 +1,278 @@
+WEBVTT
+
+00:00.350 --> 00:10.648
+Before an aircraft is released, a ship remains available, a nuclear change is
+accepted or a public decision is defended, someone must
+
+00:10.648 --> 00:13.925
+establish what the approved evidence actually says.
+
+00:13.925 --> 00:20.011
+Requirements, policies, standards, instructions, revisions and exceptions are
+spread across people and departments.
+
+00:20.011 --> 00:28.436
+The accountable professional must find the governing source, understand its
+context and show how the conclusion was reached.
+
+00:28.436 --> 00:32.649
+The outcome may be operational, financial, legal or safety-critical.
+
+00:32.649 --> 00:34.990
+The evidence problem comes first.
+
+00:35.990 --> 00:38.899
+A search result can locate a page.
+
+00:38.899 --> 00:48.872
+It does not establish that the page is current, that a referenced document is
+present or that two departments are working from the same
+
+00:48.872 --> 00:49.703
+approved revision.
+
+00:49.703 --> 00:54.690
+The problem is larger than one query and larger than one workstation.
+
+00:54.690 --> 00:56.768
+Engineers need local working context.
+
+00:56.768 --> 00:58.430
+Departments need controlled exchange.
+
+00:58.430 --> 01:05.910
+Site authorities need visible lineage, scope and disagreement without turning
+a central system into an automatic decision maker.
+
+01:06.910 --> 01:11.102
+Cortessa is being developed as a site-contained controlled-document
+intelligence environment.
+
+01:11.102 --> 01:14.037
+Every engineer has a self-sufficient Cortessa box.
+
+01:14.037 --> 01:20.745
+Those boxes connect through departmental nodes to an on-site hub, all inside
+the site's air-gapped boundary.
+
+01:20.745 --> 01:27.453
+The hub is not a central artificial intelligence and it cannot approve on an
+engineer's behalf.
+
+01:27.453 --> 01:31.645
+It carries only the scope it is enrolled to hold.
+
+01:31.645 --> 01:39.611
+The architecture keeps local evidence work close to the engineer while giving
+approved revisions a governed route through the
+
+01:39.611 --> 01:40.030
+organisation.
+
+01:41.030 --> 01:45.446
+Each engineer box holds its approved documents and working context.
+
+01:45.446 --> 01:50.303
+Extraction, cleaning, chunking, indexing, retrieval and the resident model run
+locally.
+
+01:50.303 --> 01:55.160
+Audit and Ask do not depend on a public cloud service.
+
+01:55.160 --> 01:58.251
+Retrieval-only operation remains available as the floor.
+
+01:58.251 --> 02:00.017
+Author is in development.
+
+02:00.017 --> 02:07.965
+Access to documents remains governed by the organisation, and the box does not
+silently widen a user's authority.
+
+02:07.965 --> 02:15.030
+Local self-sufficiency is what allows the site network to remain sovereign
+rather than becoming a dependency.
+
+02:16.030 --> 02:19.245
+Audit is the centre of the product.
+
+02:19.245 --> 02:26.595
+It reviews the approved corpus for documentary issues worth human attention:
+missing references, supersession, revision uncertainty,
+
+02:26.595 --> 02:28.892
+terminology, effectivity and structured conflicts.
+
+02:28.892 --> 02:35.782
+Each result is a cited candidate for review, not an automatic finding,
+approval or certification.
+
+02:35.782 --> 02:44.510
+The engineer sees the source route, the document state and the policy
+governing what Cortessa is allowed to present.
+
+02:45.510 --> 02:49.549
+A candidate becomes useful when its evidence can be challenged.
+
+02:49.549 --> 02:55.204
+Cortessa opens the original source passage and preserves the route back to the
+document.
+
+02:55.204 --> 03:00.454
+The reviewer can inspect surrounding wording, revision and applicability
+before forming a judgement.
+
+03:00.454 --> 03:02.474
+Ask follows the same discipline.
+
+03:02.474 --> 03:10.956
+Answers are tied to cited source spans, and the system can refuse when the
+approved corpus does not contain the fact.
+
+03:10.956 --> 03:12.975
+Verified indicates provenance, not correctness.
+
+03:12.975 --> 03:18.630
+The human decides whether the cited wording answers the question and governs
+the work.
+
+03:19.630 --> 03:25.481
+The engineer adjudicates the evidence and approves a revision through the
+organisation's human process.
+
+03:25.481 --> 03:31.331
+The revision is bound to its owner, content digest, parents and permitted
+sharing scope.
+
+03:31.331 --> 03:33.003
+Its history remains inspectable.
+
+03:33.003 --> 03:39.689
+That approved revision can then move to the departmental node and, where
+authorised, the on-site hub.
+
+03:39.689 --> 03:42.196
+A receiving engineer still reviews it.
+
+03:42.196 --> 03:48.883
+Receipt does not silently certify it, make it current or insert it into
+another searchable corpus.
+
+03:48.883 --> 03:51.390
+Promotion remains a governed human action.
+
+03:52.390 --> 03:57.932
+Department scope is checked before a revision is received, queued or exported.
+
+03:57.932 --> 03:59.780
+Missing ancestry remains explicit.
+
+03:59.780 --> 04:01.627
+Competing branches remain visible.
+
+04:01.627 --> 04:06.246
+Arrival time and hub rank do not choose a winner.
+
+04:06.246 --> 04:11.327
+The signed offline exchange contract and local integration are implemented
+foundations.
+
+04:11.327 --> 04:18.255
+Authenticated peer transport, key provisioning, delivery scheduling, backup,
+corpus promotion and production rollout remain in
+
+04:18.255 --> 04:18.716
+development.
+
+04:18.716 --> 04:27.030
+Cortessa is not presented as an already deployed site network or as a
+replacement for every records-management function.
+
+04:28.030 --> 04:36.153
+In Defence and civil aerospace, Cortessa can support the documentary route
+behind maintenance release, engineering change and
+
+04:36.153 --> 04:37.109
+airworthiness review.
+
+04:37.109 --> 04:46.188
+In nuclear, energy and rail, it can help authorised teams inspect the sources
+behind change, asset integrity and engineering
+
+04:46.188 --> 04:46.666
+acceptance.
+
+04:46.666 --> 04:56.222
+Cortessa does not fly an aircraft, put a ship to sea, approve a nuclear
+change, control infrastructure or certify compliance.
+
+04:56.222 --> 05:03.390
+It helps the responsible people find, challenge and govern the documentary
+evidence behind those outcomes.
+
+05:04.390 --> 05:10.248
+A bank can map engineer boxes to policy, risk and assurance teams.
+
+05:10.248 --> 05:16.107
+A pharmaceutical site can map them to quality, validation and change control.
+
+05:16.107 --> 05:24.406
+Legal and government estates can preserve matter, department and records
+boundaries while keeping the source route inspectable.
+
+05:24.406 --> 05:28.312
+The vocabulary and authority structure change by sector.
+
+05:28.312 --> 05:36.612
+The product discipline does not: local evidence work, cited candidates, human
+adjudication, signed revisions and explicitly scoped
+
+05:36.612 --> 05:37.588
+internal movement.
+
+05:37.588 --> 05:42.470
+No customer deployment, validated use or sector approval is implied.
+
+05:43.470 --> 05:47.466
+The credible first step is a bounded evaluation.
+
+05:47.466 --> 05:51.961
+Choose one workflow, one cleared corpus and named reviewers.
+
+05:51.961 --> 05:56.956
+Agree the baseline and evidence standard before the test begins.
+
+05:56.956 --> 06:01.951
+Include difficult scans, tables, ambiguous references and deliberately absent
+evidence.
+
+06:01.951 --> 06:06.946
+Measure the effort needed to locate and inspect governing sources.
+
+06:06.946 --> 06:12.440
+Record accepted and rejected candidates, appropriate refusals, reproducibility
+and corpus-preparation effort.
+
+06:12.440 --> 06:22.430
+Then use that evidence to define the first departmental workflow, authority
+route and controls required for a wider site deployment.
+
+06:23.430 --> 06:31.027
+Cortessa begins with a self-sufficient instrument at the engineer's desk and a
+simple promise: evidence before authority.
+
+06:31.027 --> 06:33.262
+Bring one bounded document workflow.
+
+06:33.262 --> 06:37.284
+Test Audit and Ask against evidence standards you control.
+
+06:37.284 --> 06:45.328
+Then examine how approved revisions could move through your departments
+without leaving the site boundary or surrendering human
+
+06:45.328 --> 06:45.775
+authority.
+
+06:45.775 --> 06:49.350
+Start a conversation about a scoped Cortessa evaluation.

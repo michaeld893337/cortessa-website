@@ -1,219 +1,218 @@
 WEBVTT
 
-00:00.350 --> 00:07.264
+00:00.350 --> 00:08.321
 Aircraft return to the air, ships remain available at sea, and safety-critical
 engineering moves forward because authorised people can
 
-00:07.264 --> 00:10.175
+00:08.321 --> 00:11.677
 show which source and revision governs the work.
 
-00:10.175 --> 00:16.726
+00:11.677 --> 00:19.228
 The physical outcome may be a released maintenance task, an accepted
 engineering change or a resolved assurance question.
 
-00:16.726 --> 00:24.368
+00:19.228 --> 00:28.038
 Before any of those decisions, someone has to trace the requirement, inspect
 the evidence and identify what is missing or inconsistent.
 
-00:24.368 --> 00:30.190
+00:28.038 --> 00:34.750
 Cortessa is designed to support that investigation without taking the decision
 away from the accountable person.
 
-00:31.190 --> 00:34.453
+00:35.750 --> 00:39.313
 A technical approval rarely depends on one document.
 
-00:34.453 --> 00:39.756
+00:39.313 --> 00:45.104
 Requirements connect to engineering instructions, maintenance publications,
 supplier evidence, standards, safety material and
 
-00:39.756 --> 00:40.572
+00:45.104 --> 00:45.995
 configuration records.
 
-00:40.572 --> 00:45.874
+00:45.995 --> 00:51.786
 Those sources may be owned by different teams and held in disconnected
 environments.
 
-00:45.874 --> 00:53.625
+00:51.786 --> 01:00.249
 The assurance problem is establishing which source is current, whether every
 reference is present, whether terminology still aligns and
 
-00:53.625 --> 00:58.111
+01:00.249 --> 01:05.149
 whether the evidence applies to the platform and task under review.
 
-00:58.111 --> 01:00.151
+01:05.149 --> 01:07.376
 Search can find a page.
 
-01:00.151 --> 01:04.230
+01:07.376 --> 01:11.830
 Assurance requires the route between the pages to remain inspectable.
 
-01:05.230 --> 01:11.692
-The credible starting point is one bounded technical-assurance workflow: for
-example, a selected engineering-change or
+01:12.830 --> 01:19.919
+Cortessa's target Defence deployment gives each authorised engineer a
+dedicated, self-sufficient box inside the site boundary.
 
-01:11.692 --> 01:12.553
-maintenance-release pack.
+01:19.919 --> 01:29.667
+Local documents, ingestion, index, on-device model and source viewer remain on
+that box, so evidence work does not depend on a public
 
-01:12.553 --> 01:18.584
-Agree the authoritative corpus, revision set, expected source routes and
-questions before testing begins.
+01:29.667 --> 01:30.553
+cloud service.
 
-01:18.584 --> 01:25.045
-Define the existing baseline, the evidence standard and the authorised
-engineers who will adjudicate results.
+01:30.553 --> 01:34.984
+Audit and Ask run locally against the engineer's approved corpus.
 
-01:25.045 --> 01:28.492
-Use only public, synthetic or explicitly cleared material.
+01:34.984 --> 01:39.858
+Author remains in development and requires further testing before operational
+use.
 
-01:28.492 --> 01:37.968
-Cortessa is evaluated inside that fixed scope; it does not claim access to an
-entire Defence estate or understanding of every platform
+01:39.858 --> 01:47.390
+The engineer controls what enters the local working context and remains
+responsible for every interpretation and revision.
 
-01:37.968 --> 01:38.830
-and programme.
+01:48.390 --> 01:57.674
+Engineer boxes are designed to connect through departmental nodes to an
+on-site hub, with the complete exchange remaining inside the
 
-01:39.830 --> 01:44.447
-Cortessa runs on a dedicated sovereign workstation inside the agreed boundary.
+01:57.674 --> 01:58.602
+air-gapped site.
 
-01:44.447 --> 01:51.163
-The approved corpus, ingestion pipeline, local index, on-device model and
-source viewer remain on that machine.
+01:58.602 --> 02:06.494
+Engineering, configuration and assurance departments retain their own scopes,
+with selected cross-department sharing only where it is
 
-01:51.163 --> 01:55.360
-Runtime operation does not depend on a public cloud service.
+02:06.494 --> 02:06.958
+authorised.
 
-01:55.360 --> 01:59.978
-The organisation controls the permitted documents, users, identity and
-security posture.
+02:06.958 --> 02:13.921
+This is Cortessa's target site architecture, not a claim of a deployed
+production network today.
 
-01:59.978 --> 02:02.916
-Retrieval-only operation remains available as the floor.
+02:13.921 --> 02:20.884
+The governed offline revision contract and application foundations exist;
+authenticated peer transport, key provisioning, delivery
 
-02:02.916 --> 02:11.311
-Cortessa supports review inside the existing environment; it does not widen
-access, connect to a platform or replace the organisation's
+02:20.884 --> 02:25.990
+scheduling, backup, recovery, site assurance and physical rollout remain
+deployment work.
 
-02:11.311 --> 02:12.150
-information-governance controls.
-
-02:13.150 --> 02:16.579
+02:26.990 --> 02:30.697
 Audit is the centre of the Cortessa workflow.
 
-02:16.579 --> 02:23.438
+02:30.697 --> 02:38.112
 It works across the bounded defence corpus rather than waiting for one
 question at a time.
 
-02:23.438 --> 02:29.440
+02:38.112 --> 02:44.599
 It can surface missing references, supersession questions, revision
 uncertainty, terminology differences and structured conflicts.
 
-02:29.440 --> 02:35.870
+02:44.599 --> 02:51.550
 Each candidate enters engineering review; it is not automatically a
 certification, safety or compliance finding.
 
-02:36.870 --> 02:41.433
+02:52.550 --> 02:57.327
 Every audit result leads back to the passages that created it.
 
-02:41.433 --> 02:47.241
+02:57.327 --> 03:03.407
 The engineer can open the source, inspect surrounding wording and check
 revision and applicability.
 
-02:47.241 --> 02:52.220
+03:03.407 --> 03:08.619
 If evidence is absent, Cortessa can refuse rather than fill the gap.
 
-02:52.220 --> 03:00.102
+03:08.619 --> 03:16.870
 The engineer decides whether the issue is real, irrelevant, already controlled
 or worth further investigation, then records the outcome
 
-03:00.102 --> 03:01.761
+03:16.870 --> 03:18.607
 through the existing process.
 
-03:01.761 --> 03:05.910
+03:18.607 --> 03:22.950
 Verified shows provenance; it does not decide which requirement governs.
 
-03:06.910 --> 03:11.171
+03:23.950 --> 03:28.565
 Technical authority cannot be outsourced to a language model.
 
-03:11.171 --> 03:16.379
+03:28.565 --> 03:34.206
 Configuration, applicability, safety significance and operational consequence
 require authorised professional judgement.
 
-03:16.379 --> 03:21.113
+03:34.206 --> 03:39.334
 Cortessa makes the source route, provenance state and uncertainty visible.
 
-03:21.113 --> 03:28.215
+03:39.334 --> 03:47.025
 The responsible engineer resolves the issue and records the decision through
 the organisation's approved process.
 
-03:28.215 --> 03:35.790
+03:47.025 --> 03:55.230
 Cortessa does not become the design authority, configuration authority, safety
 authority, certifying body or procurement authority.
 
-03:36.790 --> 03:38.912
-Reviewers need more than an answer.
+03:56.230 --> 04:04.978
+When an engineer approves a revision, the revision can carry its signed
+identity, content hash, parents and approved audit context
 
-03:38.912 --> 03:45.280
-They need the source route, document state and the policy governing what the
-system is allowed to present.
+04:04.978 --> 04:09.789
+through the Defence department node and, where authorised, the on-site hub.
 
-03:45.280 --> 03:50.586
-Identity, document currency, assertion policy and egress posture are visible
-parts of the operating picture.
+04:09.789 --> 04:16.350
+Prior branches, missing parents and conflicts remain visible; arrival order
+does not choose a winner.
 
-03:50.586 --> 03:57.307
-Local activity can be recorded in a ledger so the organisation can inspect
-what the system did and when.
+04:16.350 --> 04:25.973
+The hub cannot publish an engineer's approval, and receipt does not certify a
+document or silently make it current or searchable on
 
-03:57.307 --> 04:00.490
-That record may contribute to an assurance evidence package.
+04:25.973 --> 04:26.847
+another box.
 
-04:00.490 --> 04:06.150
-It does not make conclusions correct and does not replace the formal
-engineering or approval record.
+04:26.847 --> 04:29.909
+Import and use remain explicit, engineer-governed actions.
 
-04:07.150 --> 04:10.623
+04:29.909 --> 04:36.470
+The local ledger supports inspection of system activity but never replaces the
+formal engineering record.
+
+04:37.470 --> 04:41.200
 Compare matched tasks against the existing review baseline.
 
-04:10.623 --> 04:18.438
+04:41.200 --> 04:49.593
 Measure time to locate and open the governing source, reviewer effort, cited
 candidate findings, accepted and rejected results,
 
-04:18.438 --> 04:21.911
+04:49.593 --> 04:53.324
 appropriate refusals and reproducibility of sampled source paths.
 
-04:21.911 --> 04:28.857
-For aircraft support, test whether stale or missing evidence becomes visible
-earlier in the selected review.
+04:53.324 --> 05:02.649
+Begin with one cleared workflow and one department, then test the controls
+needed to extend it across the site architecture.
 
-04:28.857 --> 04:34.935
-For naval engineering, test the route from a candidate finding to its
-governing source.
+05:02.649 --> 05:09.644
+For aircraft support, naval engineering and safety-critical assurance, these
+remain evaluation hypotheses, not claimed operational
 
-04:34.935 --> 04:39.277
-For safety-critical assurance, test whether the conclusion-to-source trail is
-clearer.
+05:09.644 --> 05:10.110
+outcomes.
 
-04:39.277 --> 04:42.750
-These are evaluation hypotheses, not claimed operational outcomes.
-
-04:43.750 --> 04:45.530
+05:11.110 --> 05:13.130
 Bring one bounded workflow.
 
-04:45.530 --> 04:49.090
-Agree the corpus, reviewers, baseline and evidence standard.
+05:13.130 --> 05:23.735
+Agree the corpus, reviewers, baseline and evidence standard, then test the
+route from an engineer's local evidence work to a governed
 
-04:49.090 --> 04:53.540
-Include difficult scans, tables, ambiguous references and deliberately absent
-evidence.
+05:23.735 --> 05:25.250
+departmental revision exchange.
 
-04:53.540 --> 04:57.990
-Record setup and corpus-preparation effort as part of the result.
+05:25.250 --> 05:32.825
+Cortessa claims no Defence deployment, completed site rollout, platform
+integration, accreditation, approval, achieved saving or
 
-04:57.990 --> 05:04.220
-Cortessa claims no Defence deployment, platform integration, accreditation,
-approval, achieved saving or readiness outcome.
+05:32.825 --> 05:33.835
+readiness outcome.
 
-05:04.220 --> 05:08.670
-The value has to be demonstrated in a representative environment.
+05:33.835 --> 05:39.390
+The architecture must be demonstrated and assured in a representative
+environment.
 
-05:08.670 --> 05:12.230
+05:39.390 --> 05:43.430
 Start a conversation about a scoped Defence evaluation.

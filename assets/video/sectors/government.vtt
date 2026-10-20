@@ -1,174 +1,182 @@
 WEBVTT
 
-00:00.350 --> 00:05.743
+00:00.350 --> 00:05.627
 Government teams work across policy, implementation guidance, standards,
 governance minutes and decision records.
 
-00:05.743 --> 00:14.454
+00:05.627 --> 00:14.151
 Before advice is submitted or assurance is given, reviewers need the
 authoritative source, the current wording and a clear route back
 
-00:14.454 --> 00:15.698
+00:14.151 --> 00:15.369
 to the evidence.
 
-00:15.698 --> 00:22.750
+00:15.369 --> 00:22.270
 When that trail is fragmented, skilled people spend time reconstructing
 documentary context instead of judging the issue.
 
-00:23.750 --> 00:31.590
+00:23.270 --> 00:30.897
 A policy question can depend on the current policy, earlier wording,
 implementation guidance, a standard, governance minutes and a
 
-00:31.590 --> 00:32.415
+00:30.897 --> 00:31.699
 recorded decision.
 
-00:32.415 --> 00:34.478
+00:31.699 --> 00:33.706
 A reference can be replaced.
 
-00:34.478 --> 00:36.954
+00:33.706 --> 00:36.115
 A date can change what applied.
 
-00:36.954 --> 00:40.668
+00:36.115 --> 00:39.728
 Local guidance may narrow how a policy is implemented.
 
-00:40.668 --> 00:43.144
+00:39.728 --> 00:42.136
 The challenge is not simply search.
 
-00:43.144 --> 00:47.270
+00:42.136 --> 00:46.150
 It is establishing authority, chronology and the relationships between
 sources.
 
-00:48.270 --> 00:53.716
-Choose one unclassified or appropriately controlled policy estate and one
-review workflow.
+00:47.150 --> 00:52.501
+Cortessa's target government-site deployment gives each authorised official a
+dedicated, self-sufficient box.
 
-00:53.716 --> 01:00.070
-Agree the corpus, users, access boundary, test questions and evidence standard
-before evaluation begins.
+00:52.501 --> 00:58.744
+Permitted policy records, ingestion, index, on-device model and source viewer
+remain on that box.
 
-01:00.070 --> 01:05.970
-Include stale references, incomplete records, conflicting wording and
-questions that should be refused.
+00:58.744 --> 01:02.757
+Audit and Ask run locally against the approved corpus.
 
-01:05.970 --> 01:11.870
-Compare matched tasks against the current process, with authorised officials
-adjudicating the results.
+01:02.757 --> 01:06.325
+Author remains in development and requires further testing.
 
-01:12.870 --> 01:18.704
-Cortessa is intended to operate on a dedicated sovereign workstation inside an
-agreed boundary.
+01:06.325 --> 01:11.230
+The official controls the working context, interpretation and every approved
+revision.
 
-01:18.704 --> 01:24.538
-The approved corpus, local index, on-device model and source viewer remain
-within that environment.
+01:12.230 --> 01:21.778
+Official boxes are designed to connect through policy, delivery and assurance
+departmental nodes to an on-site hub, entirely inside the
 
-01:24.538 --> 01:28.705
-Runtime operation does not depend on a public cloud service.
+01:21.778 --> 01:22.732
+air-gapped site.
 
-01:28.705 --> 01:33.289
-The department defines permitted information, users, identity controls and
-security posture.
+01:22.732 --> 01:26.074
+Department-default scope and selected sharing remain explicit.
 
-01:33.289 --> 01:40.790
-Cortessa does not bypass handling rules or automatically make material
-suitable for OFFICIAL, SECRET or any other classification.
+01:26.074 --> 01:31.802
+This is the target architecture, not a deployed-network, accreditation or
+classification claim.
 
-01:41.790 --> 01:44.843
+01:31.802 --> 01:38.486
+The offline contract and application foundations exist; authenticated
+transport, key operations, scheduling, backup, recovery,
+
+01:38.486 --> 01:41.350
+assurance and rollout remain deployment work.
+
+01:42.350 --> 01:45.529
 Audit is the centre of the Cortessa workflow.
 
-01:44.843 --> 01:53.239
+01:45.529 --> 01:54.271
 Across the bounded policy estate, it can surface a policy that cites a missing
 standard, guidance that appears to rely on superseded
 
-01:53.239 --> 01:58.200
+01:54.271 --> 01:59.437
 wording, inconsistent terminology, uncertain effectivity or an unexplained gap
 in the decision record.
 
-01:58.200 --> 02:00.872
+01:59.437 --> 02:02.219
 Each candidate enters an authorised review queue.
 
-02:00.872 --> 02:05.070
+02:02.219 --> 02:06.590
 It is not automatically a finding of legal or administrative non-compliance.
 
-02:06.070 --> 02:10.535
+02:07.590 --> 02:11.757
 Each audit result leads back to the passage that created it.
 
-02:10.535 --> 02:17.029
+02:11.757 --> 02:17.818
 The authorised reviewer can open the source, inspect surrounding wording and
 confirm document state and chronology.
 
-02:17.029 --> 02:21.899
+02:17.818 --> 02:22.364
 If evidence is absent, Cortessa can refuse rather than fill the gap.
 
-02:21.899 --> 02:29.205
+02:22.364 --> 02:29.183
 The accountable official determines relevance, accepts or rejects the
 candidate, and records the outcome through the existing process.
 
-02:29.205 --> 02:33.670
+02:29.183 --> 02:33.350
 Verified shows provenance; it does not establish policy correctness or
 authority.
 
-02:34.670 --> 02:42.037
+02:34.350 --> 02:41.926
 Democratic accountability, statutory duties, policy intent and operational
 context cannot be delegated to a language model.
 
-02:42.037 --> 02:45.720
+02:41.926 --> 02:45.713
 Cortessa can expose the evidence route and uncertainty.
 
-02:45.720 --> 02:52.166
+02:45.713 --> 02:52.342
 Accountable officials determine what applies, what it means and what
 recommendation should be made.
 
-02:52.166 --> 02:57.230
+02:52.342 --> 02:57.550
 Cortessa does not take ministerial, policy, procurement, statutory or
 regulatory decisions.
 
-02:58.230 --> 03:04.768
-Reviewers need the source route, document state and the policy governing what
-the system may present.
+02:58.550 --> 03:05.449
+An official-approved revision can carry signed identity, content hash, parent
+lineage and approved audit context through its
 
-03:04.768 --> 03:09.263
-Identity, document currency, assertion policy and egress posture remain
-visible concerns.
+03:05.449 --> 03:08.695
+departmental node and, where authorised, the on-site hub.
 
-03:09.263 --> 03:17.026
-Local activity can be recorded in a ledger so the organisation can inspect
-what the system did and when.
+03:08.695 --> 03:14.376
+Conflicts remain explicit; the hub cannot make a public decision or choose
+policy authority.
 
-03:17.026 --> 03:23.973
-That record can support an assurance package, but it does not guarantee
-compliance with security, records-management or
+03:14.376 --> 03:18.434
+Receipt does not certify, supersede or automatically index a record.
 
-03:23.973 --> 03:24.790
-freedom-of-information obligations.
+03:18.434 --> 03:25.738
+The receiving official governs import and use, while the local Ledger supports
+inspection without replacing statutory, security or
 
-03:25.790 --> 03:29.372
+03:25.738 --> 03:26.550
+records processes.
+
+03:27.550 --> 03:31.132
 Compare matched tasks against the current review workflow.
 
-03:29.372 --> 03:36.088
+03:31.132 --> 03:37.848
 Measure time to the authoritative source, traceability, stale-revision
 visibility, accepted and rejected findings, correct refusals,
 
-03:36.088 --> 03:37.878
+03:37.848 --> 03:39.638
 reviewer effort and reproducibility.
 
-03:37.878 --> 03:40.565
+03:39.638 --> 03:42.325
 Record corpus preparation and setup burden.
 
-03:40.565 --> 03:43.699
+03:42.325 --> 03:45.459
 Include ambiguous policy language and absent records.
 
-03:43.699 --> 03:51.310
+03:45.459 --> 03:53.070
 The result should show where Cortessa helps, where it fails and what must
 change before any expansion.
 
-03:52.310 --> 03:58.099
-Bring one appropriately controlled policy estate and the people authorised to
-judge it.
+03:54.070 --> 03:58.740
+Bring one appropriately controlled policy estate and the authorised officials.
 
-03:58.099 --> 04:03.443
-Evaluate the evidence route, remediate observed gaps and retest before
-considering expansion.
+03:58.740 --> 04:03.411
+Test the evidence route and governed departmental exchange before expansion.
 
-04:03.443 --> 04:05.670
-Start a conversation with Cortessa.
+04:03.411 --> 04:08.081
+Cortessa claims no government deployment, accreditation or completed site
+rollout.
+
+04:08.081 --> 04:11.350
+Start a conversation about a scoped evaluation.

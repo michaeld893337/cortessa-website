@@ -86,12 +86,15 @@
       <div class="wrap">
         <div class="hero-grid">
           <div>
-            <p class="mono-label rise">Sovereign document intelligence</p>
-            <h1 id="hero-heading" class="rise">One governed document environment. Inside your boundary.</h1>
+            <p class="mono-label rise">For engineering and assurance teams in defence and regulated industries</p>
+            <h1 id="hero-heading" class="rise">Find the evidence behind an engineering decision — without sending controlled documents to the cloud.</h1>
             <p class="lede rise">
-              Cortessa is being developed as a site-contained environment of self-sufficient
-              engineer boxes, departmental nodes and an on-site hub. Analysis stays on-box.
-              Approved revisions remain inside the site. Engineers retain authority.
+              Cortessa is being developed for engineers, assurance teams and programme leaders
+              working with controlled document estates in defence, aerospace, nuclear and other
+              regulated sectors. Each engineer box runs Audit and Ask locally. People inspect the
+              cited sources and retain decision authority. The target site architecture connects
+              those boxes through departmental nodes to an on-site hub, entirely inside the
+              governed site boundary.
             </p>
             <div class="hero-actions rise">
               <a class="btn btn-primary" href="pilot.html">Request a scoped pilot</a>
@@ -121,6 +124,19 @@
           site architecture joins those boxes through departmental nodes and an on-site hub so an
           explicitly approved revision can move with its signatures, lineage and scope intact.
         </p>
+        <p class="evidence">
+          An engineer box is a self-sufficient Cortessa workstation for local analysis.
+          Departmental nodes and the on-site hub are the target route for moving approved,
+          signed revisions within authorised scope.
+        </p>
+        <figure class="programme-overview__film">
+          <video controls preload="metadata" poster="assets/video/programme/cortessa-programme-overview-poster.jpg" aria-labelledby="site-architecture-heading programme-overview-caption">
+            <source src="assets/video/programme/cortessa-programme-overview.mp4" type="video/mp4">
+            <track kind="captions" src="assets/video/programme/cortessa-programme-overview.vtt" srclang="en-GB" label="English">
+            Your browser cannot play this video. <a href="assets/video/programme/cortessa-programme-overview.mp4">Download the Cortessa programme overview</a>.
+          </video>
+          <figcaption id="programme-overview-caption">Cortessa programme overview · 6 min 50 sec · <a href="assets/video/programme/cortessa-programme-overview.mp4">Open video</a></figcaption>
+        </figure>
         <ol class="architecture-strip" aria-label="Cortessa site architecture">
           <li class="architecture-column">
             <span class="mono-label">Engineer boxes</span>
@@ -221,6 +237,14 @@
             <span class="proof-tag refused">Refused</span>
             <p>When the fact is not present, the system refuses rather than guess.</p>
           </div>
+        </div>
+        <div class="note">
+          <p><span class="note-label">Why a prompt is not the same as a gate</span>
+          You can tell a general-purpose assistant to cite sources and refuse when unsure. That is
+          still an instruction interpreted by the model producing the answer. Cortessa separates
+          the answer from the check: a deterministic, versioned rule outside the model decides
+          whether each claim is eligible for Verified, Draft or Refused. The cited source remains
+          open for inspection, and the engineer makes the decision.</p>
         </div>
       </div>
     </section>

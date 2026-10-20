@@ -93,10 +93,41 @@
     </section>
 
     <!-- 02 · Modes -->
+    <section class="section band" aria-labelledby="agents-heading">
+      <div class="wrap reveal">
+        <div class="desig">
+          <span class="mono-label">02 / Bounded workflows</span>
+          <span class="mono-label desig-note">Human review · no autonomous action</span>
+        </div>
+        <h2 id="agents-heading">Does Cortessa run autonomous agents?</h2>
+        <div class="prose">
+          <p>
+            No. The current Ask and Audit workflows analyse an approved local corpus and return
+            cited answers or findings for human review. They are not designed to browse the public
+            internet, take operational action or replace an engineer's authority. The model and
+            ingestion pipeline run on the engineer box, and the current offline configuration
+            makes no external runtime calls. That materially narrows the routes available to a
+            compromised model or document; it is not a claim that any software or deployment is
+            immune to attack.
+          </p>
+          <p>
+            Security still has to be proved in the deployed environment. A pilot should test
+            malicious-document and prompt-injection handling, model-runtime isolation,
+            operating-system permissions, firewall and egress controls, logging, recovery and
+            administrative access. Classification and accreditation remain the customer's
+            decisions. Departmental nodes and the on-site hub are target architecture;
+            authenticated transport, production key operations, backup, recovery, assurance and
+            rollout remain in development.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 03 · Modes -->
     <section class="section invert" aria-labelledby="modes-heading">
       <div class="wrap reveal">
         <div class="desig">
-          <span class="mono-label">02 / Modes</span>
+          <span class="mono-label">03 / Modes</span>
           <span class="mono-label desig-note">On-device standard · shown on the ribbon</span>
         </div>
         <h2 id="modes-heading">The model is on the box; the site network stays inside the boundary</h2>
@@ -117,7 +148,7 @@
     <section class="section" aria-labelledby="licence-heading">
       <div class="wrap reveal">
         <div class="desig">
-          <span class="mono-label">03 / Licensing</span>
+          <span class="mono-label">04 / Licensing</span>
           <span class="mono-label desig-note">Offline cryptographic activation</span>
         </div>
         <h2 id="licence-heading">Offline cryptographic licensing</h2>
@@ -140,7 +171,7 @@
     <section class="section band" aria-labelledby="audit-heading">
       <div class="wrap reveal">
         <div class="desig">
-          <span class="mono-label">04 / Auditability</span>
+          <span class="mono-label">05 / Auditability</span>
           <span class="mono-label desig-note">Deterministic · inspectable</span>
         </div>
         <h2 id="audit-heading">Auditability you can inspect</h2>

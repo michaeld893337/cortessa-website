@@ -1,178 +1,182 @@
 WEBVTT
 
-00:00.350 --> 00:05.169
+00:00.350 --> 00:05.134
 Rail engineering teams work across standards, maintenance instructions, change
 notices and asset records.
 
-00:05.169 --> 00:13.323
+00:05.134 --> 00:13.230
 Before a change is accepted or work is authorised, the reviewer needs the
 governing source, the correct revision and a defensible route
 
-00:13.323 --> 00:14.806
+00:13.230 --> 00:14.702
 back to the evidence.
 
-00:14.806 --> 00:21.478
+00:14.702 --> 00:21.326
 When those relationships are difficult to inspect, scarce engineering time is
 spent reconstructing the document trail instead of
 
-00:21.478 --> 00:22.590
+00:21.326 --> 00:22.430
 judging the work.
 
-00:23.590 --> 00:30.135
+00:23.430 --> 00:29.845
 A single asset class can depend on infrastructure standards, rolling-stock
 instructions, maintenance procedures, technical bulletins
 
-00:30.135 --> 00:31.881
+00:29.845 --> 00:31.555
 and local change records.
 
-00:31.881 --> 00:34.063
+00:31.555 --> 00:33.693
 One document may supersede another.
 
-00:34.063 --> 00:36.681
+00:33.693 --> 00:36.259
 A referenced clause may have moved.
 
-00:36.681 --> 00:39.735
+00:36.259 --> 00:39.253
 Terminology and effectivity can differ between revisions.
 
-00:39.735 --> 00:42.354
+00:39.253 --> 00:41.818
 The challenge is not simply search.
 
-00:42.354 --> 00:47.590
+00:41.818 --> 00:46.950
 It is establishing which source governed the question at the relevant time.
 
-00:48.590 --> 00:51.801
-Choose one asset class and one review workflow.
+00:47.950 --> 00:53.291
+Cortessa's target rail-site deployment gives each authorised engineer a
+dedicated, self-sufficient box.
 
-00:51.801 --> 00:57.421
-Agree the authoritative documents, representative historic revisions and the
-questions the evaluation must answer.
+00:53.291 --> 01:00.413
+Local standards, instructions, change records, ingestion, index, on-device
+model and source viewer remain on that box.
 
-00:57.421 --> 01:02.239
-Set the access boundary, the reviewers and the evidence standard in advance.
+01:00.413 --> 01:04.418
+Audit and Ask run locally against the approved corpus.
 
-01:02.239 --> 01:09.464
-Cortessa is then tested against matched tasks from the current process,
-including difficult documents, missing references and questions
+01:04.418 --> 01:07.979
+Author remains in development and requires further testing.
 
-01:09.464 --> 01:11.070
-that should be refused.
+01:07.979 --> 01:12.430
+The engineer controls the working context and every approved revision.
 
-01:12.070 --> 01:18.682
-Cortessa is intended to operate on a dedicated sovereign workstation inside an
-agreed organisational boundary.
+01:13.430 --> 01:21.085
+Engineer boxes are designed to connect through infrastructure, rolling-stock
+and standards-assurance departmental nodes to an on-site
 
-01:18.682 --> 01:24.853
-The approved corpus, local index, on-device model and source viewer remain
-within that environment.
+01:21.085 --> 01:23.955
+hub, entirely inside the air-gapped site.
 
-01:24.853 --> 01:29.261
-Runtime operation does not depend on a public cloud service.
+01:23.955 --> 01:28.261
+This is the target architecture, not a deployed-network claim.
 
-01:29.261 --> 01:34.550
-The rail organisation defines permitted users, documents, identity controls
-and security posture.
+01:28.261 --> 01:34.959
+The offline contract and application foundations exist; authenticated
+transport, key operations, scheduling, backup, recovery,
 
-01:35.550 --> 01:38.474
+01:34.959 --> 01:37.830
+assurance and rollout remain deployment work.
+
+01:38.830 --> 01:41.735
 Audit is the centre of the Cortessa workflow.
 
-01:38.474 --> 01:44.323
+01:41.735 --> 01:47.544
 It works across the bounded engineering corpus rather than waiting for one
 question at a time.
 
-01:44.323 --> 01:52.365
+01:47.544 --> 01:55.532
 It can surface a reference the corpus does not hold, terminology that changes
 between documents, an instruction that appears to rely on
 
-01:52.365 --> 01:54.924
+01:55.532 --> 01:58.073
 a superseded source, or uncertainty about effectivity.
 
-01:54.924 --> 01:59.310
+01:58.073 --> 02:02.430
 Each candidate is presented for investigation, not treated as an automatic
 finding.
 
-02:00.310 --> 02:05.137
+02:03.430 --> 02:07.791
 Every audit result must lead back to the passage that created it.
 
-02:05.137 --> 02:11.172
+02:07.791 --> 02:13.243
 The reviewer can open the source, inspect surrounding wording and confirm the
 revision and context.
 
-02:11.172 --> 02:16.401
+02:13.243 --> 02:17.967
 If the evidence is absent, Cortessa can refuse rather than fill the gap.
 
-02:16.401 --> 02:24.045
+02:17.967 --> 02:24.872
 The engineer decides whether the discrepancy is real, irrelevant or already
 controlled, then records the outcome through the existing
 
-02:24.045 --> 02:24.447
+02:24.872 --> 02:25.236
 process.
 
-02:24.447 --> 02:28.470
+02:25.236 --> 02:28.870
 Verified shows provenance; it does not establish the engineering conclusion.
 
-02:29.470 --> 02:36.723
+02:29.870 --> 02:37.191
 Asset context, engineering risk, operational constraints and applicable
 standards cannot be delegated to a language model.
 
-02:36.723 --> 02:41.710
+02:37.191 --> 02:42.224
 Cortessa can make the evidence route and uncertainty easier to inspect.
 
-02:41.710 --> 02:48.963
+02:42.224 --> 02:49.544
 The authorised engineer determines applicability, resolves apparent conflicts
 and decides whether a change or instruction is
 
-02:48.963 --> 02:49.417
+02:49.544 --> 02:50.002
 acceptable.
 
-02:49.417 --> 02:55.310
+02:50.002 --> 02:55.950
 Cortessa does not approve engineering change, establish ROGS compliance or
 control railway operations.
 
-02:56.310 --> 02:58.418
-Reviewers need more than fluent output.
+02:56.950 --> 03:03.899
+An engineer-approved revision can carry signed identity, content hash, parent
+lineage and approved audit context through its
 
-02:58.418 --> 03:04.390
-They need the source route, the document state and the policy governing what
-the system may present.
+03:03.899 --> 03:07.169
+departmental node and, where authorised, the on-site hub.
 
-03:04.390 --> 03:08.606
-Identity, document currency, assertion policy and egress posture remain
-visible governance concerns.
+03:07.169 --> 03:12.074
+Conflicts remain explicit; the hub cannot approve or choose a governing
+revision.
 
-03:08.606 --> 03:15.280
-Local activity can be recorded in a ledger so the organisation can inspect
-what the system did and when.
+03:12.074 --> 03:15.752
+Receipt does not certify or automatically index a document.
 
-03:15.280 --> 03:20.550
-That record can support an evidence package; it does not replace the
-engineering approval record.
+03:15.752 --> 03:23.110
+The receiving engineer governs import and use, while the local Ledger supports
+inspection without replacing the engineering record.
 
-03:21.550 --> 03:26.799
+03:24.110 --> 03:28.972
 Compare Cortessa with the current workflow using the same documents and tasks.
 
-03:26.799 --> 03:34.235
+03:28.972 --> 03:35.860
 Measure time to the governing source, reviewer effort, accepted and rejected
 findings, false-finding burden, unanswered questions and
 
-03:34.235 --> 03:34.673
+03:35.860 --> 03:36.265
 traceability.
 
-03:34.673 --> 03:38.172
+03:36.265 --> 03:39.506
 Include stale references, conflicting wording and absent sources.
 
-03:38.172 --> 03:40.796
+03:39.506 --> 03:41.937
 Record corpus preparation and setup effort.
 
-03:40.796 --> 03:48.670
+03:41.937 --> 03:49.230
 The result should show where Cortessa helps, where it fails and what must
 change before any wider use.
 
-03:49.670 --> 03:56.517
-Bring one bounded rail engineering workflow, an agreed document set and the
-people authorised to judge it.
+03:50.230 --> 03:55.750
+Bring one bounded rail workflow, an agreed document set and the authorised
+engineers.
 
-03:56.517 --> 03:59.336
-Evaluate the evidence route before considering expansion.
+03:55.750 --> 03:59.996
+Test the evidence route and governed departmental exchange before expansion.
 
-03:59.336 --> 04:01.350
-Start a conversation with Cortessa.
+03:59.996 --> 04:03.818
+Cortessa claims no rail deployment or completed site rollout.
+
+04:03.818 --> 04:06.790
+Start a conversation about a scoped evaluation.
