@@ -1,0 +1,497 @@
+WEBVTT
+
+1
+00:00:00.000 --> 00:00:03.260
+Before the review, two versions arrive on
+the desk.
+
+2
+00:00:04.060 --> 00:00:05.080
+The title is familiar.
+
+3
+00:00:05.740 --> 00:00:06.940
+The revision is different.
+
+4
+00:00:07.320 --> 00:00:10.940
+Which document governs the work, and are
+the references behind it
+
+5
+00:00:10.940 --> 00:00:14.640
+actually present? The reviewer needs more
+than a search result.
+
+6
+00:00:15.220 --> 00:00:18.840
+They need a route back to the wording, its
+context and its history.
+
+7
+00:00:19.540 --> 00:00:23.060
+This is the problem Cortessa is being built
+around:
+
+8
+00:00:23.400 --> 00:00:27.220
+controlled documents, questions that can be
+traced, and people who
+
+9
+00:00:27.220 --> 00:00:28.860
+remain accountable for the decision.
+
+10
+00:00:28.860 --> 00:00:33.540
+We will follow that route through the
+actual product, using public NASA
+
+11
+00:00:33.540 --> 00:00:35.040
+documents as a demonstration.
+
+12
+00:00:35.980 --> 00:00:38.040
+The people and workplaces are illustrative.
+
+13
+00:00:38.680 --> 00:00:39.560
+Start with Audit.
+
+14
+00:00:40.120 --> 00:00:43.520
+It cross-references the selected corpus and
+surfaces documentary
+
+15
+00:00:43.520 --> 00:00:45.160
+questions for human review:
+
+16
+00:00:45.760 --> 00:00:50.360
+a superseded revision, an uncertain
+reference, or a cited document that
+
+17
+00:00:50.360 --> 00:00:51.280
+is not held.
+
+18
+00:00:51.920 --> 00:00:56.320
+On the graph, a document on one side points
+to the references it cites.
+
+19
+00:00:56.320 --> 00:00:59.720
+Follow one relationship into the candidate
+behind it.
+
+20
+00:01:00.020 --> 00:01:03.860
+In this public example, a held document
+cites a reference that the
+
+21
+00:01:03.860 --> 00:01:05.240
+corpus does not hold.
+
+22
+00:01:05.800 --> 00:01:09.800
+The candidate identifies the citing source
+and passage, so the next step
+
+23
+00:01:09.800 --> 00:01:13.780
+is inspectable. The important result is not
+the colour of a warning.
+
+24
+00:01:14.320 --> 00:01:15.560
+It is the evidence route:
+
+25
+00:01:15.920 --> 00:01:20.040
+which document made the reference, where it
+appears, and what the held
+
+26
+00:01:20.040 --> 00:01:24.480
+corpus contains. A missing document becomes
+a visible review question.
+
+27
+00:01:24.480 --> 00:01:28.200
+That gap remains part of the evidence the
+reviewer examines.
+
+28
+00:01:28.760 --> 00:01:31.460
+The reviewer can now decide what to inspect
+next.
+
+29
+00:01:32.140 --> 00:01:33.240
+Open the cited passage.
+
+30
+00:01:33.660 --> 00:01:35.400
+Then open the original document.
+
+31
+00:01:35.820 --> 00:01:39.080
+The source matters because a sentence can
+change meaning when it is
+
+32
+00:01:39.080 --> 00:01:43.020
+separated from its surrounding wording,
+revision or applicability.
+
+33
+00:01:43.560 --> 00:01:46.900
+A matching phrase alone does not settle the
+engineering question.
+
+34
+00:01:47.480 --> 00:01:51.640
+Here, the reviewer follows the reference
+back to the page and examines
+
+35
+00:01:51.640 --> 00:01:56.020
+that context. They can compare the relevant
+revision and check whether
+
+36
+00:01:56.020 --> 00:01:58.400
+the wording governs this particular review.
+
+37
+00:01:59.240 --> 00:02:01.160
+Cortessa keeps that route inspectable.
+
+38
+00:02:01.660 --> 00:02:03.220
+It surfaces a cited candidate;
+
+39
+00:02:03.760 --> 00:02:06.960
+the responsible specialist examines the
+evidence and decides what
+
+40
+00:02:06.960 --> 00:02:09.340
+follows. That is the working relationship:
+
+41
+00:02:09.760 --> 00:02:13.080
+the product brings the documentary issue
+into view, and the human
+
+42
+00:02:13.080 --> 00:02:14.940
+challenges it against the source.
+
+43
+00:02:15.460 --> 00:02:18.980
+The same discipline applies when the
+reviewer has a specific question.
+
+44
+00:02:18.980 --> 00:02:23.440
+In Ask, open the citation and inspect the
+source behind the response.
+
+45
+00:02:24.140 --> 00:02:27.060
+This recorded public example is labelled
+Draft.
+
+46
+00:02:27.680 --> 00:02:31.300
+A citation is available to inspect, while
+the response remains
+
+47
+00:02:31.300 --> 00:02:34.380
+explicitly Draft, not a verified
+conclusion.
+
+48
+00:02:34.880 --> 00:02:37.260
+Another recorded example is marked Refused.
+
+49
+00:02:37.920 --> 00:02:41.180
+The product can decline to give an answer
+that the evidence does not
+
+50
+00:02:41.180 --> 00:02:45.620
+support. Verified, Draft and Refused have
+different meanings.
+
+51
+00:02:45.620 --> 00:02:48.160
+Verified establishes provenance:
+
+52
+00:02:48.500 --> 00:02:50.340
+wording is anchored to a source.
+
+53
+00:02:50.900 --> 00:02:54.560
+It does not establish correctness,
+applicability or approval.
+
+54
+00:02:55.220 --> 00:02:58.780
+The reviewer still decides whether the
+passage answers the question and
+
+55
+00:02:58.780 --> 00:03:00.040
+whether it governs the work.
+
+56
+00:03:00.320 --> 00:03:04.080
+They have a source to inspect and a
+question to resolve, rather than an
+
+57
+00:03:04.080 --> 00:03:06.080
+unexplained instruction to accept.
+
+58
+00:03:06.580 --> 00:03:11.240
+At a wind farm, a nuclear facility or a
+carrier deck, the scenery
+
+59
+00:03:11.240 --> 00:03:13.800
+changes; the evidence question remains.
+
+60
+00:03:13.800 --> 00:03:18.280
+In aviation planning, it may concern the
+documentary basis for the next
+
+61
+00:03:18.280 --> 00:03:19.400
+human approval step.
+
+62
+00:03:19.740 --> 00:03:23.100
+Before a police briefing, it may be a
+question about superseded
+
+63
+00:03:23.100 --> 00:03:28.080
+guidance. These are illustrative
+situations, not customer deployments.
+
+64
+00:03:28.800 --> 00:03:31.220
+The documentary task is the link between
+them.
+
+65
+00:03:31.460 --> 00:03:34.200
+The authorised professional records the
+judgement through their
+
+66
+00:03:34.200 --> 00:03:38.660
+organisation's process. Cortessa surfaces
+evidence for that review.
+
+67
+00:03:39.060 --> 00:03:42.180
+Human authority stays with the people
+responsible for the work.
+
+68
+00:03:42.180 --> 00:03:44.800
+That evidence work begins locally.
+
+69
+00:03:45.420 --> 00:03:49.640
+Each Cortessa engineer box holds its
+documents, ingestion pipeline,
+
+70
+00:03:49.860 --> 00:03:51.240
+index and resident model.
+
+71
+00:03:51.800 --> 00:03:55.600
+The on-device model is the standard
+generated experience, without a
+
+72
+00:03:55.600 --> 00:03:58.920
+public-cloud dependency. Analysis stays on-
+box.
+
+73
+00:03:59.440 --> 00:04:02.820
+If the selected model is unavailable, that
+state is made explicit.
+
+74
+00:04:03.660 --> 00:04:07.400
+Separate source extracts are not relabelled
+as a successful generated
+
+75
+00:04:07.400 --> 00:04:10.980
+answer. This keeps the working context
+close to the reviewer.
+
+76
+00:04:10.980 --> 00:04:14.620
+It also keeps the organisation's access
+rules and approval
+
+77
+00:04:14.620 --> 00:04:16.300
+responsibilities in the story.
+
+78
+00:04:16.960 --> 00:04:19.940
+Sovereignty is a working boundary around
+the evidence and its use.
+
+79
+00:04:20.400 --> 00:04:22.360
+The local product supports that boundary;
+
+80
+00:04:22.800 --> 00:04:25.560
+a label on an answer does not replace human
+judgement.
+
+81
+00:04:26.280 --> 00:04:30.300
+The wider design connects those local boxes
+through departmental nodes
+
+82
+00:04:30.300 --> 00:04:34.240
+to an on-site hub, entirely inside the site
+boundary.
+
+83
+00:04:34.800 --> 00:04:39.040
+What is intended to travel is an explicitly
+approved, signed revision,
+
+84
+00:04:39.460 --> 00:04:41.580
+carrying its lineage and permitted scope.
+
+85
+00:04:42.160 --> 00:04:44.440
+A receiving reviewer still examines it.
+
+86
+00:04:44.940 --> 00:04:48.760
+Arrival does not make it the governing
+source or automatically add it to
+
+87
+00:04:48.760 --> 00:04:50.020
+another searchable corpus.
+
+88
+00:04:50.780 --> 00:04:54.580
+The self-sufficient local product and
+governed exchange foundations
+
+89
+00:04:54.580 --> 00:04:59.180
+exist. Authenticated peer transport,
+provisioning and production rollout
+
+90
+00:04:59.180 --> 00:05:00.400
+remain in development.
+
+91
+00:05:01.160 --> 00:05:03.140
+That distinction stays visible here:
+
+92
+00:05:03.620 --> 00:05:07.760
+solid local foundations, a developing site
+network, and human approval
+
+93
+00:05:07.760 --> 00:05:09.800
+at the points where authority changes.
+
+94
+00:05:10.540 --> 00:05:14.800
+The aim is a document thread people can
+inspect, with scope and history
+
+95
+00:05:14.800 --> 00:05:16.840
+preserved across the organisation.
+
+96
+00:05:17.300 --> 00:05:21.480
+Begin with one bounded document workflow
+and a corpus cleared for the
+
+97
+00:05:21.480 --> 00:05:25.900
+evaluation. Name the reviewers and agree
+what evidence they need before
+
+98
+00:05:25.900 --> 00:05:26.940
+the test starts.
+
+99
+00:05:27.460 --> 00:05:29.020
+Include the awkward cases:
+
+100
+00:05:29.460 --> 00:05:33.600
+uncertain revisions, missing references,
+difficult source material and
+
+101
+00:05:33.600 --> 00:05:35.460
+questions whose answers are absent.
+
+102
+00:05:35.460 --> 00:05:39.920
+Watch how people find the source, challenge
+a candidate and record their
+
+103
+00:05:39.920 --> 00:05:44.240
+judgement. Then decide what Cortessa has
+demonstrated in your own review
+
+104
+00:05:44.240 --> 00:05:46.680
+process, and what needs further work.
+
+105
+00:05:47.180 --> 00:05:49.880
+See Audit and Ask against evidence you can
+inspect.
+
+106
+00:05:50.400 --> 00:05:54.300
+Get in touch to arrange a Cortessa
+demonstration and discuss a scoped
+
+107
+00:05:54.300 --> 00:05:57.680
+evaluation. Cortessa. Sovereign document
+intelligence.
